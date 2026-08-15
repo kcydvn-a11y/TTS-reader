@@ -11,12 +11,12 @@
 </head>
 <body>
   <div class="container">
-   <header>
-  <span class="icon">✦</span>
-  <h1>Thai Thong · TTS ĐA NGÔN NGỮ</h1>
-  <button class="btn-donate" id="btnDonate" title="Ủng hộ dự án">❤️ Ủng hộ</button>
-  <span class="badge">Web Edition</span>
-</header>
+    <header>
+      <span class="icon">✦</span>
+      <h1>Thai Thong · TTS ĐA NGÔN NGỮ</h1>
+      <button class="btn-donate" id="btnDonate" title="Ủng hộ dự án">❤️ Ủng hộ</button>
+      <span class="badge">Web Edition</span>
+    </header>
 
     <!-- INPUT -->
     <div class="card">
@@ -30,18 +30,45 @@
         <textarea id="textInput" placeholder="Dán văn bản luận giải hoặc bất kỳ nội dung nào vào đây..."></textarea>
       </div>
 
+      <!-- PANEL URL ĐÃ SỬA LỖI CLICK -->
       <div id="panel-url" style="display:none;">
-        <label>URL trang web</label>
-        <input type="url" id="urlInput" placeholder="https://example.com/bai-viet..." />
-        <div class="hint">
-          Hệ thống sẽ cố gắng lấy nội dung chính (loại bỏ menu, quảng cáo). Một số trang chống scrape có thể thất bại.
+        <label>Dán link bài viết / báo mạng vào đây</label>
+        <div class="url-input-group">
+          <input type="url" id="urlInput" placeholder="https://tuoitre.vn/bai-viet-hay... hoặc link blog" />
         </div>
-        <span class="advanced-toggle" id="advToggle">⚙ Tùy chọn nâng cao (selector)</span>
+
+        <!-- Nút thử nhanh link mẫu -->
+        <div class="sample-links" style="margin-top: 8px; font-size: 12px;">
+          <span>💡 Dùng thử: </span>
+          <button type="button" class="btn-chip" onclick="document.getElementById('urlInput').value='https://tuoitre.vn/phong-trao-doc-sach-truyen-cam-hung-20240101.htm'">Link báo mẫu</button>
+        </div>
+
+        <div class="hint" style="margin-top: 6px;">
+          ✨ <b>Mẹo:</b> Hỗ trợ tốt nhất cho các trang tin tức, báo chí, blog, bài viết hướng dẫn.
+        </div>
+
+        <!-- SỬA TẠI ĐÂY: Thêm onclick trực tiếp xử lý ẩn/hiện mượt mà -->
+        <span class="advanced-toggle" id="advToggle" style="cursor:pointer; display:inline-block; margin-top:10px;" 
+              onclick="const box = document.getElementById('advancedBox'); box.style.display = (box.style.display === 'block') ? 'none' : 'block';">
+          ⚙️ Lấy bị sai/thừa chữ? Bấm vào đây để chỉnh
+        </span>
+        
+        <!-- SỬA TẠI ĐÂY: Bỏ display:none inline để tránh đè CSS -->
         <div class="advanced" id="advancedBox">
-          <label style="margin-top:10px;">CSS Selector vùng nội dung (để trống = tự động)</label>
-          <input type="text" id="selectorInput" placeholder="ví dụ: article, .post-content, #main-content" />
-          <label style="margin-top:10px;">Bỏ qua các class/id chứa từ khóa (cách nhau dấu phẩy)</label>
-          <input type="text" id="excludeInput" placeholder="nav, sidebar, footer, ads, comment, menu" value="nav,sidebar,footer,ads,advert,comment,menu,related,share,social" />
+          <p class="adv-tip" style="font-size:12px; color:#aaa; margin-bottom:8px;">Nếu ứng dụng lấy lộn menu hoặc quảng cáo, hãy chọn loại trang web bên dưới:</p>
+          
+          <!-- Các nút chọn nhanh preset selector -->
+          <div class="preset-buttons" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').value='.detail-content, .sidebar-content, article'">📰 Trang Báo chí</button>
+            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').value='.entry-content, .post-content'">📝 Blog / WordPress</button>
+            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').value='main, article'">🌐 Web thông thường</button>
+          </div>
+
+          <label style="margin-top:10px; display:block;">Vùng lấy chữ (CSS Selector):</label>
+          <input type="text" id="selectorInput" placeholder="VD: article, .post-content (để trống = tự động)" />
+          
+          <label style="margin-top:10px; display:block;">Các từ khóa muốn loại bỏ (cách nhau dấu phẩy):</label>
+          <input type="text" id="excludeInput" placeholder="nav, sidebar, footer, ads..." value="nav,sidebar,footer,ads,advert,comment,menu,related,share,social" />
         </div>
       </div>
 
@@ -88,61 +115,107 @@
     <!-- CONTENT -->
     <div class="content-card">
       <div class="content-header">
-  <span>NỘI DUNG (có thể sửa trực tiếp)</span>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <button class="btn btn-secondary btn-icon" id="btnUpdateContent" title="Cập nhật sau khi sửa" style="font-size:11px;padding:6px 10px;">↻ Cập nhật</button>
-    <div class="font-controls">
-      <button id="fontDown">A−</button>
-      <span class="size" id="fontSizeLabel">16</span>
-      <button id="fontUp">A+</button>
-    </div>
-  </div>
-</div>
+        <span>NỘI DUNG (có thể sửa trực tiếp)</span>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <button class="btn btn-secondary btn-icon" id="btnUpdateContent" title="Cập nhật sau khi sửa" style="font-size:11px;padding:6px 10px;">↻ Cập nhật</button>
+          <div class="font-controls">
+            <button id="fontDown">A−</button>
+            <span class="size" id="fontSizeLabel">16</span>
+            <button id="fontUp">A+</button>
+          </div>
+        </div>
+      </div>
       <div id="contentDisplay" contenteditable="true" spellcheck="false" title="Click vào đây để sửa / xóa phần không muốn đọc"></div>
     </div>
-     <!-- MODAL ỦNG HỘ -->
-<div class="modal-overlay" id="donateModal" style="display:none;">
-  <div class="modal-sheet">
-    <div class="modal-handle"></div>
-    <div class="modal-title">❤️ ỦNG HỘ DỰ ÁN</div>
 
-    <div class="donate-card">
-      <!-- Đặt file bank.png cùng thư mục với HTML, hoặc đổi src thành link ảnh -->
-      <img src="bank.png" alt="QR ủng hộ" class="qr-img"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="qr-fallback" style="display:none;">
-        <span style="font-size:48px;">📱</span>
-        <span>Chưa có ảnh QR (bank.png)</span>
-      </div>
+    <!-- MODAL ỦNG HỘ -->
+    <div class="modal-overlay" id="donateModal" style="display:none;">
+      <div class="modal-sheet">
+        <div class="modal-handle"></div>
+        <div class="modal-title">❤️ ỦNG HỘ DỰ ÁN</div>
 
-      <button class="btn-link" id="btnSaveQr">⬇️ Lưu ảnh QR về máy</button>
+        <div class="donate-card">
+          <img src="bank.png" alt="QR ủng hộ" class="qr-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="qr-fallback" style="display:none;">
+            <span style="font-size:48px;">📱</span>
+            <span>Chưa có ảnh QR (bank.png)</span>
+          </div>
 
-      <div class="donate-name">NGUYEN NGOC THAI THONG</div>
+          <button class="btn-link" id="btnSaveQr">⬇️ Lưu ảnh QR về máy</button>
 
-      <button class="copy-row" data-copy="9898661918" data-label="Số tài khoản">
-        <span class="mono">9898661918 • Vietcombank</span>
-        <span class="copy-icon">📋</span>
-      </button>
+          <div class="donate-name">NGUYEN NGOC THAI THONG</div>
 
-      <p class="donate-hint">Quét mã QR để ủng hộ kinh phí duy trì dự án.</p>
+          <button class="copy-row" data-copy="9898661918" data-label="Số tài khoản">
+            <span class="mono">9898661918 • Vietcombank</span>
+            <span class="copy-icon">📋</span>
+          </button>
 
-      <div class="donate-email-box">
-        <div class="email-label">📬 Gửi bộ hồ sơ / liên hệ:</div>
-        <button class="copy-row email" data-copy="ThaiThongsj@gmail.com" data-label="Email">
-          <span>📧 ThaiThongsj@gmail.com</span>
-          <span class="copy-icon">📋</span>
-        </button>
+          <p class="donate-hint">Quét mã QR để ủng hộ kinh phí duy trì dự án.</p>
+
+          <div class="donate-email-box">
+            <div class="email-label">📬 Gửi bộ hồ sơ / liên hệ:</div>
+            <button class="copy-row email" data-copy="ThaiThongsj@gmail.com" data-label="Email">
+              <span>📧 ThaiThongsj@gmail.com</span>
+              <span class="copy-icon">📋</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="btn btn-secondary" id="btnCloseDonate" style="width:100%;margin-top:12px;">Đóng</button>
       </div>
     </div>
 
-    <button class="btn btn-secondary" id="btnCloseDonate" style="width:100%;margin-top:12px;">Đóng</button>
-  </div>
-</div>
+    <!-- FOOTER NÂNG CẤP -->
     <footer>
-      Web Speech API · Hoạt động tốt nhất trên Chrome / Edge.<br>
-      Nếu máy chưa cài giọng ngôn ngữ tương ứng → sẽ không đọc được hoặc đọc kém.<br>
-      Windows: Cài đặt → Thời gian & ngôn ngữ → Giọng nói | macOS: System Settings → Accessibility → Spoken Content
+      <div class="speech-info-card">
+        <div class="info-header">
+          <span class="info-badge">💡 LƯU Ý GIỌNG ĐỌC</span>
+          <span>Ứng dụng chạy trực tiếp bằng <b>Web Speech API</b> của thiết bị.</span>
+        </div>
+
+        <details class="help-accordion">
+          <summary>❓ Làm sao để cài đặt hoặc thêm giọng Tiếng Việt đọc hay hơn?</summary>
+          <div class="guide-grid">
+            <div class="guide-item highlight-edge">
+              <strong>✨ Cách nhanh nhất (Khuyên dùng)</strong>
+              <p style="margin:0; font-size:12px; color:#e5e7eb;">
+                Mở ứng dụng này bằng <b>Microsoft Edge</b>. Trình duyệt này có sẵn giọng đọc AI <i>Microsoft HoaiMy / An (Natural)</i> cực chuẩn mà <b>không cần cài thêm gì</b>.
+              </p>
+            </div>
+
+            <div class="guide-item">
+              <strong>🪟 Trên Windows 10 / 11:</strong>
+              <ol>
+                <li>Vào <b>Cài đặt (Settings)</b> → <b>Thời gian & Ngôn ngữ</b>.</li>
+                <li>Mục <b>Giọng nói (Speech)</b> → Chọn <b>Thêm giọng nói</b>.</li>
+                <li>Tìm <b>"Tiếng Việt"</b> và bấm <b>Cài đặt</b>.</li>
+                <li>Tắt hoàn toàn Chrome/Edge rồi mở lại.</li>
+              </ol>
+            </div>
+
+            <div class="guide-item">
+              <strong>📱 Trên Android:</strong>
+              <ol>
+                <li>Vào <b>Cài đặt</b> → <b>Quản lý chung</b> → <b>Văn bản thành giọng nói</b>.</li>
+                <li>Chọn <b>Mục chuyển đổi preferred: Công cụ TTS của Google</b>.</li>
+                <li>Cài đặt dữ liệu giọng nói → Tải gói <b>Tiếng Việt</b>.</li>
+              </ol>
+            </div>
+
+            <div class="guide-item">
+              <strong>🍎 Trên iOS / macOS:</strong>
+              <ol>
+                <li>Vào <b>Cài đặt</b> → <b>Trợ năng</b> → <b>Nội dung được đọc</b>.</li>
+                <li>Mục <b>Giọng nói</b> → Chọn <b>Tiếng Việt</b>.</li>
+                <li>Tải bản giọng <i>"Linh (Tự nhiên / Nâng cao)"</i> để đọc chuẩn nhất.</li>
+              </ol>
+            </div>
+
+          </div>
+        </details>
+      </div>
     </footer>
+
   </div>
 </body>
 </html>
