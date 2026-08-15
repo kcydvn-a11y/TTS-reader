@@ -4,33 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="T1.css">
+  <link rel="icon" type="image/png" href="tts1.png">
   <title>Thai Thong - TTS Đa Ngôn Ngữ</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="jspdf.umd.min.js"></script>
+  <script src="html2canvas.min.js"></script>
+  <!-- Thư viện đọc PDF và Word (DOCX) client-side -->
+  <script src="pdf.min.js"></script>
+  <script src="mammoth.browser.min.js"></script>
+  <script src="i18n.js"></script>
   <script src="T2.js" defer></script>
 </head>
 <body>
   <div class="container">
     <header>
       <span class="icon">✦</span>
-      <h1>Thai Thong · TTS ĐA NGÔN NGỮ</h1>
+      <h1 id="headerTitle">Thai Thong · TTS ĐA NGÔN NGỮ</h1>
+      <!-- Nút chuyển đổi ngôn ngữ sẽ được thêm tự động bằng JS ở đây -->
       <button class="btn-donate" id="btnDonate" title="Ủng hộ dự án">❤️ Ủng hộ</button>
       <span class="badge">Web Edition</span>
-    </header>
+    </header>	
 
     <!-- INPUT -->
     <div class="card">
+      <!-- TAB HEADER -->
       <div class="tabs">
         <button class="tab active" data-tab="text">Văn bản</button>
         <button class="tab" data-tab="url">Link trang web</button>
+        <button class="tab" data-tab="file">📁 Tải File (PDF/Word/TXT)</button>
       </div>
 
+      <!-- PANEL VĂN BẢN -->
       <div id="panel-text">
         <label>Dán nội dung cần đọc</label>
         <textarea id="textInput" placeholder="Dán văn bản luận giải hoặc bất kỳ nội dung nào vào đây..."></textarea>
       </div>
 
-      <!-- PANEL URL ĐÃ SỬA LỖI CLICK -->
+      <!-- PANEL URL -->
       <div id="panel-url" style="display:none;">
         <label>Dán link bài viết / báo mạng vào đây</label>
         <div class="url-input-group">
@@ -47,21 +56,18 @@
           ✨ <b>Mẹo:</b> Hỗ trợ tốt nhất cho các trang tin tức, báo chí, blog, bài viết hướng dẫn.
         </div>
 
-        <!-- SỬA TẠI ĐÂY: Thêm onclick trực tiếp xử lý ẩn/hiện mượt mà -->
         <span class="advanced-toggle" id="advToggle" style="cursor:pointer; display:inline-block; margin-top:10px;" 
               onclick="const box = document.getElementById('advancedBox'); box.style.display = (box.style.display === 'block') ? 'none' : 'block';">
           ⚙️ Lấy bị sai/thừa chữ? Bấm vào đây để chỉnh
         </span>
         
-        <!-- SỬA TẠI ĐÂY: Bỏ display:none inline để tránh đè CSS -->
         <div class="advanced" id="advancedBox">
           <p class="adv-tip" style="font-size:12px; color:#aaa; margin-bottom:8px;">Nếu ứng dụng lấy lộn menu hoặc quảng cáo, hãy chọn loại trang web bên dưới:</p>
           
-          <!-- Các nút chọn nhanh preset selector -->
           <div class="preset-buttons" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
-            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').value='.detail-content, .sidebar-content, article'">📰 Trang Báo chí</button>
-            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').value='.entry-content, .post-content'">📝 Blog / WordPress</button>
-            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').value='main, article'">🌐 Web thông thường</button>
+            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').value='.fck_detail, article.fck_detail, .detail-content, .content-detail, article'">📰 Trang Báo chí</button>
+            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').entry-content, .post-content, .post-body, article, .content'">📝 Blog / WordPress</button>
+            <button type="button" class="btn-preset" onclick="document.getElementById('selectorInput').value='main, article, .content, .post, .entry-content'">🌐 Web thông thường</button>
           </div>
 
           <label style="margin-top:10px; display:block;">Vùng lấy chữ (CSS Selector):</label>
@@ -72,46 +78,59 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- PANEL FILE -->
+      <div id="panel-file" style="display:none;">
+        <label>Tải file tài liệu lên để đọc</label>
+        <div class="drop-zone" id="dropZone" style="border: 2px dashed #0284c7; border-radius: 10px; padding: 25px; text-align: center; background: rgba(2, 132, 199, 0.03); cursor: pointer; transition: all 0.2s ease; margin-top: 6px;">
+          <input type="file" id="fileInput" accept=".pdf,.docx,.txt,.md" style="display:none;" />
+          <div id="dropZoneContent">
+            <span style="font-size: 38px; display: block; margin-bottom: 8px;">📄</span>
+            <p style="margin: 0; font-size: 14px; color: #334155;"><b>Kéo & thả file vào đây</b> hoặc <span style="color: #0284c7; text-decoration: underline;">Bấm để chọn file</span></p>
+            <span style="font-size: 12px; color: #64748b; margin-top: 4px; display: block;">Hỗ trợ: PDF (.pdf), Word (.docx), Văn bản (.txt, .md)</span>
+          </div>
+          <div id="fileInfo" style="display:none; font-weight: 600; color: #0284c7; font-size: 14px;"></div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 15px;">
         <button class="btn btn-primary" id="btnLoad">Xử lý & Chuẩn bị đọc</button>
         <button class="btn btn-secondary" id="btnClear">Xóa</button>
       </div>
       <div class="status" id="loadStatus"></div>
     </div>
 
-    <!-- CONTROLS -->
-    <div class="controls">
-      <div class="ctrl-row">
-        <button class="speed-btn" id="btnSpeed" title="Đổi tốc độ đọc">1x</button>
-        <span class="sentence-info" id="sentenceInfo">Câu: 0 / 0</span>
-        <div class="jump-group">
-          <span>Tới câu:</span>
-          <input type="number" id="jumpInput" min="1" placeholder="1" />
-          <button class="btn btn-secondary btn-icon" id="btnJump">→</button>
-        </div>
-        <span class="lang-badge" id="langBadge">vi · Tiếng Việt</span>
-      </div>
-
-      <div class="ctrl-row">
-        <div class="main-actions">
-          <button class="btn btn-primary" id="btnPlay">
-            <span id="playIcon">▶</span>
-            <span id="playLabel">ĐỌC GIỌNG MÁY</span>
-          </button>
-          <button class="btn btn-danger btn-icon" id="btnStop" style="display:none;" title="Dừng & về đầu">■</button>
-          <button class="btn btn-secondary" id="btnPdf">
-            📄 XUẤT PDF
-          </button>
-        </div>
-      </div>
-
-      <div style="margin-top:10px;">
-        <label style="font-size:11px;">Giọng đọc (tự chọn tốt nhất theo ngôn ngữ)</label>
-        <select class="voice-select" id="voiceSelect"></select>
-      </div>
-      <div class="status" id="ttsStatus"></div>
+   <!-- CONTROLS -->
+<div class="controls">
+  <div class="ctrl-row">
+    <button class="speed-btn" id="btnSpeed" title="Đổi tốc độ đọc">1x</button>
+    <span class="sentence-info" id="sentenceInfo">Câu: 0 / 0</span>
+    <div class="jump-group">
+      <span id="lblJump">Tới câu:</span>
+      <input type="number" id="jumpInput" min="1" placeholder="1" />
+      <button class="btn btn-secondary btn-icon" id="btnJump">→</button>
     </div>
+    <span class="lang-badge" id="langBadge">vi · Tiếng Việt</span>
+  </div>
 
+  <div class="ctrl-row">
+    <div class="main-actions">
+      <button class="btn btn-primary" id="btnPlay">
+        <span id="playIcon">▶</span>
+        <span id="playLabel">ĐỌC GIỌNG MÁY</span>
+      </button>
+      <button class="btn btn-danger btn-icon" id="btnStop" style="display:none;" title="Dừng & về đầu">■</button>
+      <button class="btn btn-secondary" id="btnPdf">
+        <span id="pdfLabel">📄 XUẤT PDF</span>
+      </button>
+    </div>
+  </div>
+
+  <div style="margin-top:10px;">
+    <label style="font-size:11px;" id="lblVoiceSelect">Giọng đọc (tự chọn tốt nhất theo ngôn ngữ)</label>
+    <select class="voice-select" id="voiceSelect"></select>
+  </div>
+  <div class="status" id="ttsStatus"></div>
+</div>
     <!-- CONTENT -->
     <div class="content-card">
       <div class="content-header">
@@ -201,7 +220,6 @@
                 <li>Cài đặt dữ liệu giọng nói → Tải gói <b>Tiếng Việt</b>.</li>
               </ol>
             </div>
-
             <div class="guide-item">
               <strong>🍎 Trên iOS / macOS:</strong>
               <ol>
@@ -215,7 +233,6 @@
         </details>
       </div>
     </footer>
-
-  </div>
+  </div> 
 </body>
 </html>

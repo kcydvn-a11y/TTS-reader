@@ -682,3 +682,82 @@ input, textarea, select {
 #advancedBox {
   display: none;
 }
+// Bảng từ điển ngôn ngữ mở rộng cho khung Controls
+const controlsTranslations = {
+  vi: {
+    speedTitle: "Đổi tốc độ đọc",
+    sentenceLabel: "Câu",
+    jumpLabel: "Tới câu:",
+    playLabel: "ĐỌC GIỌNG MÁY",
+    stopTitle: "Dừng & về đầu",
+    pdfLabel: "📄 XUẤT PDF",
+    voiceLabel: "Giọng đọc (tự chọn tốt nhất theo ngôn ngữ)",
+    badgeText: "vi · Tiếng Việt"
+  },
+  en: {
+    speedTitle: "Change reading speed",
+    sentenceLabel: "Sentence",
+    jumpLabel: "Jump to:",
+    playLabel: "PLAY SPEECH",
+    stopTitle: "Stop & Reset",
+    pdfLabel: "📄 EXPORT PDF",
+    voiceLabel: "Voice (auto-selected best by language)",
+    badgeText: "en · English"
+  },
+  ja: {
+    speedTitle: "読み上げ速度の変更",
+    sentenceLabel: "文",
+    jumpLabel: "移動:",
+    playLabel: "音声読み上げ",
+    stopTitle: "停止して r 保持",
+    pdfLabel: "📄 PDF出力",
+    voiceLabel: "音声 (言語に最適な声を tự động 選択)",
+    badgeText: "ja · 日本語"
+  },
+  zh: {
+    speedTitle: "更改朗读速度",
+    sentenceLabel: "句",
+    jumpLabel: "跳转至:",
+    playLabel: "朗读文本",
+    stopTitle: "停止并重置",
+    pdfLabel: "📄 导出 PDF",
+    voiceLabel: "语音 (按语言自动选择最佳)",
+    badgeText: "zh · 中文"
+  }
+};
+
+// Hàm cập nhật riêng cho khu vực Controls
+function updateControlsUI(langCode = 'vi', currentSentence = 0, totalSentences = 0) {
+  // Lấy ngôn ngữ tương ứng (mặc định 'vi' nếu chưa hỗ trợ)
+  const langKey = langCode.substring(0, 2).toLowerCase();
+  const t = controlsTranslations[langKey] || controlsTranslations.vi;
+
+  // Cập nhật các phần tử HTML
+  document.getElementById('btnSpeed').title = t.speedTitle;
+  document.getElementById('lblJump').textContent = t.jumpLabel;
+  document.getElementById('playLabel').textContent = t.playLabel;
+  document.getElementById('btnStop').title = t.stopTitle;
+  document.getElementById('pdfLabel').textContent = t.pdfLabel;
+  document.getElementById('lblVoiceSelect').textContent = t.voiceLabel;
+
+  // Cập nhật thẻ Badge hiển thị ngôn ngữ
+  const langBadge = document.getElementById('langBadge');
+  if (langBadge) {
+    langBadge.textContent = t.badgeText;
+  }
+
+  // Cập nhật chỉ số câu (Sentence Info)
+  const sentenceInfo = document.getElementById('sentenceInfo');
+  if (sentenceInfo) {
+    sentenceInfo.textContent = `${t.sentenceLabel}: ${currentSentence} / ${totalSentences}`;
+  }
+}
+
+// Ví dụ tích hợp khi người dùng chọn giọng đọc hoặc thay đổi ngôn ngữ:
+document.getElementById('voiceSelect').addEventListener('change', (e) => {
+  const selectedOption = e.target.options[e.target.selectedIndex];
+  if (selectedOption && selectedOption.dataset.lang) {
+    const lang = selectedOption.dataset.lang; // VD: 'en-US', 'vi-VN', 'ja-JP'
+    updateControlsUI(lang, 0, 0);
+  }
+});
