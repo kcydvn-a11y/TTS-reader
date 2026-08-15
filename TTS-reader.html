@@ -100,7 +100,44 @@
 </div>
       <div id="contentDisplay" contenteditable="true" spellcheck="false" title="Click vào đây để sửa / xóa phần không muốn đọc"></div>
     </div>
+     <!-- MODAL ỦNG HỘ -->
+<div class="modal-overlay" id="donateModal" style="display:none;">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">❤️ ỦNG HỘ DỰ ÁN</div>
 
+    <div class="donate-card">
+      <!-- Đặt file bank.png cùng thư mục với HTML, hoặc đổi src thành link ảnh -->
+      <img src="bank.png" alt="QR ủng hộ" class="qr-img"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="qr-fallback" style="display:none;">
+        <span style="font-size:48px;">📱</span>
+        <span>Chưa có ảnh QR (bank.png)</span>
+      </div>
+
+      <button class="btn-link" id="btnSaveQr">⬇️ Lưu ảnh QR về máy</button>
+
+      <div class="donate-name">NGUYEN NGOC THAI THONG</div>
+
+      <button class="copy-row" data-copy="9898661918" data-label="Số tài khoản">
+        <span class="mono">9898661918 • Vietcombank</span>
+        <span class="copy-icon">📋</span>
+      </button>
+
+      <p class="donate-hint">Quét mã QR để ủng hộ kinh phí duy trì dự án.</p>
+
+      <div class="donate-email-box">
+        <div class="email-label">📬 Gửi bộ hồ sơ / liên hệ:</div>
+        <button class="copy-row email" data-copy="ThaiThongsj@gmail.com" data-label="Email">
+          <span>📧 ThaiThongsj@gmail.com</span>
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+    </div>
+
+    <button class="btn btn-secondary" id="btnCloseDonate" style="width:100%;margin-top:12px;">Đóng</button>
+  </div>
+</div>
     <footer>
       Web Speech API · Hoạt động tốt nhất trên Chrome / Edge.<br>
       Nếu máy chưa cài giọng ngôn ngữ tương ứng → sẽ không đọc được hoặc đọc kém.<br>
