@@ -706,19 +706,30 @@
       });
       if (res.ok) {
         let text = await res.text();
-        // Jina thường trả markdown, loại bỏ phần header meta
+        // Jina thường trả markdown + meta
         text = text
           .replace(/^Title:.*$/im, '')
           .replace(/^URL Source:.*$/im, '')
           .replace(/^Published Time:.*$/im, '')
           .replace(/^Markdown Content:.*$/im, '')
-          .replace(/^#{1,6}\s+/gm, '')          // bỏ heading markdown
-          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // bỏ link markdown
+          .replace(/^#{1,6}\s+/gm, '')
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
           .replace(/!\[.*?\]\(.*?\)/g, '')
           .replace(/```[\s\S]*?```/g, '')
-          .replace(/`[^`]+`/g, '')
+          .replace(/`[^`]+`/g, '');
+
+        // Loại bỏ mục lục / related / rating thường gặp ở web VN
+        text = text
+          .replace(/Mục lục[\s\S]*?(?=\n\s*\d+\.\s|$)/i, '')
+          .replace(/Có thể bạn quan tâm[\s\S]*?(?=\n\s*\d+\.|\n\s*[A-ZÀ-ỹ]|$)/gi, '')
+          .replace(/Bài đăng này hữu ích[\s\S]*$/i, '')
+          .replace(/Đánh giá trung bình[\s\S]*$/i, '')
+          .replace(/Hãy là người đầu tiên đánh giá[\s\S]*$/i, '')
+          .replace(/Toggle Table of Content[\s\S]*?(?=\n)/gi, '')
+          .replace(/Bấm vào một ngôi sao[\s\S]*$/i, '')
           .replace(/\n{3,}/g, '\n\n')
           .trim();
+
         if (text.length > 120) {
           loadStatus.textContent = 'Đã lấy nội dung thành công (Jina).';
           return text;
@@ -777,7 +788,11 @@
       'nav', 'header', 'footer', 'aside',
       '[role="navigation"]', '[role="banner"]', '[role="complementary"]',
       '.ads', '.advertisement', '.ad-container', '.sidebar', '.comments',
-      '#comments', '#sidebar', '#footer', '#header', '#nav', '#menu'
+      '#comments', '#sidebar', '#footer', '#header', '#nav', '#menu',
+      // Mục lục + widget phổ biến
+      '#ez-toc-container', '.ez-toc-container', '.ez-toc-title-container',
+      '.ez-toc-list', '.rmp-widgets-container', '.rmp-rating-widget',
+      '.post-share', '.share-box', '.related-posts', '.jp-relatedposts'
     ];
     removeSelectors.forEach(sel => {
       try { doc.querySelectorAll(sel).forEach(el => el.remove()); } catch (_) {}
@@ -802,9 +817,11 @@
 
     if (!mainText || mainText.length < 80) {
       const candidates = [
+        // Ưu tiên cao cho WordPress / blog VN
+        '.entry-content', '.singlepost-content', '.td-post-content',
         'article', 'main', '[role="main"]',
-        '.post-content', '.entry-content', '.article-content', '.article-body',
-        '.content-body', '.post-body', '.story-body', '.td-post-content',
+        '.post-content', '.article-content', '.article-body',
+        '.content-body', '.post-body', '.story-body',
         '#content', '#main-content', '#article', '#post',
         '.content', '.main-content', '.page-content', '.detail-content'
       ];
@@ -858,7 +875,7 @@
       loadStatus.textContent = 'Lỗi: ' + (e.message || e);
     }
   });
-
+ 
   $('btnClear').addEventListener('click', () => {
     stopTts();
     textInput.value = '';
@@ -902,61 +919,214 @@
     }
   });
 
-  // ===================== PDF =====================
+    // ===================== PDF (hỗ trợ tiếng Việt) =====================
   $('btnPdf').addEventListener('click', async () => {
-    if (!rawText) {
+    const text = (rawText || contentDisplay.innerText || '').trim();
+    if (!text) {
       ttsStatus.textContent = 'Chưa có nội dung để xuất PDF.';
       return;
     }
-    ttsStatus.textContent = 'Đang tạo PDF...';
+
+    ttsStatus.textContent = 'Đang tạo PDF (hỗ trợ tiếng Việt)...';
+
     try {
       const { jsPDF } = window.jspdf;
-      const doc = new jsPDF({ unit: 'pt', format: 'a4' });
-      const margin = 40;
-      const pageWidth = doc.internal.pageSize.getWidth();
-      const maxWidth = pageWidth - margin * 2;
-      let y = margin;
 
-      doc.setFontSize(16);
-      doc.setTextColor(180, 130, 40);
-      doc.text('BẢN LUẬN GIẢI CHI TIẾT', margin, y);
-      y += 24;
-      doc.setFontSize(9);
-      doc.setTextColor(100);
-      doc.text('ĐẠI LUẬN 16 ĐẠI THUẬT - VẬN MỆNH', margin, y);
-      y += 20;
-      doc.setDrawColor(200);
-      doc.line(margin, y, pageWidth - margin, y);
-      y += 16;
+      // Tạo khung tạm để render đẹp, giữ font hệ thống (có tiếng Việt)
+      const temp = document.createElement('div');
+      temp.style.cssText = `
+        position: fixed;
+        left: -9999px;
+        top: 0;
+        width: 794px;
+        padding: 40px;
+        background: #fff;
+        color: #111;
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.65;
+        white-space: pre-wrap;
+        word-break: break-word;
+      `;
+     temp.innerHTML = `
+  <div style="font-size:18px;font-weight:700;color:#b8860b;margin-bottom:2px;line-height:1.2;">
+    Thai Thong · TTS Đa Ngôn Ngữ
+  </div>
+  <div style="font-size:11px;color:#666;margin-bottom:14px;margin-top:0;border-bottom:1px solid #ddd;padding-bottom:8px;line-height:1.2;">
+    ❤️ ThaiThongSj@gmail.com
+  </div>
+  <div>${text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}</div>
+`;
+      document.body.appendChild(temp);
 
-      doc.setFontSize(11);
-      doc.setTextColor(30);
-      const lines = doc.splitTextToSize(rawText, maxWidth);
-      const lineHeight = 16;
+      const canvas = await html2canvas(temp, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: '#ffffff',
+        logging: false,
+      });
+      document.body.removeChild(temp);
 
-      for (const line of lines) {
-        if (y > doc.internal.pageSize.getHeight() - margin) {
-          doc.addPage();
-          y = margin;
-        }
-        doc.text(line, margin, y);
-        y += lineHeight;
+      const imgData = canvas.toDataURL('image/jpeg', 0.92);
+      const pdf = new jsPDF({ unit: 'pt', format: 'a4', orientation: 'portrait' });
+
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const pageHeight = pdf.internal.pageSize.getHeight();
+      const margin = 24;
+      const usableWidth = pageWidth - margin * 2;
+      const imgHeight = (canvas.height * usableWidth) / canvas.width;
+
+      let heightLeft = imgHeight;
+      let position = margin;
+
+      // Trang đầu
+      pdf.addImage(imgData, 'JPEG', margin, position, usableWidth, imgHeight);
+      heightLeft -= (pageHeight - margin * 2);
+
+      // Các trang tiếp theo nếu nội dung dài
+      while (heightLeft > 0) {
+        position = margin - (imgHeight - heightLeft);
+        pdf.addPage();
+        pdf.addImage(imgData, 'JPEG', margin, position, usableWidth, imgHeight);
+        heightLeft -= (pageHeight - margin * 2);
       }
 
-      // Note about fonts
-      doc.setFontSize(8);
-      doc.setTextColor(120);
-      const noteY = doc.internal.pageSize.getHeight() - 20;
-      doc.text('Lưu ý: PDF dùng font mặc định. Tiếng Việt/Nhật/Trung có thể thiếu dấu nếu hệ thống không hỗ trợ.', margin, noteY);
-
-      doc.save(`Luan_Giai_${Date.now()}.pdf`);
-      ttsStatus.textContent = 'Đã xuất PDF.';
+      pdf.save(`Luan_Giai_${Date.now()}.pdf`);
+      ttsStatus.textContent = 'Đã xuất PDF (có tiếng Việt).';
     } catch (e) {
       console.error(e);
-      ttsStatus.textContent = 'Lỗi xuất PDF: ' + e.message;
+      ttsStatus.textContent = 'Lỗi xuất PDF: ' + (e.message || e);
+    }
+  });
+    // ===================== TỰ ĐỘNG XỬ LÝ + SỬA NỘI DUNG =====================
+
+  // A. Tự xử lý khi dán hoặc ngừng gõ ~0.9 giây
+  let autoProcessTimer = null;
+  textInput.addEventListener('input', () => {
+    clearTimeout(autoProcessTimer);
+    autoProcessTimer = setTimeout(() => {
+      if (textInput.value.trim().length > 20) {
+        processText(textInput.value);
+      }
+    }, 900);
+  });
+
+  textInput.addEventListener('paste', () => {
+    setTimeout(() => {
+      if (textInput.value.trim()) {
+        processText(textInput.value);
+      }
+    }, 60);
+  });
+
+  // B. Nút Cập nhật sau khi sửa khung nội dung
+  const btnUpdateContent = document.getElementById('btnUpdateContent');
+  if (btnUpdateContent) {
+    btnUpdateContent.addEventListener('click', () => {
+      const edited = (contentDisplay.innerText || contentDisplay.textContent || '').trim();
+      if (!edited) {
+        ttsStatus.textContent = 'Nội dung trống.';
+        return;
+      }
+      // Dừng đọc nếu đang chạy
+      if (ttsState === 'playing' || ttsState === 'paused') {
+        speechSynthesis.cancel();
+        ttsState = 'stopped';
+        isProcessing = false;
+      }
+      textInput.value = edited;
+      processText(edited);
+      ttsStatus.textContent = 'Đã cập nhật nội dung sau khi sửa.';
+      updateUI();
+    });
+  }
+
+  // Ctrl + Enter trong khung nội dung = Cập nhật nhanh
+  contentDisplay.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.key === 'Enter') {
+      e.preventDefault();
+      if (btnUpdateContent) btnUpdateContent.click();
     }
   });
 
+  // C. Đang sửa nội dung thì tự tạm dừng đọc
+  contentDisplay.addEventListener('focus', () => {
+    if (ttsState === 'playing') {
+      try { speechSynthesis.pause(); } catch (_) {}
+      ttsState = 'paused';
+      updateUI();
+      ttsStatus.textContent = 'Đã tạm dừng để bạn chỉnh sửa nội dung.';
+    }
+  });
+    // ===================== DONATE MODAL =====================
+  const donateModal = document.getElementById('donateModal');
+  const btnDonate = document.getElementById('btnDonate');
+  const btnCloseDonate = document.getElementById('btnCloseDonate');
+
+  function showToast(msg) {
+    const old = document.querySelector('.toast');
+    if (old) old.remove();
+    const t = document.createElement('div');
+    t.className = 'toast';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2200);
+  }
+
+  if (btnDonate && donateModal) {
+    btnDonate.addEventListener('click', () => {
+      donateModal.style.display = 'flex';
+    });
+  }
+  if (btnCloseDonate) {
+    btnCloseDonate.addEventListener('click', () => {
+      donateModal.style.display = 'none';
+    });
+  }
+  // Bấm nền tối để đóng
+  if (donateModal) {
+    donateModal.addEventListener('click', (e) => {
+      if (e.target === donateModal) donateModal.style.display = 'none';
+    });
+  }
+
+  // Copy số TK / email
+  document.querySelectorAll('.copy-row').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const text = btn.getAttribute('data-copy') || '';
+      const label = btn.getAttribute('data-label') || '';
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast('✅ Đã sao chép ' + label + ': ' + text);
+      } catch (_) {
+        // fallback
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+        showToast('✅ Đã sao chép ' + label + ': ' + text);
+      }
+    });
+  });
+
+  // Lưu ảnh QR
+  const btnSaveQr = document.getElementById('btnSaveQr');
+  if (btnSaveQr) {
+    btnSaveQr.addEventListener('click', () => {
+      const img = document.querySelector('.qr-img');
+      if (!img || !img.src || img.style.display === 'none') {
+        showToast('Chưa có ảnh QR');
+        return;
+      }
+      const a = document.createElement('a');
+      a.href = img.src;
+      a.download = 'QR_Ung_Ho_Thai_Thong.png';
+      a.click();
+      showToast('✅ Đang tải ảnh QR...');
+    });
+  }
   // Init
   updateUI();
   // Preload voices

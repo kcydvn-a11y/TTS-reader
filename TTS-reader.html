@@ -11,11 +11,12 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <span class="icon">✦</span>
-      <h1>Thai Thong- TTS ĐA NGÔN NGỮ</h1>
-      <span class="badge">Web Edition</span>
-    </header>
+   <header>
+  <span class="icon">✦</span>
+  <h1>Thai Thong · TTS ĐA NGÔN NGỮ</h1>
+  <button class="btn-donate" id="btnDonate" title="Ủng hộ dự án">❤️ Ủng hộ</button>
+  <span class="badge">Web Edition</span>
+</header>
 
     <!-- INPUT -->
     <div class="card">
@@ -87,14 +88,17 @@
     <!-- CONTENT -->
     <div class="content-card">
       <div class="content-header">
-        <span>NỘI DUNG</span>
-        <div class="font-controls">
-          <button id="fontDown">A−</button>
-          <span class="size" id="fontSizeLabel">16</span>
-          <button id="fontUp">A+</button>
-        </div>
-      </div>
-      <div id="contentDisplay" contenteditable="false"></div>
+  <span>NỘI DUNG (có thể sửa trực tiếp)</span>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="btn btn-secondary btn-icon" id="btnUpdateContent" title="Cập nhật sau khi sửa" style="font-size:11px;padding:6px 10px;">↻ Cập nhật</button>
+    <div class="font-controls">
+      <button id="fontDown">A−</button>
+      <span class="size" id="fontSizeLabel">16</span>
+      <button id="fontUp">A+</button>
+    </div>
+  </div>
+</div>
+      <div id="contentDisplay" contenteditable="true" spellcheck="false" title="Click vào đây để sửa / xóa phần không muốn đọc"></div>
     </div>
 
     <footer>
