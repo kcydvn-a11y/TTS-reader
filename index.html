@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="T1.css">
+  <title>Thai Thong - TTS Đa Ngôn Ngữ</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="T2.js" defer></script>
+</head>
+<body>
+  <div class="container">
+   <header>
+  <span class="icon">✦</span>
+  <h1>Thai Thong · TTS ĐA NGÔN NGỮ</h1>
+  <button class="btn-donate" id="btnDonate" title="Ủng hộ dự án">❤️ Ủng hộ</button>
+  <span class="badge">Web Edition</span>
+</header>
+
+    <!-- INPUT -->
+    <div class="card">
+      <div class="tabs">
+        <button class="tab active" data-tab="text">Văn bản</button>
+        <button class="tab" data-tab="url">Link trang web</button>
+      </div>
+
+      <div id="panel-text">
+        <label>Dán nội dung cần đọc</label>
+        <textarea id="textInput" placeholder="Dán văn bản luận giải hoặc bất kỳ nội dung nào vào đây..."></textarea>
+      </div>
+
+      <div id="panel-url" style="display:none;">
+        <label>URL trang web</label>
+        <input type="url" id="urlInput" placeholder="https://example.com/bai-viet..." />
+        <div class="hint">
+          Hệ thống sẽ cố gắng lấy nội dung chính (loại bỏ menu, quảng cáo). Một số trang chống scrape có thể thất bại.
+        </div>
+        <span class="advanced-toggle" id="advToggle">⚙ Tùy chọn nâng cao (selector)</span>
+        <div class="advanced" id="advancedBox">
+          <label style="margin-top:10px;">CSS Selector vùng nội dung (để trống = tự động)</label>
+          <input type="text" id="selectorInput" placeholder="ví dụ: article, .post-content, #main-content" />
+          <label style="margin-top:10px;">Bỏ qua các class/id chứa từ khóa (cách nhau dấu phẩy)</label>
+          <input type="text" id="excludeInput" placeholder="nav, sidebar, footer, ads, comment, menu" value="nav,sidebar,footer,ads,advert,comment,menu,related,share,social" />
+        </div>
+      </div>
+
+      <div class="row">
+        <button class="btn btn-primary" id="btnLoad">Xử lý & Chuẩn bị đọc</button>
+        <button class="btn btn-secondary" id="btnClear">Xóa</button>
+      </div>
+      <div class="status" id="loadStatus"></div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <div class="ctrl-row">
+        <button class="speed-btn" id="btnSpeed" title="Đổi tốc độ đọc">1x</button>
+        <span class="sentence-info" id="sentenceInfo">Câu: 0 / 0</span>
+        <div class="jump-group">
+          <span>Tới câu:</span>
+          <input type="number" id="jumpInput" min="1" placeholder="1" />
+          <button class="btn btn-secondary btn-icon" id="btnJump">→</button>
+        </div>
+        <span class="lang-badge" id="langBadge">vi · Tiếng Việt</span>
+      </div>
+
+      <div class="ctrl-row">
+        <div class="main-actions">
+          <button class="btn btn-primary" id="btnPlay">
+            <span id="playIcon">▶</span>
+            <span id="playLabel">ĐỌC GIỌNG MÁY</span>
+          </button>
+          <button class="btn btn-danger btn-icon" id="btnStop" style="display:none;" title="Dừng & về đầu">■</button>
+          <button class="btn btn-secondary" id="btnPdf">
+            📄 XUẤT PDF
+          </button>
+        </div>
+      </div>
+
+      <div style="margin-top:10px;">
+        <label style="font-size:11px;">Giọng đọc (tự chọn tốt nhất theo ngôn ngữ)</label>
+        <select class="voice-select" id="voiceSelect"></select>
+      </div>
+      <div class="status" id="ttsStatus"></div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content-card">
+      <div class="content-header">
+  <span>NỘI DUNG (có thể sửa trực tiếp)</span>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="btn btn-secondary btn-icon" id="btnUpdateContent" title="Cập nhật sau khi sửa" style="font-size:11px;padding:6px 10px;">↻ Cập nhật</button>
+    <div class="font-controls">
+      <button id="fontDown">A−</button>
+      <span class="size" id="fontSizeLabel">16</span>
+      <button id="fontUp">A+</button>
+    </div>
+  </div>
+</div>
+      <div id="contentDisplay" contenteditable="true" spellcheck="false" title="Click vào đây để sửa / xóa phần không muốn đọc"></div>
+    </div>
+     <!-- MODAL ỦNG HỘ -->
+<div class="modal-overlay" id="donateModal" style="display:none;">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">❤️ ỦNG HỘ DỰ ÁN</div>
+
+    <div class="donate-card">
+      <!-- Đặt file bank.png cùng thư mục với HTML, hoặc đổi src thành link ảnh -->
+      <img src="bank.png" alt="QR ủng hộ" class="qr-img"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="qr-fallback" style="display:none;">
+        <span style="font-size:48px;">📱</span>
+        <span>Chưa có ảnh QR (bank.png)</span>
+      </div>
+
+      <button class="btn-link" id="btnSaveQr">⬇️ Lưu ảnh QR về máy</button>
+
+      <div class="donate-name">NGUYEN NGOC THAI THONG</div>
+
+      <button class="copy-row" data-copy="9898661918" data-label="Số tài khoản">
+        <span class="mono">9898661918 • Vietcombank</span>
+        <span class="copy-icon">📋</span>
+      </button>
+
+      <p class="donate-hint">Quét mã QR để ủng hộ kinh phí duy trì dự án.</p>
+
+      <div class="donate-email-box">
+        <div class="email-label">📬 Gửi bộ hồ sơ / liên hệ:</div>
+        <button class="copy-row email" data-copy="ThaiThongsj@gmail.com" data-label="Email">
+          <span>📧 ThaiThongsj@gmail.com</span>
+          <span class="copy-icon">📋</span>
+        </button>
+      </div>
+    </div>
+
+    <button class="btn btn-secondary" id="btnCloseDonate" style="width:100%;margin-top:12px;">Đóng</button>
+  </div>
+</div>
+    <footer>
+      Web Speech API · Hoạt động tốt nhất trên Chrome / Edge.<br>
+      Nếu máy chưa cài giọng ngôn ngữ tương ứng → sẽ không đọc được hoặc đọc kém.<br>
+      Windows: Cài đặt → Thời gian & ngôn ngữ → Giọng nói | macOS: System Settings → Accessibility → Spoken Content
+    </footer>
+  </div>
+</body>
+</html>
