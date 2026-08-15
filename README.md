@@ -8,7 +8,8 @@
 **Công nghệ:** Web Speech API + Vanilla JavaScript
 
 ---
-
+https://kcydvn-a11y.github.io/TTS-reader/
+---
 ## ✨ TÍNH NĂNG NỔI BẬT
 
 - **Đọc giọng máy đa ngôn ngữ**  
