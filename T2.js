@@ -5,17 +5,27 @@
   const MAX_CHUNK_LEN = 220;
 
   const LANG_CONFIG = {
-    vi: { code: 'vi-VN', name: 'Tiếng Việt', keywords: ['south', 'nam', 'saigon', 'linh', 'mai', 'female', 'nữ'] },
-    en: { code: 'en-US', name: 'English', keywords: ['enhanced', 'premium', 'neural', 'natural', 'samantha', 'google'] },
-    ja: { code: 'ja-JP', name: '日本語', keywords: ['enhanced', 'neural', 'kyoko', 'otoya', 'female'] },
-    zh: { code: 'zh-CN', name: '中文', keywords: ['enhanced', 'neural', 'ting-ting', 'female', 'natural'] },
-    ko: { code: 'ko-KR', name: '한국어', keywords: ['enhanced', 'neural', 'yuna', 'sora', 'female'] },
-    fr: { code: 'fr-FR', name: 'Français', keywords: ['enhanced', 'neural', 'thomas', 'audrey', 'female'] },
-    de: { code: 'de-DE', name: 'Deutsch', keywords: ['enhanced', 'neural', 'anna', 'marlene', 'female'] },
-    es: { code: 'es-ES', name: 'Español', keywords: ['enhanced', 'neural', 'monica', 'jorge', 'female'] },
-    ru: { code: 'ru-RU', name: 'Русский', keywords: ['enhanced', 'neural', 'tatyana', 'pavel', 'female'] },
-    th: { code: 'th-TH', name: 'ไทย', keywords: ['enhanced', 'neural', 'kanya', 'female'] },
-    id: { code: 'id-ID', name: 'Bahasa Indonesia', keywords: ['enhanced', 'neural', 'andika', 'female'] },
+    vi: { code: 'vi-VN', name: 'Tiếng Việt', keywords: ['south', 'nam', 'saigon', 'linh', 'mai', 'hoaimy', 'an', 'female', 'nữ'] },
+    en: { code: 'en-US', name: 'English', keywords: ['enhanced', 'premium', 'neural', 'natural', 'samantha', 'google', 'aria', 'jenny'] },
+    ja: { code: 'ja-JP', name: '日本語', keywords: ['enhanced', 'neural', 'kyoko', 'otoya', 'nanami', 'female'] },
+    zh: { code: 'zh-CN', name: '中文', keywords: ['enhanced', 'neural', 'ting-ting', 'xiaoxiao', 'yunxi', 'female', 'natural'] },
+    ko: { code: 'ko-KR', name: '한국어', keywords: ['enhanced', 'neural', 'yuna', 'sora', 'sunhi', 'female'] },
+    fr: { code: 'fr-FR', name: 'Français', keywords: ['enhanced', 'neural', 'thomas', 'audrey', 'denise', 'female'] },
+    de: { code: 'de-DE', name: 'Deutsch', keywords: ['enhanced', 'neural', 'anna', 'marlene', 'katja', 'female'] },
+    es: { code: 'es-ES', name: 'Español', keywords: ['enhanced', 'neural', 'monica', 'jorge', 'elvira', 'female'] },
+    ru: { code: 'ru-RU', name: 'Русский', keywords: ['enhanced', 'neural', 'tatyana', 'pavel', 'dariya', 'female'] },
+    th: { code: 'th-TH', name: 'ไทย', keywords: ['enhanced', 'neural', 'kanya', 'prem', 'female'] },
+    id: { code: 'id-ID', name: 'Bahasa Indonesia', keywords: ['enhanced', 'neural', 'andika', 'gadis', 'female'] },
+    // Ngôn ngữ bổ sung
+    pt: { code: 'pt-BR', name: 'Português', keywords: ['enhanced', 'neural', 'francisca', 'antonio', 'female', 'brasil'] },
+    it: { code: 'it-IT', name: 'Italiano', keywords: ['enhanced', 'neural', 'elsa', 'diego', 'female'] },
+    hi: { code: 'hi-IN', name: 'हिन्दी', keywords: ['enhanced', 'neural', 'swara', 'madhur', 'female'] },
+    ar: { code: 'ar-SA', name: 'العربية', keywords: ['enhanced', 'neural', 'hamed', 'zariyah', 'female'] },
+    tr: { code: 'tr-TR', name: 'Türkçe', keywords: ['enhanced', 'neural', 'emel', 'ahmet', 'female'] },
+    pl: { code: 'pl-PL', name: 'Polski', keywords: ['enhanced', 'neural', 'zosia', 'marek', 'female'] },
+    nl: { code: 'nl-NL', name: 'Nederlands', keywords: ['enhanced', 'neural', 'colette', 'maarten', 'female'] },
+    ms: { code: 'ms-MY', name: 'Bahasa Melayu', keywords: ['enhanced', 'neural', 'yasmin', 'osman', 'female'] },
+    uk: { code: 'uk-UA', name: 'Українська', keywords: ['enhanced', 'neural', 'polina', 'ostap', 'female'] },
   };
 
   // ===================== STATE =====================
@@ -64,33 +74,48 @@
   // ===================== LANGUAGE DETECT =====================
   function detectLanguageCode(text) {
     if (!text || !text.trim()) return 'vi';
-    const sample = text.length > 1000 ? text.substring(0, 1000) : text;
+    const sample = text.length > 1200 ? text.substring(0, 1200) : text;
 
+    // 1. Script đặc thù (ưu tiên cao nhất)
     if (/[\u3040-\u309F\u30A0-\u30FF]/.test(sample)) return 'ja';
     if (/[\uAC00-\uD7AF\u1100-\u11FF]/.test(sample)) return 'ko';
     if (/[\u0E00-\u0E7F]/.test(sample)) return 'th';
-    if (/[\u0400-\u04FF]/.test(sample)) return 'ru';
+    if (/[\u0600-\u06FF]/.test(sample)) return 'ar';           // Arabic
+    if (/[\u0900-\u097F]/.test(sample)) return 'hi';           // Devanagari (Hindi)
+    if (/[\u0400-\u04FF]/.test(sample)) {
+      // Phân biệt Nga / Ukraina đơn giản
+      if (/[іїєґІЇЄҐ]/.test(sample)) return 'uk';
+      return 'ru';
+    }
     if (/[\u4E00-\u9FFF]/.test(sample)) return 'zh';
 
-    // Vietnamese unique chars
+    // 2. Tiếng Việt – ký tự đặc trưng
     if (/[ăắằẳẵặơớờởỡợưứừửữựđĂẮẰẲẴẶƠỚỜỞỠỢƯỨỪỬỮỰĐ]/i.test(sample)) return 'vi';
 
+    // 3. Điểm số từ vựng cho các ngôn ngữ Latin
     const lower = sample.toLowerCase();
     const score = (re) => (lower.match(re) || []).length;
 
-    let scores = {
-      en: score(/\b(the|and|is|you|that|it|he|was|for|on|are|as|with|his|they|at|be|this|from|or|an|will|my|would|there|their)\b/g),
-      fr: score(/\b(le|la|les|un|une|des|et|est|dans|en|du|que|qui|pour|pas|sur|ce|avec|ne|se|plus|par|sont|mais|ou|donc|car|je|tu|il|elle|nous|vous|ils|elles)\b/g),
-      de: score(/\b(der|die|das|und|ist|in|den|von|zu|mit|sich|des|auf|für|im|dem|nicht|ein|eine|als|auch|es|an|ich|du|er|sie|wir|ihr)\b/g),
-      es: score(/\b(el|la|los|las|un|una|unos|unas|y|en|que|es|por|con|para|su|del|como|más|pero|sus|le|ya|o|yo|tú|él|ella|nosotros)\b/g),
-      id: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada)\b/g),
+    const scores = {
+      en: score(/\b(the|and|is|you|that|it|he|was|for|on|are|as|with|his|they|at|be|this|from|or|an|will|my|would|there|their|have|has|not|but|what|all|were|when|who|your|said|each|which|she|do|how|if|up|out|about|many)\b/g),
+      fr: score(/\b(le|la|les|un|une|des|et|est|dans|en|du|que|qui|pour|pas|sur|ce|avec|ne|se|plus|par|sont|mais|ou|donc|car|je|tu|il|elle|nous|vous|ils|elles|être|avoir|fait|tout|comme)\b/g),
+      de: score(/\b(der|die|das|und|ist|in|den|von|zu|mit|sich|des|auf|für|im|dem|nicht|ein|eine|als|auch|es|an|ich|du|er|sie|wir|ihr|werden|haben|wird|nach|bei|noch|nur|einem)\b/g),
+      es: score(/\b(el|la|los|las|un|una|unos|unas|y|en|que|es|por|con|para|su|del|como|más|pero|sus|le|ya|o|yo|tú|él|ella|nosotros|está|son|también|muy|hay|sobre)\b/g),
+      id: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|dapat|sudah|lebih|karena|saat|jika)\b/g),
+      pt: score(/\b(o|a|os|as|um|uma|de|da|do|em|para|com|não|que|se|por|como|mais|mas|foi|são|ele|ela|isso|está|também|quando|muito|seu|sua)\b/g),
+      it: score(/\b(il|lo|la|i|gli|le|un|una|di|da|in|per|con|che|è|sono|non|si|del|della|questo|questa|come|più|anche|ma|loro|essere|fare|tutto)\b/g),
+      tr: score(/\b(ve|bir|bu|da|de|için|ile|olan|var|yok|daha|çok|gibi|kadar|sonra|ama|veya|ben|sen|o|biz|siz|onlar|ne|nasıl|neden)\b/g),
+      pl: score(/\b(i|w|na|z|do|to|się|nie|jest|jak|od|po|za|ale|czy|tak|już|tylko|jego|jej|ich|być|mieć|może|przez|oraz)\b/g),
+      nl: score(/\b(de|het|een|van|en|in|is|op|te|dat|die|voor|met|zijn|niet|aan|ook|als|er|om|bij|naar|uit|nog|wel|geen|worden)\b/g),
+      ms: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|boleh|sudah|lebih|kerana|jika)\b/g),
     };
 
     let max = 0, detected = 'en';
     for (const [k, v] of Object.entries(scores)) {
       if (v > max) { max = v; detected = k; }
     }
-    return max >= 2 ? detected : 'en';
+    // Ngưỡng tối thiểu
+    return max >= 3 ? detected : 'en';
   }
 
   // ===================== ROMAN NUMERALS =====================
@@ -328,23 +353,64 @@
   }
 
   // ===================== VOICES =====================
+  function isVietnameseVoice(voice) {
+    const lang = (voice.lang || '').toLowerCase().replace('_', '-');
+    const name = (voice.name || '').toLowerCase();
+    // Bắt mọi biến thể có thể của giọng Việt
+    return (
+      lang.startsWith('vi') ||
+      lang.includes('vietnam') ||
+      name.includes('vietnam') ||
+      name.includes('vietnamese') ||
+      name.includes('an ') ||          // Microsoft An
+      name.includes('hoaimy') ||
+      name.includes('hoai my') ||
+      name.includes('linh') ||
+      name.includes('mai ') ||
+      name.includes('nam ') ||
+      name.includes('saigon') ||
+      name.includes('hanoi')
+    );
+  }
+
   function loadVoices() {
-    voices = speechSynthesis.getVoices();
+    voices = speechSynthesis.getVoices() || [];
+    console.log('[TTS] Tổng số giọng:', voices.length);
+    // In ra tất cả giọng Việt nếu có (để debug)
+    const viVoices = voices.filter(isVietnameseVoice);
+    if (viVoices.length) {
+      console.log('[TTS] Tìm thấy giọng Việt:', viVoices.map(v => v.name + ' (' + v.lang + ')'));
+    } else {
+      console.log('[TTS] Không thấy giọng Việt nào trong danh sách');
+    }
     populateVoiceSelect();
   }
+
+  // Load nhiều lần vì Chrome thường trả về rỗng lần đầu
   if (speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = loadVoices;
   }
   loadVoices();
+  setTimeout(loadVoices, 300);
+  setTimeout(loadVoices, 800);
+  setTimeout(loadVoices, 1500);
 
   function scoreVoice(voice, langKey) {
     const cfg = LANG_CONFIG[langKey] || LANG_CONFIG.vi;
     const name = (voice.name || '').toLowerCase();
-    const lang = (voice.lang || '').toLowerCase();
-    const codeShort = cfg.code.toLowerCase().slice(0, 2); // vi, en, ja...
+    const lang = (voice.lang || '').toLowerCase().replace('_', '-');
+    const codeShort = cfg.code.toLowerCase().slice(0, 2);
     let score = 0;
 
-    // Ưu tiên khớp locale chính xác
+    // ===== Ưu tiên cực mạnh cho tiếng Việt =====
+    if (langKey === 'vi' && isVietnameseVoice(voice)) {
+      score += 200; // điểm rất cao để luôn đứng đầu
+      if (lang === 'vi-vn' || lang === 'vi') score += 50;
+      if (name.includes('neural') || name.includes('natural')) score += 20;
+      return score; // trả sớm, không cần tính tiếp
+    }
+
+    // Khớp locale thông thường
     if (lang === cfg.code.toLowerCase() || lang === cfg.code.toLowerCase().replace('-', '_')) score += 80;
     else if (lang.startsWith(codeShort + '-') || lang.startsWith(codeShort + '_')) score += 55;
     else if (lang.startsWith(codeShort)) score += 35;
@@ -360,7 +426,7 @@
 
     // Phạt giọng kém
     if (name.includes('compact') || name.includes('online') || name.includes('eloquence')) score -= 25;
-    if (name.includes('male') && (langKey === 'vi' || langKey === 'th')) score -= 5; // ưu nữ một chút
+    if (name.includes('male') && (langKey === 'vi' || langKey === 'th')) score -= 5;
 
     return score;
   }
@@ -370,44 +436,50 @@
     const cfg = LANG_CONFIG[langKey] || LANG_CONFIG.vi;
     voiceSelect.innerHTML = '';
 
+    if (!voices.length) {
+      const opt = document.createElement('option');
+      opt.textContent = 'Đang tải danh sách giọng...';
+      voiceSelect.appendChild(opt);
+      return;
+    }
+
     const scored = voices
       .map(v => ({ v, s: scoreVoice(v, langKey) }))
       .sort((a, b) => b.s - a.s);
 
-    const matched = scored.filter(x => x.s > 10 || (x.v.lang || '').toLowerCase().startsWith(langKey));
+    // Với tiếng Việt: lấy tất cả giọng Việt trước, sau đó mới đến giọng khác
+    let matched;
+    if (langKey === 'vi') {
+      const viList = scored.filter(x => isVietnameseVoice(x.v));
+      matched = viList.length > 0 ? viList : scored.filter(x => x.s > 10);
+    } else {
+      matched = scored.filter(x => x.s > 10 || (x.v.lang || '').toLowerCase().startsWith(langKey));
+    }
 
-    // Kiểm tra máy có giọng Việt không
-    const hasVietnamese = voices.some(v => {
-      const l = (v.lang || '').toLowerCase();
-      return l.startsWith('vi') || l.includes('vietnam');
-    });
+    const hasVietnamese = voices.some(isVietnameseVoice);
 
-    if (matched.length === 0) {
+    if (matched.length === 0 || (langKey === 'vi' && !hasVietnamese)) {
       const opt = document.createElement('option');
       opt.value = '';
-      opt.textContent = '⚠️ Không có giọng ' + cfg.name + ' trên máy này';
+      opt.textContent = '⚠️ Không tìm thấy giọng ' + cfg.name;
       voiceSelect.appendChild(opt);
 
-      // Hiện thêm danh sách giọng đang có để bạn kiểm tra
       const sep = document.createElement('option');
       sep.disabled = true;
-      sep.textContent = '── Các giọng đang có trên máy ──';
+      sep.textContent = '── Tất cả giọng đang có trên máy (' + voices.length + ') ──';
       voiceSelect.appendChild(sep);
 
-      scored.slice(0, 25).forEach(({ v }) => {
+      scored.forEach(({ v }) => {
         const o = document.createElement('option');
         o.value = voices.indexOf(v);
         o.textContent = `${v.name} (${v.lang})`;
         voiceSelect.appendChild(o);
       });
 
-      if (langKey === 'vi' && !hasVietnamese) {
-        ttsStatus.innerHTML = '❌ <b>Máy chưa cài giọng Tiếng Việt (vi-VN)</b>. Các ngôn ngữ khác hiện ra vì máy đã có sẵn.<br>' +
-          '→ <b>Windows</b>: Cài đặt → Thời gian & ngôn ngữ → Giọng nói → Thêm giọng → chọn <b>Tiếng Việt</b><br>' +
-          '→ Sau khi cài xong nhấn <b>F5</b> tải lại trang.';
-      } else {
-        ttsStatus.textContent = 'Máy chưa có giọng ' + cfg.name + '. Hãy cài trong Cài đặt hệ thống.';
-      }
+      ttsStatus.innerHTML = '❌ <b>Vẫn chưa thấy giọng Tiếng Việt</b>.<br>' +
+        '1. Hãy <b>tắt hoàn toàn Chrome</b> (kể cả chạy nền) rồi mở lại.<br>' +
+        '2. Vào Cài đặt Windows → Thời gian & ngôn ngữ → <b>Giọng nói</b> → kiểm tra đã có giọng Việt chưa.<br>' +
+        '3. Nếu mới cài, đôi khi cần khởi động lại máy.';
       return;
     }
 
@@ -419,11 +491,21 @@
       voiceSelect.appendChild(opt);
     });
 
-    if (matched[0].s < 40) {
-      ttsStatus.textContent = 'Giọng hiện tại có thể không chuẩn ' + cfg.name + '. Nên cài thêm giọng hệ thống.';
-    } else {
-      ttsStatus.textContent = '';
+    // Thêm dòng phân cách + các giọng khác để người dùng chọn thủ công
+    if (langKey === 'vi' && matched.length < voices.length) {
+      const sep = document.createElement('option');
+      sep.disabled = true;
+      sep.textContent = '── Giọng khác ──';
+      voiceSelect.appendChild(sep);
+      scored.filter(x => !isVietnameseVoice(x.v)).slice(0, 15).forEach(({ v }) => {
+        const o = document.createElement('option');
+        o.value = voices.indexOf(v);
+        o.textContent = `${v.name} (${v.lang})`;
+        voiceSelect.appendChild(o);
+      });
     }
+
+    ttsStatus.textContent = hasVietnamese ? '✓ Đã tìm thấy giọng Tiếng Việt' : '';
   }
 
   function getSelectedVoice() {
@@ -610,36 +692,97 @@
 
   async function fetchUrlContent(url) {
     loadStatus.innerHTML = '<span class="loading"></span> Đang lấy nội dung trang...';
+
+    // Chuẩn hóa URL
+    if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
+
+    // ========== Cách 1: Jina Reader (mạnh nhất, trả về nội dung sạch) ==========
+    try {
+      loadStatus.innerHTML = '<span class="loading"></span> Đang lấy nội dung (Jina Reader)...';
+      const jinaUrl = 'https://r.jina.ai/' + url;
+      const res = await fetch(jinaUrl, {
+        signal: AbortSignal.timeout(18000),
+        headers: { 'Accept': 'text/plain' }
+      });
+      if (res.ok) {
+        let text = await res.text();
+        // Jina thường trả markdown, loại bỏ phần header meta
+        text = text
+          .replace(/^Title:.*$/im, '')
+          .replace(/^URL Source:.*$/im, '')
+          .replace(/^Published Time:.*$/im, '')
+          .replace(/^Markdown Content:.*$/im, '')
+          .replace(/^#{1,6}\s+/gm, '')          // bỏ heading markdown
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // bỏ link markdown
+          .replace(/!\[.*?\]\(.*?\)/g, '')
+          .replace(/```[\s\S]*?```/g, '')
+          .replace(/`[^`]+`/g, '')
+          .replace(/\n{3,}/g, '\n\n')
+          .trim();
+        if (text.length > 120) {
+          loadStatus.textContent = 'Đã lấy nội dung thành công (Jina).';
+          return text;
+        }
+      }
+    } catch (e) {
+      console.warn('Jina failed:', e);
+    }
+
+    // ========== Cách 2: Các CORS proxy thông thường ==========
+    loadStatus.innerHTML = '<span class="loading"></span> Thử proxy khác...';
     const proxies = [
       (u) => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
       (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+      (u) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`,
       (u) => `https://cors.x2u.in/${u}`,
     ];
+
     let html = null;
     let lastErr = null;
     for (const make of proxies) {
       try {
         const res = await fetch(make(url), { signal: AbortSignal.timeout(12000) });
         if (!res.ok) throw new Error('HTTP ' + res.status);
-        html = await res.text();
-        if (html && html.length > 200) break;
+        let body = await res.text();
+
+        // allorigins /get trả JSON
+        if (body.trim().startsWith('{')) {
+          try {
+            const json = JSON.parse(body);
+            body = json.contents || json.content || body;
+          } catch (_) {}
+        }
+        if (body && body.length > 400) {
+          html = body;
+          break;
+        }
       } catch (e) {
         lastErr = e;
       }
     }
-    if (!html) throw lastErr || new Error('Không lấy được nội dung');
 
+    if (!html) {
+      throw lastErr || new Error('Không lấy được nội dung. Trang có thể chống scrape hoặc proxy bị chặn.');
+    }
+
+    // Parse HTML
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
 
-    // Remove unwanted
-    const excludeKeywords = ($('excludeInput').value || 'nav,sidebar,footer,ads,comment,menu')
+    const excludeKeywords = ($('excludeInput').value || 'nav,sidebar,footer,ads,advert,comment,menu,related,share,social,cookie,popup,banner,widget')
       .split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
 
-    doc.querySelectorAll('script, style, noscript, iframe, svg').forEach(el => el.remove());
-    doc.querySelectorAll('nav, header, footer, aside').forEach(el => el.remove());
+    const removeSelectors = [
+      'script', 'style', 'noscript', 'iframe', 'svg', 'canvas', 'form',
+      'nav', 'header', 'footer', 'aside',
+      '[role="navigation"]', '[role="banner"]', '[role="complementary"]',
+      '.ads', '.advertisement', '.ad-container', '.sidebar', '.comments',
+      '#comments', '#sidebar', '#footer', '#header', '#nav', '#menu'
+    ];
+    removeSelectors.forEach(sel => {
+      try { doc.querySelectorAll(sel).forEach(el => el.remove()); } catch (_) {}
+    });
 
-    // Remove by class/id keywords
     doc.querySelectorAll('[class], [id]').forEach(el => {
       const cls = (el.className || '').toString().toLowerCase();
       const id = (el.id || '').toLowerCase();
@@ -651,27 +794,47 @@
     let mainText = '';
     const customSel = $('selectorInput').value.trim();
     if (customSel) {
-      const el = doc.querySelector(customSel);
-      if (el) mainText = el.innerText || el.textContent || '';
-    }
-    if (!mainText) {
-      const candidates = doc.querySelectorAll('article, main, [role="main"], .post-content, .entry-content, .content, .article-body, #content, #main');
-      let best = null, bestLen = 0;
-      candidates.forEach(el => {
-        const t = (el.innerText || '').trim();
-        if (t.length > bestLen) { bestLen = t.length; best = el; }
-      });
-      if (best) mainText = best.innerText;
-      else mainText = doc.body ? doc.body.innerText : '';
+      try {
+        const el = doc.querySelector(customSel);
+        if (el) mainText = el.innerText || el.textContent || '';
+      } catch (_) {}
     }
 
-    // Clean excess whitespace
+    if (!mainText || mainText.length < 80) {
+      const candidates = [
+        'article', 'main', '[role="main"]',
+        '.post-content', '.entry-content', '.article-content', '.article-body',
+        '.content-body', '.post-body', '.story-body', '.td-post-content',
+        '#content', '#main-content', '#article', '#post',
+        '.content', '.main-content', '.page-content', '.detail-content'
+      ];
+      let best = null, bestScore = 0;
+      for (const sel of candidates) {
+        try {
+          doc.querySelectorAll(sel).forEach(el => {
+            const t = (el.innerText || '').trim();
+            const score = t.length + (t.match(/[.!?。]/g) || []).length * 50;
+            if (score > bestScore) {
+              bestScore = score;
+              best = el;
+            }
+          });
+        } catch (_) {}
+      }
+      if (best) mainText = best.innerText;
+      else mainText = doc.body ? (doc.body.innerText || '') : '';
+    }
+
     mainText = mainText
       .replace(/\n{3,}/g, '\n\n')
       .replace(/[ \t]+\n/g, '\n')
+      .replace(/[ \t]{2,}/g, ' ')
       .trim();
 
-    if (mainText.length < 80) throw new Error('Nội dung quá ngắn hoặc trang chống lấy dữ liệu.');
+    // Nới lỏng ngưỡng: nếu vẫn ngắn thì vẫn trả về nếu > 40 ký tự (để user thấy)
+    if (mainText.length < 40) {
+      throw new Error('Nội dung quá ngắn hoặc trang chống lấy dữ liệu. Thử dùng CSS Selector ở phần nâng cao, hoặc copy thủ công.');
+    }
     return mainText;
   }
 
