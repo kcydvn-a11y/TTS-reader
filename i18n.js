@@ -54,7 +54,9 @@
         guideAndroidTitle: "📱 Trên Android:",
         guideAndroidSteps: "<li>Vào <b>Cài đặt</b> → <b>Quản lý chung</b> → <b>Văn bản thành giọng nói</b>.</li><li>Chọn <b>Mục chuyển đổi preferred: Công cụ TTS của Google</b>.</li><li>Cài đặt dữ liệu giọng nói → Tải gói <b>Tiếng Việt</b>.</li>",
         guideIosTitle: "🍎 Trên iOS / macOS:",
-        guideIosSteps: "<li>Vào <b>Cài đặt</b> → <b>Trợ năng</b> → <b>Nội dung được đọc</b>.</li><li>Mục <b>Giọng nói</b> → Chọn <b>Tiếng Việt</b>.</li><li>Tải bản giọng <i>\"Linh (Tự nhiên / Nâng cao)\"</i> để đọc chuẩn nhất.</li>"
+        guideIosSteps: "<li>Vào <b>Cài đặt</b> → <b>Trợ năng</b> → <b>Nội dung được đọc</b>.</li><li>Mục <b>Giọng nói</b> → Chọn <b>Tiếng Việt</b>.</li><li>Tải bản giọng <i>\"Linh (Tự nhiên / Nâng cao)\"</i> để đọc chuẩn nhất.</li>",
+		noVoiceFound: "⚠️ Không tìm thấy giọng {lang}",
+        noVoiceFoundDetail: "Thiết bị chưa cài giọng {lang}. Hệ thống sẽ dùng giọng gần nhất có sẵn."
       },
       en: {
         title: "Thai Thong - Multilingual TTS",
@@ -109,7 +111,9 @@
         guideAndroidTitle: "📱 On Android:",
         guideAndroidSteps: "<li>Go to <b>Settings</b> → <b>General management</b> → <b>Text-to-speech output</b>.</li><li>Select preferred engine (e.g., Google TTS).</li><li>Install voice data for your language.</li>",
         guideIosTitle: "🍎 On iOS / macOS:",
-        guideIosSteps: "<li>Go to <b>Settings</b> → <b>Accessibility</b> → <b>Spoken Content</b>.</li><li>Under <b>Voices</b> → Select your language.</li><li>Download enhanced/natural voices for best quality.</li>"
+        guideIosSteps: "<li>Go to <b>Settings</b> → <b>Accessibility</b> → <b>Spoken Content</b>.</li><li>Under <b>Voices</b> → Select your language.</li><li>Download enhanced/natural voices for best quality.</li>",
+		noVoiceFound: "⚠️ No voice found for {lang}",
+        noVoiceFoundDetail: "This device doesn't have a voice for {lang}. The system will use the closest available voice."
       }
     };
 
