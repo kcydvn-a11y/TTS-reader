@@ -712,3 +712,81 @@ input, textarea, select {
       white-space: normal; /* Cho phép xuống dòng tự nhiên nếu chữ quá dài */
       word-break: break-word;
     }
+/* 1. Hỗ trợ Safe Area cho iPhone tràn viền & sửa lỗi 100vh */
+body {
+  min-height: 100dvh; /* Thay cho 100vh để không bị giật khi ẩn/hiện thanh URL */
+}
+
+.container {
+  padding-bottom: calc(40px + env(safe-area-inset-bottom));
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+}
+
+/* Fix Toast & Modal bị che bởi thanh gạt Home iOS */
+.modal-sheet {
+  padding-bottom: calc(20px + env(safe-area-inset-bottom));
+}
+
+.toast {
+  bottom: calc(24px + env(safe-area-inset-bottom));
+}
+
+/* 2. Tối ưu Header & Tabs không bị vỡ chữ trên máy nhỏ */
+header {
+  flex-wrap: wrap; /* Tự xuống dòng nếu màn hình quá hẹp */
+}
+
+.tabs {
+  overflow-x: auto; /* Cho phép cuộn ngang nếu tab quá nhiều/dài */
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
+}
+
+.tab {
+  flex: 0 0 auto; /* Không ép co giãn méo chữ */
+  min-width: 100px;
+  text-align: center;
+}
+
+/* 3. Tối ưu thanh Controls Sticky trên Mobile (nhỏ gọn hơn) */
+@media (max-width: 600px) {
+  .controls {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+
+  .ctrl-row {
+    flex-direction: row; /* Giữ nằm ngang thay vì đè thành cột quá cao */
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  /* Nút bấm gọn gàng hơn trên di động */
+  .speed-btn {
+    padding: 4px 8px;
+    min-width: 44px;
+  }
+
+  #contentDisplay {
+    max-height: 50dvh; /* Cân bằng lại không gian hiển thị bài viết */
+    padding: 14px;
+  }
+}
+
+/* 4. Fix lỗi hiển thị nút & QR trong Modal trên màn hình siêu nhỏ (< 360px) */
+@media (max-width: 360px) {
+  .btn {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  
+  .qr-img, .qr-fallback {
+    width: 160px;
+    height: 160px;
+  }
+}
