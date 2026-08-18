@@ -11,6 +11,7 @@
   <!-- Thư viện đọc PDF và Word (DOCX) client-side -->
   <script src="pdf.min.js"></script>
   <script src="mammoth.browser.min.js"></script>
+  <script src="tesseract.min.min.js"></script>
   <script src="i18n.js"></script>
   <script src="T2.js" defer></script>
 </head>
@@ -81,8 +82,8 @@
       <!-- PANEL FILE -->
       <div id="panel-file" style="display:none;">
         <label>Tải file tài liệu lên để đọc</label>
-        <div class="drop-zone" id="dropZone" style="border: 2px dashed #0284c7; border-radius: 10px; padding: 25px; text-align: center; background: rgba(2, 132, 199, 0.03); cursor: pointer; transition: all 0.2s ease; margin-top: 6px;">
-          <input type="file" id="fileInput" accept=".pdf,.docx,.txt,.md" style="display:none;" />
+        <div class="drop-zone" id="dropZone" style="border: 2px dashed #0284c7; border-radius: 10px; padding: 25px; text-align: center; background: rgba(2, 132, 199, 0.03); cursor: pointer; transition: all 0.2s ease; margin-top: 6px;">          
+		  <input type="file" id="fileInput" accept=".txt,.md,.pdf,.docx,.jpg,.jpeg,.png,.webp,.bmp" style="display:none;">
           <div id="dropZoneContent">
             <span style="font-size: 38px; display: block; margin-bottom: 8px;">📄</span>
             <p style="margin: 0; font-size: 14px; color: #334155;"><b>Kéo & thả file vào đây</b> hoặc <span style="color: #0284c7; text-decoration: underline;">Bấm để chọn file</span></p>
