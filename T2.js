@@ -1,1 +1,1940 @@
-function _0x520d(_0x5ef17b,_0x2c9d50){_0x5ef17b=_0x5ef17b-0x1b1;const _0x269066=_0x2690();let _0x520d65=_0x269066[_0x5ef17b];if(_0x520d['thrZvU']===undefined){var _0xbb460e=function(_0x4b8c86){const _0x1aed7a='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x67dcfa='',_0x9ae926='';for(let _0x338030=0x0,_0x13efcc,_0x3fc1da,_0xa5c6d8=0x0;_0x3fc1da=_0x4b8c86['charAt'](_0xa5c6d8++);~_0x3fc1da&&(_0x13efcc=_0x338030%0x4?_0x13efcc*0x40+_0x3fc1da:_0x3fc1da,_0x338030++%0x4)?_0x67dcfa+=String['fromCharCode'](0xff&_0x13efcc>>(-0x2*_0x338030&0x6)):0x0){_0x3fc1da=_0x1aed7a['indexOf'](_0x3fc1da);}for(let _0x38e047=0x0,_0xfdf8e6=_0x67dcfa['length'];_0x38e047<_0xfdf8e6;_0x38e047++){_0x9ae926+='%'+('00'+_0x67dcfa['charCodeAt'](_0x38e047)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x9ae926);};_0x520d['aJfGZx']=_0xbb460e,_0x520d['mCEarG']={},_0x520d['thrZvU']=!![];}const _0x1b7177=_0x269066[0x0],_0x223494=_0x5ef17b+_0x1b7177,_0x2daa2c=_0x520d['mCEarG'][_0x223494];return!_0x2daa2c?(_0x520d65=_0x520d['aJfGZx'](_0x520d65),_0x520d['mCEarG'][_0x223494]=_0x520d65):_0x520d65=_0x2daa2c,_0x520d65;}(function(_0x19f866,_0x18b06a){const _0x1fd256=_0x520d,_0x494043=_0x19f866();while(!![]){try{const _0x3fc42b=-parseInt(_0x1fd256(0x2ab))/0x1*(-parseInt(_0x1fd256(0x1f5))/0x2)+parseInt(_0x1fd256(0x224))/0x3+-parseInt(_0x1fd256(0x37f))/0x4+-parseInt(_0x1fd256(0x425))/0x5*(-parseInt(_0x1fd256(0x435))/0x6)+-parseInt(_0x1fd256(0x32d))/0x7*(parseInt(_0x1fd256(0x261))/0x8)+-parseInt(_0x1fd256(0x37a))/0x9+parseInt(_0x1fd256(0x215))/0xa;if(_0x3fc42b===_0x18b06a)break;else _0x494043['push'](_0x494043['shift']());}catch(_0x3cdff3){_0x494043['push'](_0x494043['shift']());}}}(_0x2690,0x850ad),(function(){const _0x24cca1=_0x520d;if(![])return;var _0x67dcfa=(location[_0x24cca1(0x2a4)]||'')[_0x24cca1(0x257)](),_0x9ae926=(location[_0x24cca1(0x32b)]||'')[_0x24cca1(0x257)](),_0x338030=_0x67dcfa===_0x24cca1(0x2d2)[_0x24cca1(0x257)](),_0x13efcc=_0x9ae926[_0x24cca1(0x27e)](_0x24cca1(0x288)[_0x24cca1(0x257)]())===0x0;if(!_0x338030||!_0x13efcc){try{document[_0x24cca1(0x2d0)][_0x24cca1(0x1dd)]=_0x24cca1(0x237)+_0x24cca1(0x2e1)+'<p\x20style=\x22color:#aaa;max-width:360px;line-height:1.5;\x22>Ứng\x20dụng\x20chỉ\x20hoạt\x20động\x20trên:<br><b>https://kcydvn-a11y.github.io/tts-reader/</b></p></div></div>';}catch(_0x3fc1da){}throw new Error(_0x24cca1(0x2fb));}}()),(function(){const _0x2d6be8=_0x520d,_0xa5c6d8=[0x1,1.25,1.5,1.75,0x2,2.5,0x3,0x4,0x5,0x6],_0x38e047=0x1,_0xfdf8e6=0xdc,_0x2e9d03={'vi':{'code':_0x2d6be8(0x1bc),'name':'Tiếng\x20Việt','keywords':['south',_0x2d6be8(0x3aa),'saigon',_0x2d6be8(0x2a0),_0x2d6be8(0x34e),_0x2d6be8(0x2ea),'an',_0x2d6be8(0x1f9),'nữ']},'th':{'code':_0x2d6be8(0x30c),'name':'ไทย\x20(Thái)','keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x38b),_0x2d6be8(0x2c9),_0x2d6be8(0x1f9)]},'id':{'code':'id-ID','name':_0x2d6be8(0x37b),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x238),_0x2d6be8(0x3a2),'female']},'ms':{'code':_0x2d6be8(0x1cf),'name':'Bahasa\x20Melayu','keywords':['enhanced',_0x2d6be8(0x2aa),_0x2d6be8(0x34b),_0x2d6be8(0x355),'female']},'km':{'code':_0x2d6be8(0x38d),'name':_0x2d6be8(0x29f),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x1ce),_0x2d6be8(0x3df),_0x2d6be8(0x1f9)]},'lo':{'code':_0x2d6be8(0x41a),'name':_0x2d6be8(0x306),'keywords':['enhanced',_0x2d6be8(0x2aa),'chanthavong',_0x2d6be8(0x22c),_0x2d6be8(0x1f9)]},'my':{'code':_0x2d6be8(0x3b9),'name':_0x2d6be8(0x227),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x414),_0x2d6be8(0x1f9)]},'fil':{'code':_0x2d6be8(0x42e),'name':_0x2d6be8(0x2dc),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x1ef),_0x2d6be8(0x40a),_0x2d6be8(0x1f9)]},'zh':{'code':_0x2d6be8(0x21b),'name':_0x2d6be8(0x299),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x1ff),_0x2d6be8(0x1b4),_0x2d6be8(0x23a),'female',_0x2d6be8(0x2f2)]},'zh-TW':{'code':_0x2d6be8(0x1d9),'name':_0x2d6be8(0x438),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),'yating',_0x2d6be8(0x258),_0x2d6be8(0x284),_0x2d6be8(0x1f9)]},'zh-HK':{'code':'zh-HK','name':_0x2d6be8(0x247),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x26d),_0x2d6be8(0x3d5),'hongkong',_0x2d6be8(0x1f9)]},'yue':{'code':_0x2d6be8(0x361),'name':_0x2d6be8(0x2dd),'keywords':['cantonese',_0x2d6be8(0x20c),_0x2d6be8(0x30d),_0x2d6be8(0x1f9)]},'ja':{'code':'ja-JP','name':'日本語\x20(Nhật\x20Bản)','keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x271),_0x2d6be8(0x371),_0x2d6be8(0x316),_0x2d6be8(0x1f9)]},'ko':{'code':_0x2d6be8(0x1e1),'name':_0x2d6be8(0x2df),'keywords':['enhanced',_0x2d6be8(0x2aa),_0x2d6be8(0x2b1),_0x2d6be8(0x25e),_0x2d6be8(0x34d),_0x2d6be8(0x1f9)]},'bo':{'code':_0x2d6be8(0x33c),'name':_0x2d6be8(0x3eb),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x3cd),_0x2d6be8(0x1f9)]},'mn':{'code':_0x2d6be8(0x2f4),'name':_0x2d6be8(0x21f),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),'yesui',_0x2d6be8(0x210),_0x2d6be8(0x1f9)]},'hi':{'code':_0x2d6be8(0x398),'name':_0x2d6be8(0x2c5),'keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x364),_0x2d6be8(0x276),_0x2d6be8(0x1f9)]},'bn':{'code':_0x2d6be8(0x35d),'name':_0x2d6be8(0x3a9),'keywords':['enhanced',_0x2d6be8(0x2aa),_0x2d6be8(0x1b8),_0x2d6be8(0x2fc),_0x2d6be8(0x1f9)]},'ta':{'code':_0x2d6be8(0x3bc),'name':_0x2d6be8(0x1e5),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x294),_0x2d6be8(0x384),_0x2d6be8(0x1f9)]},'te':{'code':_0x2d6be8(0x212),'name':'తెలుగు\x20(Telugu)','keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x2f7),_0x2d6be8(0x1c9),'female']},'mr':{'code':_0x2d6be8(0x330),'name':'मराठी\x20(Marathi)','keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x296),_0x2d6be8(0x366),_0x2d6be8(0x1f9)]},'gu':{'code':_0x2d6be8(0x35f),'name':_0x2d6be8(0x1d8),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),'dhwani',_0x2d6be8(0x3c2),_0x2d6be8(0x1f9)]},'kn':{'code':_0x2d6be8(0x25c),'name':_0x2d6be8(0x3fa),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),'gapan',_0x2d6be8(0x218),_0x2d6be8(0x1f9)]},'ml':{'code':_0x2d6be8(0x27c),'name':_0x2d6be8(0x23f),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),'midhun',_0x2d6be8(0x1f8),_0x2d6be8(0x1f9)]},'pa':{'code':_0x2d6be8(0x3c8),'name':'ਪੰਜਾਬੀ\x20(Punjabi)','keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x3ad),_0x2d6be8(0x1f9)]},'ur':{'code':_0x2d6be8(0x337),'name':_0x2d6be8(0x31a),'keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x2b5),_0x2d6be8(0x354),_0x2d6be8(0x1f9)]},'ne':{'code':_0x2d6be8(0x350),'name':_0x2d6be8(0x1b5),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x1e9),'female']},'ar':{'code':_0x2d6be8(0x1cd),'name':_0x2d6be8(0x277),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x1e0),'zariyah',_0x2d6be8(0x262),_0x2d6be8(0x432),_0x2d6be8(0x1f9)]},'ar-AE':{'code':_0x2d6be8(0x231),'name':_0x2d6be8(0x1c3),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x432),_0x2d6be8(0x2ae),'female']},'ar-EG':{'code':_0x2d6be8(0x370),'name':_0x2d6be8(0x373),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x326),_0x2d6be8(0x1f9)]},'ar-JO':{'code':'ar-JO','name':_0x2d6be8(0x24b),'keywords':['enhanced',_0x2d6be8(0x2aa),'sana','female']},'ar-IQ':{'code':_0x2d6be8(0x35e),'name':_0x2d6be8(0x295),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x1f9)]},'fa':{'code':'fa-IR','name':_0x2d6be8(0x2c6),'keywords':['enhanced','neural',_0x2d6be8(0x307),'female']},'he':{'code':_0x2d6be8(0x3fc),'name':_0x2d6be8(0x423),'keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x1d3),_0x2d6be8(0x229),_0x2d6be8(0x1f9)]},'tr':{'code':'tr-TR','name':'Türkçe\x20(Thổ\x20Nhĩ\x20Kỳ)','keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),'emel',_0x2d6be8(0x245),_0x2d6be8(0x1f9)]},'en':{'code':_0x2d6be8(0x1b1),'name':_0x2d6be8(0x2f1),'keywords':['enhanced',_0x2d6be8(0x3e4),_0x2d6be8(0x2aa),_0x2d6be8(0x2f2),_0x2d6be8(0x368),_0x2d6be8(0x328),_0x2d6be8(0x297),_0x2d6be8(0x280),'guy']},'fr':{'code':_0x2d6be8(0x2b6),'name':_0x2d6be8(0x39c),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x2d7),_0x2d6be8(0x3e2),_0x2d6be8(0x2f3),_0x2d6be8(0x1f9)]},'de':{'code':_0x2d6be8(0x3a3),'name':_0x2d6be8(0x26e),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x393),_0x2d6be8(0x40d),_0x2d6be8(0x2b9),'female']},'es':{'code':_0x2d6be8(0x3b7),'name':_0x2d6be8(0x3d7),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x29b),_0x2d6be8(0x39f),_0x2d6be8(0x419),_0x2d6be8(0x1f9)]},'it':{'code':'it-IT','name':_0x2d6be8(0x32f),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x2a1),_0x2d6be8(0x386),_0x2d6be8(0x1f9)]},'pt':{'code':_0x2d6be8(0x1c5),'name':_0x2d6be8(0x2fa),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x289),_0x2d6be8(0x31b),'brasil',_0x2d6be8(0x1f9)]},'ru':{'code':_0x2d6be8(0x2e4),'name':'Русский','keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x2ee),_0x2d6be8(0x1bd),_0x2d6be8(0x2a5),_0x2d6be8(0x1f9)]},'uk':{'code':'uk-UA','name':_0x2d6be8(0x27f),'keywords':['enhanced',_0x2d6be8(0x2aa),_0x2d6be8(0x3a8),_0x2d6be8(0x1f3),_0x2d6be8(0x1f9)]},'pl':{'code':'pl-PL','name':_0x2d6be8(0x1b2),'keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x1d2),_0x2d6be8(0x37e),'female']},'nl':{'code':_0x2d6be8(0x42a),'name':_0x2d6be8(0x327),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x1f6),_0x2d6be8(0x283),_0x2d6be8(0x1f9)]},'sv':{'code':'sv-SE','name':'Svenska','keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x249),_0x2d6be8(0x1f9)]},'no':{'code':_0x2d6be8(0x2bb),'name':_0x2d6be8(0x36f),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x3bf),_0x2d6be8(0x1f9)]},'da':{'code':_0x2d6be8(0x38f),'name':_0x2d6be8(0x250),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x36c),_0x2d6be8(0x1f9)]},'fi':{'code':_0x2d6be8(0x3f2),'name':_0x2d6be8(0x259),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x403),_0x2d6be8(0x1f9)]},'el':{'code':_0x2d6be8(0x225),'name':'Ελληνικά','keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x1c7),_0x2d6be8(0x1f9)]},'cs':{'code':_0x2d6be8(0x2ec),'name':_0x2d6be8(0x41d),'keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),'vlasta',_0x2d6be8(0x1f9)]},'hu':{'code':_0x2d6be8(0x3a4),'name':'Magyar','keywords':[_0x2d6be8(0x300),_0x2d6be8(0x2aa),_0x2d6be8(0x415),_0x2d6be8(0x1f9)]},'ro':{'code':_0x2d6be8(0x200),'name':_0x2d6be8(0x3e1),'keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x37c),'female']},'sw':{'code':_0x2d6be8(0x42b),'name':'Kiswahili','keywords':[_0x2d6be8(0x300),'neural',_0x2d6be8(0x235),_0x2d6be8(0x1f9)]}};let _0x58603a='',_0x42864d=[],_0xef65c3=0x0,_0x367f62=_0x2d6be8(0x253),_0x371937=0x0,_0x2261f5='vi',_0x579864=0x10,_0x3a2abc=[],_0x5ad72a=null,_0x68ebd9=![];const _0x265a5b=_0x1a0020=>document[_0x2d6be8(0x21a)](_0x1a0020),_0x48921d=_0x265a5b('textInput'),_0x42dc62=_0x265a5b('urlInput'),_0x2c3664=_0x265a5b(_0x2d6be8(0x431)),_0x39341c=_0x265a5b(_0x2d6be8(0x1f2)),_0x34ec4e=_0x265a5b(_0x2d6be8(0x323)),_0x4e0f6b=_0x265a5b(_0x2d6be8(0x353)),_0x528f9c=_0x265a5b('playIcon'),_0x5c40bc=_0x265a5b('btnStop'),_0x28c64d=_0x265a5b(_0x2d6be8(0x356)),_0x5d2f55=_0x265a5b(_0x2d6be8(0x251)),_0x57b609=_0x265a5b('voiceSelect'),_0x50237e=_0x265a5b(_0x2d6be8(0x221)),_0x189a20=_0x265a5b(_0x2d6be8(0x42f));document[_0x2d6be8(0x3f5)](_0x2d6be8(0x233))[_0x2d6be8(0x410)](_0x2edf81=>{const _0x3a6e28=_0x2d6be8;_0x2edf81['addEventListener'](_0x3a6e28(0x311),()=>{const _0x40a7aa=_0x3a6e28;document[_0x40a7aa(0x3f5)](_0x40a7aa(0x233))[_0x40a7aa(0x410)](_0x333d18=>_0x333d18['classList']['remove'](_0x40a7aa(0x1fa))),_0x2edf81[_0x40a7aa(0x3ee)]['add']('active');const _0x18e75e=_0x2edf81[_0x40a7aa(0x372)][_0x40a7aa(0x347)]===_0x40a7aa(0x312);_0x265a5b(_0x40a7aa(0x411))[_0x40a7aa(0x2c4)][_0x40a7aa(0x408)]=_0x18e75e?_0x40a7aa(0x377):_0x40a7aa(0x2ad),_0x265a5b(_0x40a7aa(0x336))['style'][_0x40a7aa(0x408)]=_0x18e75e?_0x40a7aa(0x2ad):_0x40a7aa(0x377);});}),_0x265a5b(_0x2d6be8(0x2e2))[_0x2d6be8(0x43a)](_0x2d6be8(0x311),()=>{const _0x17302f=_0x2d6be8;_0x265a5b('advancedBox')[_0x17302f(0x3ee)][_0x17302f(0x3ae)](_0x17302f(0x2b8));});function _0x31af3f(_0xd2410f){const _0x4f2022=_0x2d6be8;if(!_0xd2410f||!_0xd2410f['trim']())return'vi';const _0x2537b9=_0xd2410f[_0x4f2022(0x269)]>0x4b0?_0xd2410f[_0x4f2022(0x1df)](0x0,0x4b0):_0xd2410f;if(/[\u3040-\u309F\u30A0-\u30FF]/['test'](_0x2537b9))return'ja';if(/[\uAC00-\uD7AF\u1100-\u11FF]/[_0x4f2022(0x267)](_0x2537b9))return'ko';if(/[\u0E00-\u0E7F]/[_0x4f2022(0x267)](_0x2537b9))return'th';if(/[\u0E80-\u0EFF]/[_0x4f2022(0x267)](_0x2537b9))return'lo';if(/[\u1000-\u109F]/['test'](_0x2537b9))return'my';if(/[\u1780-\u17FF]/[_0x4f2022(0x267)](_0x2537b9))return'km';if(/[\u0F00-\u0FFF]/[_0x4f2022(0x267)](_0x2537b9))return'bo';if(/[\u0590-\u05FF]/[_0x4f2022(0x267)](_0x2537b9))return'he';if(/[\u0370-\u03FF]/[_0x4f2022(0x267)](_0x2537b9))return'el';if(/[\u0900-\u097F]/[_0x4f2022(0x267)](_0x2537b9))return'hi';if(/[\u0980-\u09FF]/[_0x4f2022(0x267)](_0x2537b9))return'bn';if(/[\u0A00-\u0A7F]/['test'](_0x2537b9))return'pa';if(/[\u0A80-\u0AFF]/[_0x4f2022(0x267)](_0x2537b9))return'gu';if(/[\u0B80-\u0BFF]/[_0x4f2022(0x267)](_0x2537b9))return'ta';if(/[\u0C00-\u0C7F]/[_0x4f2022(0x267)](_0x2537b9))return'te';if(/[\u0C80-\u0CFF]/[_0x4f2022(0x267)](_0x2537b9))return'kn';if(/[\u0D00-\u0DFF]/[_0x4f2022(0x267)](_0x2537b9))return'ml';if(/[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/[_0x4f2022(0x267)](_0x2537b9)){if(/[پچگژ]/['test'](_0x2537b9))return'fa';if(/[ںےٹڈڑ]/[_0x4f2022(0x267)](_0x2537b9))return'ur';return'ar';}if(/[\u0400-\u04FF]/[_0x4f2022(0x267)](_0x2537b9)){if(/[іїєґІЇЄҐ]/[_0x4f2022(0x267)](_0x2537b9))return'uk';return'ru';}if(/[\u4E00-\u9FFF]/[_0x4f2022(0x267)](_0x2537b9))return'zh';if(/[ăắằẳẵặơớờởỡợưứừửữựđĂẮẰẲẴẶƠỚỜỞỠỢƯỨỪỬỮỰĐ]/i[_0x4f2022(0x267)](_0x2537b9))return'vi';const _0x4ea5a9=_0x2537b9[_0x4f2022(0x257)](),_0x2dfbc6=_0x4b430e=>(_0x4ea5a9[_0x4f2022(0x2da)](_0x4b430e)||[])[_0x4f2022(0x269)],_0x1a859f={'en':_0x2dfbc6(/\b(the|and|is|you|that|it|he|was|for|on|are|as|with|his|they|at|be|this|from|or|an|will|my|would|there|their|have|has|not|but|what|all|were|when|who|your|said|each|which|she|do|how|if|up|out|about|many)\b/g),'fr':_0x2dfbc6(/\b(le|la|les|un|une|des|et|est|dans|en|du|que|qui|pour|pas|sur|ce|avec|ne|se|plus|par|sont|mais|ou|donc|car|je|tu|il|elle|nous|vous|ils|elles|être|avoir|fait|tout|comme)\b/g),'de':_0x2dfbc6(/\b(der|die|das|und|ist|in|den|von|zu|mit|sich|des|auf|für|im|dem|nicht|ein|eine|als|auch|es|an|ich|du|er|sie|wir|ihr|werden|haben|wird|nach|bei|noch|nur|einem)\b/g),'es':_0x2dfbc6(/\b(el|la|los|las|un|una|unos|unas|y|en|que|es|por|con|para|su|del|como|más|pero|sus|le|ya|o|yo|tú|él|ella|nosotros|está|son|también|muy|hay|sobre)\b/g),'id':_0x2dfbc6(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|dapat|sudah|lebih|karena|saat|jika)\b/g),'pt':_0x2dfbc6(/\b(o|a|os|as|um|uma|de|da|do|em|para|com|não|que|se|por|como|mais|mas|foi|são|ele|ela|isso|está|também|quando|muito|seu|sua)\b/g),'it':_0x2dfbc6(/\b(il|lo|la|i|gli|le|un|una|di|da|in|per|con|che|è|sono|non|si|del|della|questo|questa|come|più|anche|ma|loro|essere|fare|tutto)\b/g),'tr':_0x2dfbc6(/\b(ve|bir|bu|da|de|için|ile|olan|var|yok|daha|çok|gibi|kadar|sonra|ama|veya|ben|sen|o|biz|siz|onlar|ne|nasıl|neden)\b/g),'pl':_0x2dfbc6(/\b(i|w|na|z|do|to|się|nie|jest|jak|od|po|za|ale|czy|tak|już|tylko|jego|jej|ich|być|mieć|może|przez|oraz)\b/g),'nl':_0x2dfbc6(/\b(de|het|een|van|en|in|is|op|te|dat|die|voor|met|zijn|niet|aan|ook|als|er|om|bij|naar|uit|nog|wel|geen|worden)\b/g),'ms':_0x2dfbc6(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|boleh|sudah|lebih|kerana|jika)\b/g),'fil':_0x2dfbc6(/\b(ang|ng|mga|sa|na|si|ay|para|at|may|din|rin|ko|mo|ni|niya|kami|tayo|sila)\b/g)};let _0x96dfe0=0x0,_0x1ca2ae='en';for(const [_0x4d6255,_0x14d015]of Object[_0x4f2022(0x404)](_0x1a859f)){_0x14d015>_0x96dfe0&&(_0x96dfe0=_0x14d015,_0x1ca2ae=_0x4d6255);}return _0x96dfe0>=0x3?_0x1ca2ae:'en';}const _0x5ee3dc=/(?<=^|[\s\(\[\{,.:;\-])(?=[MDCLXVI])(M{0,3}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3}))(\.?)(?=[\s\)\}\],.:;!?]|$)/g,_0x5591bd=/\b(chương|phần|mục|tập|điều|bảng|thế kỷ|bước|kỳ|mệnh|đại|bài|đoạn|hình|sơ đồ|cột|ví dụ|số|hạng|phụ lục)\s*$/i,_0x50ff23=/\b(chapter|part|section|volume|article|table|century|step|phase|figure|diagram|column|example|number|appendix)\s*$/i;function _0x5c2652(_0x60c5c1){const _0x5dd271=_0x2d6be8,_0x36a1b4={'I':0x1,'V':0x5,'X':0xa,'L':0x32,'C':0x64,'D':0x1f4,'M':0x3e8};let _0x484179=0x0,_0x13bf0e=0x0;for(let _0x253ffb=_0x60c5c1[_0x5dd271(0x269)]-0x1;_0x253ffb>=0x0;_0x253ffb--){const _0x354e8e=_0x36a1b4[_0x60c5c1[_0x253ffb]]||0x0;_0x484179+=_0x354e8e<_0x13bf0e?-_0x354e8e:_0x354e8e,_0x13bf0e=_0x354e8e;}return _0x484179;}function _0x4112b3(_0x36cfba){const _0x210b2f=_0x2d6be8;if(_0x36cfba<=0x0)return'';if(_0x36cfba>0xf9f)return String(_0x36cfba);const _0x37873e=['',_0x210b2f(0x228),_0x210b2f(0x3ef),'ba',_0x210b2f(0x382),_0x210b2f(0x234),_0x210b2f(0x2a8),'bảy',_0x210b2f(0x40f),_0x210b2f(0x1da)];if(_0x36cfba<0xa)return _0x37873e[_0x36cfba];const _0x394567=Math[_0x210b2f(0x273)](_0x36cfba/0x3e8),_0x546df6=_0x36cfba%0x3e8,_0x2a4244=Math['floor'](_0x546df6/0x64),_0x11414f=_0x546df6%0x64,_0x40da54=Math[_0x210b2f(0x273)](_0x11414f/0xa),_0x5b6841=_0x11414f%0xa,_0x1fadea=[];if(_0x394567)_0x1fadea[_0x210b2f(0x270)](_0x37873e[_0x394567]+_0x210b2f(0x3b8));if(_0x2a4244)_0x1fadea[_0x210b2f(0x270)](_0x37873e[_0x2a4244]+_0x210b2f(0x286));else{if(_0x394567&&_0x11414f)_0x1fadea['push'](_0x210b2f(0x27d));}if(_0x40da54>0x1){_0x1fadea[_0x210b2f(0x270)](_0x37873e[_0x40da54]+'\x20mươi');if(_0x5b6841===0x1)_0x1fadea[_0x210b2f(0x270)](_0x210b2f(0x216));else{if(_0x5b6841===0x4)_0x1fadea[_0x210b2f(0x270)]('tư');else{if(_0x5b6841===0x5)_0x1fadea['push'](_0x210b2f(0x1c8));else{if(_0x5b6841)_0x1fadea[_0x210b2f(0x270)](_0x37873e[_0x5b6841]);}}}}else{if(_0x40da54===0x1){_0x1fadea[_0x210b2f(0x270)](_0x210b2f(0x26a));if(_0x5b6841===0x5)_0x1fadea[_0x210b2f(0x270)](_0x210b2f(0x1c8));else{if(_0x5b6841)_0x1fadea[_0x210b2f(0x270)](_0x37873e[_0x5b6841]);}}else{if(_0x5b6841){if(_0x394567||_0x2a4244)_0x1fadea[_0x210b2f(0x270)](_0x210b2f(0x2a0));_0x1fadea[_0x210b2f(0x270)](_0x5b6841===0x4&&(_0x394567||_0x2a4244)?'tư':_0x37873e[_0x5b6841]);}}}return _0x1fadea[_0x210b2f(0x2ed)]('\x20');}function _0x18e542(_0x5e3bb5,_0x580c29){const _0x1b4f6b=_0x2d6be8;return _0x5e3bb5[_0x1b4f6b(0x22e)](_0x5ee3dc,(_0x3fc83e,_0x90c2d0,_0x8d99e,_0x17c350,_0x18c24d)=>{const _0x5e695b=_0x1b4f6b;if(!_0x90c2d0)return _0x3fc83e;if(_0x90c2d0==='I'){const _0x463753=_0x18c24d[_0x5e695b(0x1df)](0x0,_0x17c350),_0x193951=_0x18c24d[_0x5e695b(0x1df)](_0x17c350+_0x3fc83e[_0x5e695b(0x269)]);let _0x53330e=![];if(_0x580c29==='vi'){const _0x22e425=_0x5591bd[_0x5e695b(0x267)](_0x463753),_0x5d4c89=/^\s*[\.\-\:]?\s*\d+/[_0x5e695b(0x267)](_0x193951),_0x3b84ab=_0x463753['replace'](/[\s\(\[\{\*\#-]+$/,''),_0x1db018=!_0x3b84ab||_0x3b84ab['endsWith']('\x0a'),_0x42aa6e=_0x463753['endsWith']('(')||_0x463753[_0x5e695b(0x2cd)]('[');_0x53330e=!!_0x8d99e||_0x5d4c89||_0x22e425||_0x1db018||_0x42aa6e;}else{const _0x44d634=_0x50ff23['test'](_0x463753),_0x4f4bc8=_0x463753[_0x5e695b(0x22e)](/[\s\(\[\{\*\#-]+$/,''),_0xbc749f=!_0x4f4bc8||_0x4f4bc8['endsWith']('\x0a'),_0x22ea0d=_0x463753[_0x5e695b(0x2cd)]('(')||_0x463753[_0x5e695b(0x2cd)]('[');_0x53330e=_0x44d634||_0xbc749f&&!!_0x8d99e||_0xbc749f&&_0x22ea0d;}if(!_0x53330e)return _0x3fc83e;}const _0x184009=_0x5c2652(_0x90c2d0);if(!_0x184009)return _0x3fc83e;const _0x5efd40=_0x8d99e?',':'';if(_0x580c29==='vi')return _0x4112b3(_0x184009)+_0x5e695b(0x437)+_0x5efd40;return _0x184009+_0x5efd40;});}function _0x28070f(_0xe671fd,_0x50871c){const _0x299f61=_0x2d6be8;let _0x326733=_0xe671fd;_0x326733=_0x326733['replace'](/```[\s\S]*?```/g,'')['replace'](/`.*?`/g,'')[_0x299f61(0x22e)](/https?:\/\/\S+|www\.\S+/g,'')[_0x299f61(0x22e)](/\[([^\]]+)\]\([^)]+\)/g,'$1'),_0x326733=_0x326733[_0x299f61(0x22e)](/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu,''),_0x326733=_0x326733['replace'](/["“”„‟«»]/g,'\x20'),_0x326733=_0x326733['replace'](/['‘’‚‛]/g,'\x20'),_0x326733=_0x326733[_0x299f61(0x22e)](/[\u200B-\u200D\uFEFF]/g,''),_0x326733=_0x326733[_0x299f61(0x22e)](/\.{2,}/g,'.'),_0x326733=_0x326733[_0x299f61(0x22e)](/[\(\)\[\]\{\}]/g,'\x20'),_0x326733=_0x326733[_0x299f61(0x22e)](/\s*\.\s*\./g,'.'),_0x326733=_0x326733[_0x299f61(0x22e)](/\s+/g,'\x20');if(_0x50871c==='en'){const _0x2ad753={'\x5cbe\x5c.g\x5c.\x5cb':'for\x20example','\x5cbi\x5c.e\x5c.\x5cb':_0x299f61(0x2e8),'\x5cbetc\x5c.\x5cb':'et\x20cetera','\x5cbvs\x5c.\x5cb':_0x299f61(0x38c),'\x5cbDr\x5c.\x5cb':_0x299f61(0x22d),'\x5cbMr\x5c.\x5cb':_0x299f61(0x348),'\x5cbMrs\x5c.\x5cb':_0x299f61(0x202),'\x5cbMs\x5c.\x5cb':_0x299f61(0x34c),'\x5cbProf\x5c.\x5cb':_0x299f61(0x3d9),'\x5cbapprox\x5c.\x5cb':'approximately','\x5cbDept\x5c.\x5cb':'Department','\x5cbUniv\x5c.\x5cb':_0x299f61(0x38a),'\x5cbInc\x5c.\x5cb':_0x299f61(0x3f6),'\x5cbLtd\x5c.\x5cb':'Limited','\x5cbJr\x5c.\x5cb':_0x299f61(0x334),'\x5cbSr\x5c.\x5cb':_0x299f61(0x256),'\x5cbSt\x5c.\x5cb':'Street','\x5cbAve\x5c.\x5cb':_0x299f61(0x33f),'\x5cbBlvd\x5c.\x5cb':_0x299f61(0x36e),'\x5cbNo\x5c.\x5cb':_0x299f61(0x3f1),'\x5cbVol\x5c.\x5cb':_0x299f61(0x3be),'\x5cbpp\x5c.\x5cb':_0x299f61(0x40b),'\x5cbfig\x5c.\x5cb':_0x299f61(0x32a)};for(const [_0x42aa18,_0x23ad46]of Object[_0x299f61(0x404)](_0x2ad753)){_0x326733=_0x326733['replace'](new RegExp(_0x42aa18,'gi'),_0x23ad46);}_0x326733=_0x326733[_0x299f61(0x22e)](/\b(\d+)(st|nd|rd|th)\b/gi,(_0x52ee23,_0x111b53,_0x5ae8bd)=>{const _0x33611f=_0x299f61,_0x116785=parseInt(_0x111b53,0xa);if(_0x116785===0x1)return _0x33611f(0x2c1);if(_0x116785===0x2)return'second';if(_0x116785===0x3)return _0x33611f(0x2f5);return _0x111b53+'\x20'+_0x5ae8bd;});const _0x5a2095=['',_0x299f61(0x308),_0x299f61(0x397),'March','April',_0x299f61(0x3f7),_0x299f61(0x3d4),_0x299f61(0x252),_0x299f61(0x428),_0x299f61(0x291),_0x299f61(0x1d0),_0x299f61(0x3f9),_0x299f61(0x254)];_0x326733=_0x326733[_0x299f61(0x22e)](/\b(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g,(_0x26d6e3,_0x3552dd,_0x281e43,_0x8ab365)=>{let _0x1593b3=+_0x3552dd,_0x4552d7=+_0x281e43,_0x46426f=+_0x8ab365;if(_0x46426f>0x0&&_0x46426f<0x64)_0x46426f=_0x46426f>=0x32?0x76c+_0x46426f:0x7d0+_0x46426f;_0x3552dd<=0xc&&_0x281e43>0xc&&(_0x4552d7=+_0x3552dd,_0x1593b3=+_0x281e43);if(_0x4552d7>=0x1&&_0x4552d7<=0xc&&_0x1593b3>=0x1&&_0x1593b3<=0x1f&&_0x46426f>=0x76c&&_0x46426f<=0x834)return _0x5a2095[_0x4552d7]+'\x20'+_0x1593b3+',\x20'+_0x46426f;return _0x26d6e3;});}if(_0x50871c==='vi'){_0x326733=_0x326733[_0x299f61(0x22e)](/\b[Mm]\.?\s*[Uu]\.?\s*bàn\s+tay\b/gi,'muu\x20bàn\x20tay'),_0x326733=_0x326733[_0x299f61(0x22e)](/\b[Mm]u\s+bàn\s+tay\b/g,'muu\x20bàn\x20tay'),_0x326733=_0x326733[_0x299f61(0x22e)](/\b([Nn]gày|[Nn]gay)\s*[:\-]?\s*(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g,(_0x340faf,_0x57c371,_0x58fd32,_0x2ee55c,_0x3b41c3)=>{const _0x213bb3=_0x299f61;let _0x58b7fc=+_0x3b41c3;if(_0x58b7fc>0x0&&_0x58b7fc<0x64)_0x58b7fc=_0x58b7fc>=0x32?0x76c+_0x58b7fc:0x7d0+_0x58b7fc;if(+_0x58fd32>=0x1&&+_0x58fd32<=0x1f&&+_0x2ee55c>=0x1&&+_0x2ee55c<=0xc&&_0x58b7fc>=0x76c&&_0x58b7fc<=0x834)return _0x213bb3(0x427)+_0x58fd32+_0x213bb3(0x266)+_0x2ee55c+_0x213bb3(0x319)+_0x58b7fc;return _0x340faf;}),_0x326733=_0x326733[_0x299f61(0x22e)](/\b(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g,(_0x28c245,_0x13532b,_0x2e5541,_0x34152d)=>{const _0x16e0fa=_0x299f61;let _0x47706d=+_0x34152d;if(_0x47706d>0x0&&_0x47706d<0x64)_0x47706d=_0x47706d>=0x32?0x76c+_0x47706d:0x7d0+_0x47706d;if(+_0x13532b>=0x1&&+_0x13532b<=0x1f&&+_0x2e5541>=0x1&&+_0x2e5541<=0xc&&_0x47706d>=0x76c&&_0x47706d<=0x834)return _0x16e0fa(0x427)+_0x13532b+_0x16e0fa(0x266)+_0x2e5541+_0x16e0fa(0x319)+_0x47706d;return _0x28c245;}),_0x326733=_0x326733['replace'](/\b(\d{1,2}):(\d{2})\b/g,_0x299f61(0x23d));const _0x5859e7={'\x5cbTP\x5c.?\x5cs*HCM\x5cb':_0x299f61(0x2b3),'\x5cbTP\x5c.?\x5cb':'Thành\x20phố','\x5cbSĐT\x5cb':_0x299f61(0x22b),'\x5cbBL\x5cb':'Luận\x20giải','\x5cbkg\x5cb':_0x299f61(0x310),'\x5cbvnđ\x5cb':_0x299f61(0x36b),'\x5cbđ\x5cb':'đồng'};for(const [_0x223dfc,_0x40f407]of Object[_0x299f61(0x404)](_0x5859e7)){_0x326733=_0x326733[_0x299f61(0x22e)](new RegExp(_0x223dfc,'gi'),_0x40f407);}}_0x326733=_0x326733[_0x299f61(0x22e)](/^[ \t]*[\*\-\•\+]\s+/gm,'');if(_0x50871c==='vi')_0x326733=_0x326733[_0x299f61(0x22e)](/&/g,_0x299f61(0x1f0))[_0x299f61(0x22e)](/%/g,_0x299f61(0x2a3))[_0x299f61(0x22e)](/\+/g,_0x299f61(0x243));else _0x50871c==='en'&&(_0x326733=_0x326733[_0x299f61(0x22e)](/&/g,_0x299f61(0x1bb))[_0x299f61(0x22e)](/%/g,_0x299f61(0x240))['replace'](/\+/g,_0x299f61(0x374)));return _0x326733=_0x326733[_0x299f61(0x22e)](/@/g,_0x299f61(0x3f8)),_0x326733=_0x326733[_0x299f61(0x22e)](/(\d+)\s*\/\s*(\d+)/g,_0x299f61(0x275)),_0x326733=_0x18e542(_0x326733,_0x50871c),_0x326733=_0x326733['replace'](/[*#_`~>=]+/g,'\x20'),_0x326733=_0x326733[_0x299f61(0x22e)](/:/g,',\x20'),_0x326733=_0x326733['replace'](/\n+/g,'\x20'),_0x326733=_0x326733[_0x299f61(0x22e)](/\s+/g,'\x20')[_0x299f61(0x21e)](),_0x326733;}function _0x153b6d(_0x4b5305,_0x1a69eb){const _0x1affce=_0x2d6be8,_0x46908d=_0x28070f(_0x4b5305,_0x1a69eb);if(!_0x46908d)return[];const _0x1dd0e4=_0x46908d[_0x1affce(0x2c7)](/(?<=[.!?;…])\s+/),_0x1974c9=[];let _0x5dbc74='';function _0x56914d(_0x33d882){const _0x2b7397=_0x1affce,_0xb784ea=_0x33d882['split'](/(?<=[,;])\s+/);let _0x4f496a='';for(let _0x28f7a1 of _0xb784ea){_0x28f7a1=_0x28f7a1[_0x2b7397(0x21e)]();if(!_0x28f7a1)continue;if(_0x28f7a1[_0x2b7397(0x269)]>=_0xfdf8e6){_0x4f496a&&(_0x1974c9['push'](_0x4f496a),_0x4f496a='');const _0x138e26=_0x28f7a1['split'](/\s+/);let _0x9e76d2='';for(const _0x4b0793 of _0x138e26){if(!_0x4b0793)continue;if(_0x9e76d2[_0x2b7397(0x269)]+_0x4b0793[_0x2b7397(0x269)]+0x1<_0xfdf8e6)_0x9e76d2+=(_0x9e76d2?'\x20':'')+_0x4b0793;else{if(_0x9e76d2)_0x1974c9[_0x2b7397(0x270)](_0x9e76d2);_0x9e76d2=_0x4b0793;}}if(_0x9e76d2)_0x4f496a=_0x9e76d2;}else{if(_0x4f496a[_0x2b7397(0x269)]+_0x28f7a1[_0x2b7397(0x269)]+0x1<_0xfdf8e6)_0x4f496a+=(_0x4f496a?'\x20':'')+_0x28f7a1;else{if(_0x4f496a)_0x1974c9[_0x2b7397(0x270)](_0x4f496a);_0x4f496a=_0x28f7a1;}}}if(_0x4f496a)_0x5dbc74=_0x4f496a;}for(let _0xe5f91c of _0x1dd0e4){_0xe5f91c=_0xe5f91c[_0x1affce(0x21e)]();if(!_0xe5f91c)continue;if(_0x5dbc74[_0x1affce(0x269)]+_0xe5f91c[_0x1affce(0x269)]<_0xfdf8e6)_0x5dbc74+=(_0x5dbc74?'\x20':'')+_0xe5f91c;else{if(_0x5dbc74)_0x1974c9['push'](_0x5dbc74);_0x5dbc74='';if(_0xe5f91c[_0x1affce(0x269)]>=_0xfdf8e6)_0x56914d(_0xe5f91c);else _0x5dbc74=_0xe5f91c;}}if(_0x5dbc74)_0x1974c9[_0x1affce(0x270)](_0x5dbc74);return _0x1974c9;}function _0x4f31c9(_0x9973fa){const _0x4de58a=_0x2d6be8,_0x2cc5d1=(_0x9973fa[_0x4de58a(0x23c)]||'')['toLowerCase']()[_0x4de58a(0x22e)]('_','-'),_0x10980a=(_0x9973fa[_0x4de58a(0x2ce)]||'')[_0x4de58a(0x257)]();return _0x2cc5d1[_0x4de58a(0x28f)]('vi')||_0x2cc5d1[_0x4de58a(0x390)](_0x4de58a(0x358))||_0x10980a[_0x4de58a(0x390)]('vietnam')||_0x10980a[_0x4de58a(0x390)]('vietnamese')||_0x10980a[_0x4de58a(0x390)]('hoaimy')||_0x10980a[_0x4de58a(0x390)](_0x4de58a(0x25d))||_0x10980a[_0x4de58a(0x390)](_0x4de58a(0x2a0))||_0x10980a[_0x4de58a(0x390)](_0x4de58a(0x3ba))||_0x10980a[_0x4de58a(0x390)](_0x4de58a(0x31e))||_0x10980a[_0x4de58a(0x390)](_0x4de58a(0x201))||_0x10980a[_0x4de58a(0x390)]('hanoi')||_0x10980a[_0x4de58a(0x390)]('an\x20');}function _0x25ca4b(){const _0x40efa6=_0x2d6be8;_0x3a2abc=speechSynthesis[_0x40efa6(0x2e0)]()||[],console['log'](_0x40efa6(0x28a),_0x3a2abc[_0x40efa6(0x269)]);const _0x229e51=_0x3a2abc[_0x40efa6(0x28b)](_0x4f31c9);_0x229e51[_0x40efa6(0x269)]?console['log'](_0x40efa6(0x274),_0x229e51[_0x40efa6(0x285)](_0x4381d7=>_0x4381d7[_0x40efa6(0x2ce)]+'\x20('+_0x4381d7[_0x40efa6(0x23c)]+')')):console[_0x40efa6(0x2e5)](_0x40efa6(0x3a0)),_0x340364();}speechSynthesis[_0x2d6be8(0x1fe)]!==undefined&&(speechSynthesis[_0x2d6be8(0x1fe)]=_0x25ca4b);_0x25ca4b(),setTimeout(_0x25ca4b,0x12c),setTimeout(_0x25ca4b,0x320),setTimeout(_0x25ca4b,0x5dc);function _0x5895eb(_0x4a2b81,_0x4aeaa6){const _0x3c04c6=_0x2d6be8,_0xf599ea=_0x2e9d03[_0x4aeaa6]||_0x2e9d03['vi'],_0x2a756b=(_0x4a2b81[_0x3c04c6(0x2ce)]||'')[_0x3c04c6(0x257)](),_0x5233e4=(_0x4a2b81[_0x3c04c6(0x23c)]||'')[_0x3c04c6(0x257)]()[_0x3c04c6(0x22e)]('_','-'),_0x3f5940=_0xf599ea[_0x3c04c6(0x292)][_0x3c04c6(0x257)]()[_0x3c04c6(0x3de)](0x0,0x2);let _0x5739bd=0x0;if(_0x4aeaa6==='vi'&&_0x4f31c9(_0x4a2b81)){_0x5739bd+=0xc8;if(_0x5233e4==='vi-vn'||_0x5233e4==='vi')_0x5739bd+=0x1e;}else{if(_0x5233e4===_0xf599ea[_0x3c04c6(0x292)][_0x3c04c6(0x257)]()||_0x5233e4===_0xf599ea[_0x3c04c6(0x292)][_0x3c04c6(0x257)]()[_0x3c04c6(0x22e)]('-','_'))_0x5739bd+=0x64;else{if(_0x5233e4['startsWith'](_0x3f5940+'-')||_0x5233e4[_0x3c04c6(0x28f)](_0x3f5940+'_'))_0x5739bd+=0x46;else _0x5233e4[_0x3c04c6(0x28f)](_0x3f5940)?_0x5739bd+=0x28:_0x5739bd-=0x64;}}if(_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x2aa)))_0x5739bd+=0x32;if(_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x2f2)))_0x5739bd+=0x2d;if(_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x29e)))_0x5739bd+=0x23;if(_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x300))||_0x2a756b['includes']('premium'))_0x5739bd+=0x1e;if(_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x328)))_0x5739bd+=0x19;if(_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x260)))_0x5739bd+=0x19;if(_0x2a756b['includes'](_0x3c04c6(0x363))||_0x2a756b['includes'](_0x3c04c6(0x368))||_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x30b)))_0x5739bd+=0x14;return _0xf599ea[_0x3c04c6(0x33e)]&&_0xf599ea[_0x3c04c6(0x33e)][_0x3c04c6(0x269)]&&_0xf599ea[_0x3c04c6(0x33e)]['forEach']((_0x10f76a,_0x2e2db4)=>{const _0xfcbfee=_0x3c04c6;_0x2a756b[_0xfcbfee(0x390)](_0x10f76a[_0xfcbfee(0x257)]())&&(_0x5739bd+=(_0xf599ea[_0xfcbfee(0x33e)][_0xfcbfee(0x269)]-_0x2e2db4)*0x6);}),(_0x2a756b[_0x3c04c6(0x390)]('compact')||_0x2a756b['includes']('eloquence')||_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x3fb)))&&(_0x5739bd-=0x3c),_0x2a756b[_0x3c04c6(0x390)](_0x3c04c6(0x2cf))&&(_0x4aeaa6==='vi'||_0x4aeaa6==='th')&&(_0x5739bd-=0x5),_0x5739bd;}function _0x340364(){const _0x5de583=_0x2d6be8,_0x4f6eea=_0x2261f5,_0x32d7fe=_0x2e9d03[_0x4f6eea]||_0x2e9d03['vi'],_0x52cd74=_0x57b609[_0x5de583(0x22f)],_0x2d86e9=_0x52cd74!==''&&_0x3a2abc[_0x52cd74]?_0x3a2abc[_0x52cd74]:null;_0x57b609[_0x5de583(0x1dd)]='';if(!_0x3a2abc[_0x5de583(0x269)]){const _0x1c0d62=document[_0x5de583(0x399)](_0x5de583(0x39e));_0x1c0d62[_0x5de583(0x2f6)]=_0x5de583(0x2d6),_0x57b609[_0x5de583(0x30f)](_0x1c0d62);return;}const _0x4c090a=_0x3a2abc[_0x5de583(0x285)](_0x3fa086=>({'v':_0x3fa086,'s':_0x5895eb(_0x3fa086,_0x4f6eea)}))[_0x5de583(0x209)]((_0x556995,_0x5b2f5a)=>_0x5b2f5a['s']-_0x556995['s']);let _0x1176a2=_0x4c090a['filter'](_0x27467d=>_0x27467d['s']>0x0);const _0x564247=_0x3a2abc[_0x5de583(0x22a)](_0x4f31c9),_0x5426be=localStorage[_0x5de583(0x2a2)](_0x5de583(0x28e))||'vi',_0xeaf085=typeof translations!==_0x5de583(0x3b2)&&translations[_0x5426be]?translations[_0x5426be]:null;if(_0x1176a2['length']===0x0||_0x4f6eea==='vi'&&!_0x564247){const _0x2a3d0c=document[_0x5de583(0x399)]('option');_0x2a3d0c[_0x5de583(0x22f)]='',_0x2a3d0c[_0x5de583(0x2f6)]=_0xeaf085?_0xeaf085[_0x5de583(0x208)][_0x5de583(0x22e)](_0x5de583(0x211),_0x32d7fe[_0x5de583(0x2ce)]):_0x5de583(0x40c)+_0x32d7fe[_0x5de583(0x2ce)],_0x57b609[_0x5de583(0x30f)](_0x2a3d0c);const _0x54ceb5=document[_0x5de583(0x399)](_0x5de583(0x39e));_0x54ceb5[_0x5de583(0x352)]=!![],_0x54ceb5['textContent']=_0x5426be==='en'?_0x5de583(0x3b1)+_0x3a2abc[_0x5de583(0x269)]+_0x5de583(0x349):_0x5de583(0x3e9)+_0x3a2abc['length']+_0x5de583(0x349),_0x57b609[_0x5de583(0x30f)](_0x54ceb5),_0x4c090a[_0x5de583(0x410)](({v:_0x1ce559})=>{const _0xfe79f3=_0x5de583,_0x3eec77=document[_0xfe79f3(0x399)](_0xfe79f3(0x39e));_0x3eec77[_0xfe79f3(0x22f)]=_0x3a2abc[_0xfe79f3(0x27e)](_0x1ce559),_0x3eec77[_0xfe79f3(0x2f6)]=_0x1ce559[_0xfe79f3(0x2ce)]+'\x20('+_0x1ce559[_0xfe79f3(0x23c)]+')',_0x57b609[_0xfe79f3(0x30f)](_0x3eec77);});_0x4f6eea==='vi'?_0x28c64d['innerHTML']=_0x5de583(0x34a)+_0x5de583(0x2bc)+_0x5de583(0x313)+_0x5de583(0x27a):_0x28c64d[_0x5de583(0x2f6)]=_0xeaf085?_0xeaf085[_0x5de583(0x413)][_0x5de583(0x22e)](_0x5de583(0x211),_0x32d7fe[_0x5de583(0x2ce)]):_0x5de583(0x40c)+_0x32d7fe[_0x5de583(0x2ce)]+_0x5de583(0x3f0);return;}_0x1176a2[_0x5de583(0x410)](({v:_0x414142},_0x485abc)=>{const _0x372386=_0x5de583,_0x2ce451=document[_0x372386(0x399)](_0x372386(0x39e));_0x2ce451[_0x372386(0x22f)]=_0x3a2abc[_0x372386(0x27e)](_0x414142);const _0x2b491c=_0x485abc===0x0?'\x20★':'';_0x2ce451[_0x372386(0x2f6)]=_0x414142[_0x372386(0x2ce)]+'\x20('+_0x414142['lang']+')'+_0x2b491c,_0x57b609['appendChild'](_0x2ce451);});const _0x5c6df8=_0x4c090a['filter'](_0xf0bbd0=>_0xf0bbd0['s']<=0x0);if(_0x5c6df8[_0x5de583(0x269)]>0x0){const _0x3a9e81=document[_0x5de583(0x399)](_0x5de583(0x39e));_0x3a9e81[_0x5de583(0x352)]=!![],_0x3a9e81['textContent']=_0x5426be==='en'?_0x5de583(0x35c):_0x5de583(0x332),_0x57b609[_0x5de583(0x30f)](_0x3a9e81),_0x5c6df8[_0x5de583(0x3de)](0x0,0xf)[_0x5de583(0x410)](({v:_0x2a21e7})=>{const _0x30bbab=_0x5de583,_0x5530ae=document[_0x30bbab(0x399)](_0x30bbab(0x39e));_0x5530ae[_0x30bbab(0x22f)]=_0x3a2abc[_0x30bbab(0x27e)](_0x2a21e7),_0x5530ae[_0x30bbab(0x2f6)]=_0x2a21e7['name']+'\x20('+_0x2a21e7[_0x30bbab(0x23c)]+')',_0x57b609[_0x30bbab(0x30f)](_0x5530ae);});}_0x57b609[_0x5de583(0x22f)]=_0x3a2abc[_0x5de583(0x27e)](_0x1176a2[0x0]['v']);const _0x18763c=(_0x32d7fe[_0x5de583(0x292)]||_0x4f6eea)['toLowerCase']()[_0x5de583(0x2c7)]('-')[0x0],_0x41d0de=(_0x2d86e9?.[_0x5de583(0x23c)]||'')[_0x5de583(0x257)]()[_0x5de583(0x22e)]('_','-'),_0x2f5ec5=_0x2d86e9&&(_0x41d0de[_0x5de583(0x28f)](_0x18763c)||_0x41d0de['startsWith'](_0x4f6eea[_0x5de583(0x257)]()));if(_0x2f5ec5&&_0x5895eb(_0x2d86e9,_0x4f6eea)>0x0){const _0x2ca4e6=_0x3a2abc[_0x5de583(0x27e)](_0x2d86e9);_0x2ca4e6!==-0x1&&(_0x57b609[_0x5de583(0x22f)]=_0x2ca4e6);}_0x4f6eea==='vi'?_0x28c64d[_0x5de583(0x2f6)]=_0x564247?_0x5de583(0x3dd):'':_0x28c64d[_0x5de583(0x2f6)]=_0x5de583(0x2ff)+_0x1176a2[_0x5de583(0x269)]+_0x5de583(0x396)+_0x32d7fe[_0x5de583(0x2ce)];}function _0x108a90(){const _0xbec397=_0x2d6be8,_0x23619c=parseInt(_0x57b609[_0xbec397(0x22f)],0xa);if(!isNaN(_0x23619c)&&_0x3a2abc[_0x23619c])return _0x3a2abc[_0x23619c];const _0x2e99aa=_0x3a2abc[_0xbec397(0x285)](_0x3862bb=>({'v':_0x3862bb,'s':_0x5895eb(_0x3862bb,_0x2261f5)}))[_0xbec397(0x209)]((_0x3f8596,_0x1a8d50)=>_0x1a8d50['s']-_0x3f8596['s']);return _0x2e99aa[0x0]?.['v']||null;}function _0x1fc1a5(){const _0x141276=_0x2d6be8;_0x39341c['textContent']='Câu:\x20'+(_0x42864d[_0x141276(0x269)]?_0xef65c3+0x1:0x0)+_0x141276(0x27b)+_0x42864d[_0x141276(0x269)];if(_0x367f62===_0x141276(0x1d5))_0x4e0f6b[_0x141276(0x2f6)]='TẠM\x20DỪNG',_0x528f9c[_0x141276(0x2f6)]='⏸',_0x5c40bc['style'][_0x141276(0x408)]=_0x141276(0x2d1);else _0x367f62==='paused'?(_0x4e0f6b[_0x141276(0x2f6)]=_0x141276(0x3e5),_0x528f9c[_0x141276(0x2f6)]='▶',_0x5c40bc[_0x141276(0x2c4)]['display']='inline-flex'):(_0x4e0f6b[_0x141276(0x2f6)]=_0x141276(0x32c),_0x528f9c[_0x141276(0x2f6)]='▶',_0x5c40bc[_0x141276(0x2c4)][_0x141276(0x408)]=_0x141276(0x377));_0x189a20[_0x141276(0x2f6)]=_0xa5c6d8[_0x371937]===0x1?'1x':_0xa5c6d8[_0x371937]+'x';}function _0x1d7664(_0x52d9ef){const _0x3c848f=_0x2d6be8;if(_0x367f62!==_0x3c848f(0x1d5)||_0x52d9ef>=_0x42864d[_0x3c848f(0x269)]){_0x367f62=_0x3c848f(0x253),_0x68ebd9=![],_0x5ad72a=null,_0x1fc1a5(),_0x28c64d[_0x3c848f(0x2f6)]=_0x52d9ef>=_0x42864d['length']?_0x3c848f(0x1ee):'';return;}if(_0x68ebd9)return;_0x68ebd9=!![],_0xef65c3=_0x52d9ef,_0x1fc1a5();const _0x372e0f=_0x52d9ef===0x0,_0x3415f1=_0x372e0f?0xa0:0x0,_0x24068c=()=>{const _0xcddf5c=_0x3c848f,_0x4947a8=_0x42864d[_0x52d9ef],_0x27f9d4=new SpeechSynthesisUtterance(_0x4947a8),_0x395731=_0x108a90(),_0x464c8f=(_0x2e9d03[_0x2261f5]||_0x2e9d03['vi'])[_0xcddf5c(0x292)];_0x395731?(_0x27f9d4['voice']=_0x395731,_0x27f9d4[_0xcddf5c(0x23c)]=_0x395731[_0xcddf5c(0x23c)]||_0x464c8f):_0x27f9d4[_0xcddf5c(0x23c)]=_0x464c8f;let _0x4a85d2=_0x38e047*_0xa5c6d8[_0x371937];if(_0x2261f5==='vi')_0x4a85d2=Math[_0xcddf5c(0x24a)](_0x4a85d2*0.85,1.6);else{if(_0x2261f5==='en')_0x4a85d2=Math[_0xcddf5c(0x24a)](_0x4a85d2*0.92,1.8);else['ja','zh','ko','th'][_0xcddf5c(0x390)](_0x2261f5)&&(_0x4a85d2=Math[_0xcddf5c(0x24a)](_0x4a85d2*0.9,1.7));}_0x27f9d4[_0xcddf5c(0x214)]=Math[_0xcddf5c(0x1be)](0.5,Math[_0xcddf5c(0x24a)](_0x4a85d2,0x2)),_0x27f9d4['pitch']=0x1,_0x27f9d4[_0xcddf5c(0x2c0)]=0x1,_0x27f9d4[_0xcddf5c(0x3b6)]=()=>{const _0x22669a=_0xcddf5c;_0x68ebd9=![],_0x5ad72a=null;if(_0x367f62===_0x22669a(0x1d5)){_0xef65c3++;const _0x46fd3d=_0x2261f5==='en'?0xb4:0x8c;setTimeout(()=>_0x1d7664(_0xef65c3),_0x46fd3d);}},_0x27f9d4[_0xcddf5c(0x315)]=_0x52d685=>{const _0x2f05e7=_0xcddf5c;console['warn'](_0x2f05e7(0x3e6),_0x52d685),_0x68ebd9=![],_0x5ad72a=null;if(_0x52d685[_0x2f05e7(0x383)]===_0x2f05e7(0x37d)||_0x52d685[_0x2f05e7(0x383)]===_0x2f05e7(0x220)){_0x28c64d['textContent']=_0x2f05e7(0x3cc),_0x367f62=_0x2f05e7(0x253),_0x1fc1a5();return;}_0x367f62===_0x2f05e7(0x1d5)&&(_0xef65c3++,setTimeout(()=>_0x1d7664(_0xef65c3),0x50));},_0x5ad72a=_0x27f9d4;try{(speechSynthesis[_0xcddf5c(0x26c)]||speechSynthesis['pending']||speechSynthesis[_0xcddf5c(0x3da)])&&speechSynthesis[_0xcddf5c(0x1de)]();}catch(_0x12345f){}speechSynthesis[_0xcddf5c(0x21c)](_0x27f9d4),_0x28c64d[_0xcddf5c(0x2f6)]=_0xcddf5c(0x400)+(_0x52d9ef+0x1)+'/'+_0x42864d[_0xcddf5c(0x269)]+_0xcddf5c(0x421)+_0x464c8f;};_0x3415f1>0x0?setTimeout(_0x24068c,_0x3415f1):_0x24068c();}function _0x892e2(){const _0x4df446=_0x2d6be8;if(!_0x42864d[_0x4df446(0x269)]){_0x28c64d[_0x4df446(0x2f6)]=_0x4df446(0x3f3);return;}if(_0x367f62===_0x4df446(0x1d5)){try{speechSynthesis['pause']();}catch(_0x4e6a89){}_0x367f62=_0x4df446(0x3da),_0x68ebd9=![],_0x28c64d[_0x4df446(0x2f6)]='Đã\x20tạm\x20dừng.',_0x1fc1a5();}else{if(_0x367f62===_0x4df446(0x3da)){try{speechSynthesis[_0x4df446(0x232)]();}catch(_0x2682c4){}_0x367f62=_0x4df446(0x1d5),_0x28c64d[_0x4df446(0x2f6)]=_0x4df446(0x2d5),_0x1fc1a5(),setTimeout(()=>{const _0x1769a4=_0x4df446;_0x367f62===_0x1769a4(0x1d5)&&!speechSynthesis['speaking']&&!speechSynthesis[_0x1769a4(0x3da)]&&(_0x68ebd9=![],_0x1d7664(_0xef65c3));},0x50);}else{try{speechSynthesis[_0x4df446(0x1de)]();}catch(_0x551657){}_0x367f62=_0x4df446(0x1d5),_0x68ebd9=![],_0x5ad72a=null;if(_0xef65c3>=_0x42864d[_0x4df446(0x269)])_0xef65c3=0x0;_0x1fc1a5(),_0x1d7664(_0xef65c3);}}}function _0xc3a3f7(){const _0x372243=_0x2d6be8;try{speechSynthesis[_0x372243(0x1de)]();}catch(_0x387866){}_0x367f62=_0x372243(0x253),_0x68ebd9=![],_0x5ad72a=null,_0xef65c3=0x0,_0x371937=0x0,_0x1fc1a5(),_0x28c64d[_0x372243(0x2f6)]='Đã\x20dừng.';}function _0x176778(){const _0x4aa137=_0x2d6be8;_0x371937=(_0x371937+0x1)%_0xa5c6d8[_0x4aa137(0x269)],_0x1fc1a5();if(_0x367f62===_0x4aa137(0x1d5)){try{speechSynthesis[_0x4aa137(0x1de)]();}catch(_0x4bb53){}_0x68ebd9=![],_0x5ad72a=null,setTimeout(()=>_0x1d7664(_0xef65c3),0x32);}}function _0x5a067a(_0x1e07cc){const _0x96d5de=_0x2d6be8;if(!_0x42864d['length'])return;const _0x575e6c=Math['max'](0x0,Math['min'](_0x42864d[_0x96d5de(0x269)]-0x1,_0x1e07cc-0x1));_0xef65c3=_0x575e6c,_0x50237e[_0x96d5de(0x22f)]=_0x575e6c+0x1,_0x1fc1a5();if(_0x367f62==='playing'){try{speechSynthesis[_0x96d5de(0x1de)]();}catch(_0x503f4e){}_0x68ebd9=![],_0x5ad72a=null,setTimeout(()=>_0x1d7664(_0xef65c3),0x32);}}async function _0x15402c(_0x3088c1){const _0x32fbc4=_0x2d6be8;_0x58603a=_0x3088c1[_0x32fbc4(0x21e)]();if(!_0x58603a){_0x5d2f55[_0x32fbc4(0x2f6)]='Không\x20có\x20nội\x20dung.';return;}_0x2261f5=_0x31af3f(_0x58603a);const _0xe408fa=_0x2e9d03[_0x2261f5]||_0x2e9d03['vi'];_0x34ec4e[_0x32fbc4(0x2f6)]=_0x2261f5+_0x32fbc4(0x421)+_0xe408fa[_0x32fbc4(0x2ce)],_0x42864d=_0x153b6d(_0x58603a,_0x2261f5),_0x2c3664[_0x32fbc4(0x2f6)]=_0x58603a,_0x2c3664[_0x32fbc4(0x2c4)][_0x32fbc4(0x320)]=_0x579864+'px',_0x30789e(),_0xef65c3=0x0,_0x1fc1a5(),_0x340364(),_0x5d2f55[_0x32fbc4(0x2f6)]=_0x32fbc4(0x304)+_0x42864d['length']+_0x32fbc4(0x41b)+_0xe408fa[_0x32fbc4(0x2ce)],_0x28c64d[_0x32fbc4(0x2f6)]='';}async function _0x4d87fc(_0x456862){const _0x3158a4=_0x2d6be8;_0x5d2f55['innerHTML']=_0x3158a4(0x318);if(!/^https?:\/\//i[_0x3158a4(0x267)](_0x456862))_0x456862=_0x3158a4(0x3f4)+_0x456862;async function _0x577120(_0x4ea1bc=0x1){const _0x29fa0b=_0x3158a4,_0x3d6ff6=_0x29fa0b(0x376)+_0x456862,_0x3bf009=await fetch(_0x3d6ff6,{'method':_0x29fa0b(0x21d),'signal':AbortSignal[_0x29fa0b(0x3bd)](0x4650),'headers':{'Accept':'text/plain','X-Remove-Selector':_0x29fa0b(0x1ea),'X-Respond-With':_0x29fa0b(0x429),'X-No-Cache':_0x29fa0b(0x2e9),'User-Agent':_0x29fa0b(0x298)}});if(!_0x3bf009['ok'])throw new Error(_0x29fa0b(0x3b0)+_0x3bf009[_0x29fa0b(0x1e4)]);let _0xfbf592=await _0x3bf009[_0x29fa0b(0x268)]();_0xfbf592=_0xfbf592['replace'](/^Title:.*$/im,'')[_0x29fa0b(0x22e)](/^URL Source:.*$/im,'')[_0x29fa0b(0x22e)](/^Published Time:.*$/im,'')[_0x29fa0b(0x22e)](/^Markdown Content:.*$/im,''),_0xfbf592=_0xfbf592[_0x29fa0b(0x22e)](/!\[.*?\]\([^)]*\)/g,'')['replace'](/\[([^\]]+)\]\([^)]+\)/g,'$1')['replace'](/\]\([^)]*\)/g,'')[_0x29fa0b(0x22e)](/https?:\/\/\S+/gi,'')[_0x29fa0b(0x22e)](/<[^>]*>/g,'')[_0x29fa0b(0x22e)](/#{1,6}\s?/g,'')[_0x29fa0b(0x22e)](/[\*_~`>]/g,'')['replace'](/^\s*[\*\-]\s*/gm,''),_0xfbf592=_0xfbf592[_0x29fa0b(0x22e)](/^(Chương trước|Chương sau|Danh sách chương|Mục lục|Báo lỗi|Cầu kim phiếu|Cầu đánh giá|Tải app).*$/gmi,'')[_0x29fa0b(0x22e)](/^(Bạn đang đọc truyện|Nguồn:|Converter:|Tác giả:|Thể loại:).*$/gmi,'')[_0x29fa0b(0x22e)](/^Thứ\s+[a-z0-9,:\s/()+-]+/gmi,'')[_0x29fa0b(0x22e)](/^\d{1,2}\/\d{1,2}\/\d{4}.*$/gm,'');const _0x1dc527=_0xfbf592[_0x29fa0b(0x2c7)]('\x0a')[_0x29fa0b(0x285)](_0x1347d5=>_0x1347d5[_0x29fa0b(0x21e)]())[_0x29fa0b(0x28b)](Boolean);let _0x25cb66=[];for(let _0x64fa0d=0x0;_0x64fa0d<_0x1dc527[_0x29fa0b(0x269)];_0x64fa0d++){if(_0x64fa0d>0x0&&_0x1dc527[_0x64fa0d]===_0x1dc527[_0x64fa0d-0x1])continue;if(_0x1dc527[_0x64fa0d][_0x29fa0b(0x269)]<0x6&&!/^[0-9A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝĂĐĨŨƠƯ]/i[_0x29fa0b(0x267)](_0x1dc527[_0x64fa0d]))continue;_0x25cb66[_0x29fa0b(0x270)](_0x1dc527[_0x64fa0d]);}_0xfbf592=_0x25cb66[_0x29fa0b(0x2ed)]('\x0a\x0a'),_0xfbf592=_0x11eb95(_0xfbf592);if(_0xfbf592[_0x29fa0b(0x269)]>0x3c)return _0xfbf592;console['warn'](_0x29fa0b(0x2f0),_0xfbf592[_0x29fa0b(0x269)],_0x29fa0b(0x25a),_0xfbf592[_0x29fa0b(0x3de)](0x0,0x96));throw new Error('Jina\x20trả\x20về\x20nội\x20dung\x20quá\x20ngắn');}try{const _0x35b4aa=await _0x577120(0x1);return _0x5d2f55['textContent']=_0x3158a4(0x1d4),_0x35b4aa;}catch(_0x20982d){console[_0x3158a4(0x430)](_0x3158a4(0x406),_0x20982d[_0x3158a4(0x3ab)]);}try{_0x5d2f55[_0x3158a4(0x1dd)]=_0x3158a4(0x2b2),await new Promise(_0x4afd44=>setTimeout(_0x4afd44,0x4b0));const _0x111464=await _0x577120(0x2);return _0x5d2f55['textContent']=_0x3158a4(0x26f),_0x111464;}catch(_0x12545b){console[_0x3158a4(0x430)](_0x3158a4(0x321),_0x12545b[_0x3158a4(0x3ab)]);}_0x5d2f55[_0x3158a4(0x1dd)]=_0x3158a4(0x31d);const _0x328386=[_0x47ec9c=>_0x3158a4(0x3a6)+encodeURIComponent(_0x47ec9c),_0x3f14cb=>_0x3158a4(0x1fc)+encodeURIComponent(_0x3f14cb),_0x40df44=>_0x3158a4(0x2ca)+encodeURIComponent(_0x40df44)];let _0x3d024f=null,_0x533ec4=null;for(const _0x4ca58a of _0x328386){try{const _0x46da58=await fetch(_0x4ca58a(_0x456862),{'signal':AbortSignal[_0x3158a4(0x3bd)](0x2ee0),'headers':{'User-Agent':_0x3158a4(0x2af),'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','Accept-Language':_0x3158a4(0x416)}});if(!_0x46da58['ok'])throw new Error(_0x3158a4(0x3a5)+_0x46da58[_0x3158a4(0x1e4)]);let _0x146f2c=await _0x46da58[_0x3158a4(0x268)]();if(_0x146f2c[_0x3158a4(0x21e)]()[_0x3158a4(0x28f)]('{'))try{const _0x22ce6a=JSON['parse'](_0x146f2c);_0x146f2c=_0x22ce6a[_0x3158a4(0x1fd)]||_0x22ce6a[_0x3158a4(0x39a)]||_0x146f2c;}catch(_0x13d9e7){}if(_0x146f2c&&_0x146f2c[_0x3158a4(0x269)]>0x1f4){_0x3d024f=_0x146f2c;break;}}catch(_0x5dab67){_0x533ec4=_0x5dab67,console[_0x3158a4(0x430)](_0x3158a4(0x281),_0x5dab67[_0x3158a4(0x3ab)]);}}if(!_0x3d024f)throw _0x533ec4||new Error(_0x3158a4(0x3dc));const _0x30de17=new DOMParser(),_0xb6c897=_0x30de17[_0x3158a4(0x3fe)](_0x3d024f,_0x3158a4(0x222)),_0x17393=[_0x3158a4(0x206),_0x3158a4(0x2c4),'noscript',_0x3158a4(0x1d1),_0x3158a4(0x340),'canvas',_0x3158a4(0x3ce),_0x3158a4(0x3bb),'picture',_0x3158a4(0x32a),'video',_0x3158a4(0x3a7),'nav',_0x3158a4(0x31f),_0x3158a4(0x345),_0x3158a4(0x2ef),_0x3158a4(0x1c2),_0x3158a4(0x39b),_0x3158a4(0x242),_0x3158a4(0x342),_0x3158a4(0x40e),_0x3158a4(0x265),'.ads',_0x3158a4(0x325),'.comments','#comments',_0x3158a4(0x28c),_0x3158a4(0x20e),_0x3158a4(0x1e6),_0x3158a4(0x3d0),_0x3158a4(0x1ba),_0x3158a4(0x2a6),_0x3158a4(0x3cf),_0x3158a4(0x317),_0x3158a4(0x3fd),'.nav-spec',_0x3158a4(0x2be)];_0x17393['forEach'](_0xc265b5=>{const _0x50763e=_0x3158a4;try{_0xb6c897[_0x50763e(0x3f5)](_0xc265b5)[_0x50763e(0x410)](_0x4cee1f=>_0x4cee1f[_0x50763e(0x367)]());}catch(_0x4e6dba){}});const _0x342680=_0xb6c897[_0x3158a4(0x3d8)](_0x3158a4(0x23e))?.[_0x3158a4(0x1d6)]?.[_0x3158a4(0x21e)]()||'',{selector:_0x4aa1f6}=_0xf5cce4();let _0x11f73d=null;if(_0x4aa1f6)try{const _0x59183=_0x4aa1f6[_0x3158a4(0x2c7)](',')[_0x3158a4(0x285)](_0x26e017=>_0x26e017['trim']())[_0x3158a4(0x28b)](Boolean);for(const _0x4e51e of _0x59183){const _0x137eee=_0xb6c897['querySelector'](_0x4e51e);if(_0x137eee&&_0x137eee[_0x3158a4(0x1d6)][_0x3158a4(0x21e)]()['length']>0x78){_0x11f73d=_0x137eee;break;}}}catch(_0xf61ff6){console[_0x3158a4(0x430)](_0x3158a4(0x375),_0xf61ff6);}if(!_0x11f73d){const _0x44688a=[_0x3158a4(0x439),_0x3158a4(0x407),_0x3158a4(0x42c),_0x3158a4(0x35a),'.chap-content',_0x3158a4(0x20f),_0x3158a4(0x301),'.fck_detail',_0x3158a4(0x42d),_0x3158a4(0x1e3),_0x3158a4(0x395),_0x3158a4(0x39d),_0x3158a4(0x324),'main'];for(const _0x2ab4a0 of _0x44688a){const _0x78b3e0=_0xb6c897[_0x3158a4(0x3d8)](_0x2ab4a0);if(_0x78b3e0&&_0x78b3e0[_0x3158a4(0x1d6)][_0x3158a4(0x21e)]()[_0x3158a4(0x269)]>0x96){_0x11f73d=_0x78b3e0;break;}}}if(!_0x11f73d){let _0x2ffacf=0x0;_0xb6c897[_0x3158a4(0x3f5)](_0x3158a4(0x2cc))[_0x3158a4(0x410)](_0x233fd8=>{const _0x1a0bd9=_0x3158a4,_0x6d261f=_0x233fd8['innerText']['trim']()[_0x1a0bd9(0x269)];_0x6d261f>_0x2ffacf&&(_0x2ffacf=_0x6d261f,_0x11f73d=_0x233fd8);});}let _0x282fc0='';if(_0x11f73d){const _0x26853c=_0x11f73d[_0x3158a4(0x392)](!![]);_0x26853c[_0x3158a4(0x3f5)]('br')[_0x3158a4(0x410)](_0x68bed=>_0x68bed[_0x3158a4(0x2e6)]('\x0a'));const _0x66d01b=_0x26853c[_0x3158a4(0x1d6)][_0x3158a4(0x2c7)]('\x0a');_0x282fc0=_0x66d01b[_0x3158a4(0x285)](_0xc67127=>_0xc67127[_0x3158a4(0x21e)]())['filter'](_0x42ceb5=>{const _0x16c53b=_0x3158a4;if(_0x42ceb5[_0x16c53b(0x269)]<0x3)return![];if(/^(Chương trước|Chương sau|Danh sách chương|Mục lục|Báo lỗi|Cầu kim phiếu|Cầu đánh giá)/i[_0x16c53b(0x267)](_0x42ceb5))return![];return!![];})[_0x3158a4(0x2ed)]('\x0a\x0a');}let _0x44ad66=[_0x342680,_0x282fc0]['filter'](Boolean)[_0x3158a4(0x2ed)]('\x0a\x0a');_0x44ad66=_0x44ad66[_0x3158a4(0x22e)](/https?:\/\/\S+/gi,'')[_0x3158a4(0x22e)](/\n{3,}/g,'\x0a\x0a')[_0x3158a4(0x21e)](),_0x44ad66=_0x11eb95(_0x44ad66);if(_0x44ad66[_0x3158a4(0x269)]<0x32)throw new Error('Không\x20thể\x20bóc\x20tách\x20nội\x20dung\x20bài\x20viết/truyện.');return _0x5d2f55[_0x3158a4(0x2f6)]=_0x3158a4(0x3c4),_0x44ad66;}_0x265a5b(_0x2d6be8(0x213))['addEventListener']('click',async()=>{const _0x5310c4=_0x2d6be8,_0x4f1a9b=document[_0x5310c4(0x3d8)](_0x5310c4(0x2bf))[_0x5310c4(0x372)]['tab']===_0x5310c4(0x312);try{if(_0x4f1a9b){const _0x10d51f=_0x42dc62[_0x5310c4(0x22f)][_0x5310c4(0x21e)]();if(!_0x10d51f){_0x5d2f55[_0x5310c4(0x2f6)]=_0x5310c4(0x230);return;}const _0x571212=await _0x4d87fc(_0x10d51f);_0x48921d['value']=_0x571212,await _0x15402c(_0x571212);}else await _0x15402c(_0x48921d[_0x5310c4(0x22f)]);}catch(_0x5dda7a){console['error'](_0x5dda7a),_0x5d2f55[_0x5310c4(0x2f6)]='Lỗi:\x20'+(_0x5dda7a[_0x5310c4(0x3ab)]||_0x5dda7a);}}),_0x265a5b('btnClear')[_0x2d6be8(0x43a)](_0x2d6be8(0x311),()=>{const _0x33cebb=_0x2d6be8;_0xc3a3f7(),_0x48921d['value']='',_0x42dc62[_0x33cebb(0x22f)]='',_0x2c3664[_0x33cebb(0x2f6)]='',_0x42864d=[],_0x58603a='',_0xef65c3=0x0,_0x1fc1a5(),_0x5d2f55[_0x33cebb(0x2f6)]='',_0x28c64d[_0x33cebb(0x2f6)]='';}),_0x265a5b(_0x2d6be8(0x226))[_0x2d6be8(0x43a)](_0x2d6be8(0x311),_0x892e2),_0x265a5b(_0x2d6be8(0x1ec))['addEventListener'](_0x2d6be8(0x311),_0xc3a3f7),_0x189a20['addEventListener'](_0x2d6be8(0x311),_0x176778),_0x265a5b(_0x2d6be8(0x3c6))['addEventListener'](_0x2d6be8(0x311),()=>{const _0x2a3071=_0x2d6be8,_0x5178c1=parseInt(_0x50237e[_0x2a3071(0x22f)],0xa);if(!isNaN(_0x5178c1))_0x5a067a(_0x5178c1);}),_0x50237e[_0x2d6be8(0x43a)]('keydown',_0x1d99cc=>{const _0x4078ba=_0x2d6be8;if(_0x1d99cc[_0x4078ba(0x2b0)]===_0x4078ba(0x1e8)){const _0x4a8651=parseInt(_0x50237e[_0x4078ba(0x22f)],0xa);if(!isNaN(_0x4a8651))_0x5a067a(_0x4a8651);}}),_0x265a5b(_0x2d6be8(0x331))['addEventListener'](_0x2d6be8(0x311),()=>{const _0x3efcd3=_0x2d6be8;_0x579864>0xc&&(_0x579864-=0x2,_0x2c3664[_0x3efcd3(0x2c4)][_0x3efcd3(0x320)]=_0x579864+'px',_0x265a5b(_0x3efcd3(0x1d7))[_0x3efcd3(0x2f6)]=_0x579864);}),_0x265a5b(_0x2d6be8(0x329))[_0x2d6be8(0x43a)](_0x2d6be8(0x311),()=>{const _0x5af75c=_0x2d6be8;_0x579864<0x20&&(_0x579864+=0x2,_0x2c3664[_0x5af75c(0x2c4)][_0x5af75c(0x320)]=_0x579864+'px',_0x265a5b(_0x5af75c(0x1d7))['textContent']=_0x579864);}),_0x265a5b(_0x2d6be8(0x1c6))[_0x2d6be8(0x43a)](_0x2d6be8(0x311),async()=>{const _0x10e72c=_0x2d6be8,_0x4acc23=(_0x58603a||_0x2c3664[_0x10e72c(0x1d6)]||'')[_0x10e72c(0x21e)]();if(!_0x4acc23){_0x28c64d[_0x10e72c(0x2f6)]='❌\x20Chưa\x20có\x20nội\x20dung\x20để\x20xuất\x20PDF.';return;}_0x28c64d[_0x10e72c(0x2f6)]=_0x10e72c(0x32e);try{const {jsPDF:_0x523cd8}=window[_0x10e72c(0x405)],_0x537903=new Date()[_0x10e72c(0x246)]('vi-VN',{'year':_0x10e72c(0x401),'month':_0x10e72c(0x24d),'day':'2-digit','hour':_0x10e72c(0x24d),'minute':_0x10e72c(0x24d)}),_0x3d3784=0x2ee,_0x109d58=0x424;function _0x573582(){const _0x8a2f27=_0x10e72c,_0x11667c=document[_0x8a2f27(0x399)]('div');return _0x11667c[_0x8a2f27(0x2c4)][_0x8a2f27(0x23b)]=_0x8a2f27(0x339)+_0x3d3784+_0x8a2f27(0x1fb)+_0x109d58+'px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2040px\x2045px\x2035px\x2045px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#ffffff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#1e293b;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20-apple-system,\x20BlinkMacSystemFont,\x20\x22Segoe\x20UI\x22,\x20Roboto,\x20\x22Helvetica\x20Neue\x22,\x20Arial,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2013.5px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20space-between;\x0a\x20\x20\x20\x20\x20\x20',_0x11667c['innerHTML']=_0x8a2f27(0x2fd)+_0x537903+_0x8a2f27(0x385),_0x11667c;}const _0x182d3b=_0x4acc23['split']('\x0a')['filter'](_0x2291f8=>_0x2291f8['trim']()!==''),_0x549b19=[];for(const _0x37ccba of _0x182d3b){if(_0x37ccba[_0x10e72c(0x269)]>0x15e){const _0x2fc08a=_0x37ccba['match'](/[^.!?]+[.!?]+|\s*[^.!?]+$/g)||[_0x37ccba];_0x549b19[_0x10e72c(0x270)](..._0x2fc08a);}else _0x549b19[_0x10e72c(0x270)](_0x37ccba);}const _0x25195d=[];let _0x1a8ed5=_0x573582();document[_0x10e72c(0x351)][_0x10e72c(0x30f)](_0x1a8ed5),_0x25195d[_0x10e72c(0x270)](_0x1a8ed5);let _0x259669=_0x1a8ed5['querySelector'](_0x10e72c(0x1b6));for(const _0x580e89 of _0x549b19){const _0x161e0d=document[_0x10e72c(0x399)]('p');_0x161e0d[_0x10e72c(0x2c4)][_0x10e72c(0x23b)]=_0x10e72c(0x309),_0x161e0d[_0x10e72c(0x2f6)]=_0x580e89,_0x259669[_0x10e72c(0x30f)](_0x161e0d),_0x259669[_0x10e72c(0x3c5)]>_0x259669[_0x10e72c(0x3e8)]&&(_0x259669[_0x10e72c(0x2f9)](_0x161e0d),_0x1a8ed5=_0x573582(),document[_0x10e72c(0x351)][_0x10e72c(0x30f)](_0x1a8ed5),_0x25195d[_0x10e72c(0x270)](_0x1a8ed5),_0x259669=_0x1a8ed5['querySelector'](_0x10e72c(0x1b6)),_0x259669[_0x10e72c(0x30f)](_0x161e0d));}const _0x1831cf=_0x25195d['length'];_0x25195d[_0x10e72c(0x410)]((_0x2d6399,_0x5d0b4c)=>{const _0x235321=_0x10e72c,_0x89af13=_0x2d6399[_0x235321(0x3d8)]('.page-number');if(_0x89af13)_0x89af13[_0x235321(0x2f6)]=_0x235321(0x1b3)+(_0x5d0b4c+0x1)+'\x20/\x20'+_0x1831cf;});const _0x4eb100=new _0x523cd8({'unit':'mm','format':'a4','orientation':_0x10e72c(0x287)});for(let _0x4dd19b=0x0;_0x4dd19b<_0x25195d['length'];_0x4dd19b++){if(_0x4dd19b>0x0)_0x4eb100[_0x10e72c(0x394)]();const _0x335ef9=await html2canvas(_0x25195d[_0x4dd19b],{'scale':0x2,'useCORS':!![],'backgroundColor':_0x10e72c(0x2d9),'logging':![]});_0x4eb100[_0x10e72c(0x264)](_0x335ef9[_0x10e72c(0x219)](_0x10e72c(0x3b3),0.95),_0x10e72c(0x3db),0x0,0x0,0xd2,0x129),document[_0x10e72c(0x351)][_0x10e72c(0x2f9)](_0x25195d[_0x4dd19b]);}_0x4eb100[_0x10e72c(0x359)]('ThaiThong_TTS_'+Date[_0x10e72c(0x217)]()+_0x10e72c(0x239)),_0x28c64d[_0x10e72c(0x2f6)]=_0x10e72c(0x29a);}catch(_0xdd885c){console['error'](_0xdd885c),_0x28c64d[_0x10e72c(0x2f6)]='❌\x20Lỗi\x20xuất\x20PDF:\x20'+(_0xdd885c['message']||_0xdd885c);}});let _0xe6f50e=null;_0x48921d[_0x2d6be8(0x43a)](_0x2d6be8(0x39b),()=>{clearTimeout(_0xe6f50e),_0xe6f50e=setTimeout(async()=>{const _0x236f73=_0x520d,_0x10df87=_0x48921d['value'],_0x3a6e7f=_0x11eb95(_0x10df87);_0x3a6e7f&&_0x3a6e7f!==_0x10df87&&(_0x48921d['value']=_0x3a6e7f);if(_0x3a6e7f&&typeof _0x15402c===_0x236f73(0x25f)){await _0x15402c(_0x3a6e7f);const _0x588f6a=document[_0x236f73(0x21a)]('loadStatus');if(_0x588f6a)_0x588f6a[_0x236f73(0x1dd)]='✅\x20Đã\x20tự\x20động\x20lọc\x20rác\x20và\x20sẵn\x20sàng\x20đọc!';}},0x258);}),_0x2c3664[_0x2d6be8(0x43a)]('input',()=>{_0x30789e();});const _0x4df41b=document[_0x2d6be8(0x21a)](_0x2d6be8(0x272));_0x4df41b&&_0x4df41b[_0x2d6be8(0x43a)]('click',()=>{const _0x5ccb72=_0x2d6be8,_0x2fa9ff=(_0x2c3664[_0x5ccb72(0x1d6)]||_0x2c3664[_0x5ccb72(0x2f6)]||'')['trim']();if(!_0x2fa9ff){_0x28c64d[_0x5ccb72(0x2f6)]=_0x5ccb72(0x357);return;}(_0x367f62==='playing'||_0x367f62===_0x5ccb72(0x3da))&&(speechSynthesis[_0x5ccb72(0x1de)](),_0x367f62=_0x5ccb72(0x253),_0x68ebd9=![]),_0x48921d['value']=_0x2fa9ff,_0x15402c(_0x2fa9ff),_0x28c64d['textContent']=_0x5ccb72(0x1ca),_0x1fc1a5();});_0x2c3664[_0x2d6be8(0x43a)](_0x2d6be8(0x3a1),_0x4eb929=>{const _0x59e63a=_0x2d6be8;if(_0x4eb929[_0x59e63a(0x387)]&&_0x4eb929['key']===_0x59e63a(0x1e8)){_0x4eb929[_0x59e63a(0x279)]();if(_0x4df41b)_0x4df41b[_0x59e63a(0x311)]();}}),_0x2c3664[_0x2d6be8(0x43a)](_0x2d6be8(0x3d3),()=>{const _0x4ab270=_0x2d6be8;if(_0x367f62===_0x4ab270(0x1d5)){try{speechSynthesis[_0x4ab270(0x417)]();}catch(_0x399c69){}_0x367f62=_0x4ab270(0x3da),_0x1fc1a5(),_0x28c64d[_0x4ab270(0x2f6)]=_0x4ab270(0x35b);}});const _0x32008a=document['getElementById'](_0x2d6be8(0x302)),_0x4bd75c=document[_0x2d6be8(0x21a)](_0x2d6be8(0x36d)),_0x4cdf43=document[_0x2d6be8(0x21a)](_0x2d6be8(0x1cb));function _0x4d0e19(_0x36d83e){const _0x1d7d74=_0x2d6be8,_0x4e2800=document[_0x1d7d74(0x3d8)](_0x1d7d74(0x3d1));if(_0x4e2800)_0x4e2800[_0x1d7d74(0x367)]();const _0x4b0a91=document[_0x1d7d74(0x399)]('div');_0x4b0a91[_0x1d7d74(0x2ba)]='toast',_0x4b0a91[_0x1d7d74(0x2f6)]=_0x36d83e,document[_0x1d7d74(0x351)][_0x1d7d74(0x30f)](_0x4b0a91),setTimeout(()=>_0x4b0a91[_0x1d7d74(0x367)](),0x898);}_0x4bd75c&&_0x32008a&&_0x4bd75c[_0x2d6be8(0x43a)](_0x2d6be8(0x311),()=>{const _0x49b6eb=_0x2d6be8;_0x32008a[_0x49b6eb(0x2c4)][_0x49b6eb(0x408)]=_0x49b6eb(0x381);});_0x4cdf43&&_0x4cdf43[_0x2d6be8(0x43a)](_0x2d6be8(0x311),()=>{const _0x3015c6=_0x2d6be8;_0x32008a[_0x3015c6(0x2c4)][_0x3015c6(0x408)]=_0x3015c6(0x377);});_0x32008a&&_0x32008a[_0x2d6be8(0x43a)](_0x2d6be8(0x311),_0x5b2153=>{const _0x35db98=_0x2d6be8;if(_0x5b2153[_0x35db98(0x2cb)]===_0x32008a)_0x32008a[_0x35db98(0x2c4)][_0x35db98(0x408)]=_0x35db98(0x377);});document[_0x2d6be8(0x3f5)](_0x2d6be8(0x1cc))[_0x2d6be8(0x410)](_0x10c951=>{const _0x31a96d=_0x2d6be8;_0x10c951[_0x31a96d(0x43a)](_0x31a96d(0x311),async()=>{const _0x1fad52=_0x31a96d,_0x23203b=_0x10c951[_0x1fad52(0x41e)](_0x1fad52(0x2fe))||'',_0x59f167=_0x10c951[_0x1fad52(0x41e)](_0x1fad52(0x1dc))||'';try{await navigator[_0x1fad52(0x346)][_0x1fad52(0x1bf)](_0x23203b),_0x4d0e19('✅\x20Đã\x20sao\x20chép\x20'+_0x59f167+':\x20'+_0x23203b);}catch(_0x25e4b7){const _0x534dd8=document[_0x1fad52(0x399)](_0x1fad52(0x391));_0x534dd8['value']=_0x23203b,document[_0x1fad52(0x351)][_0x1fad52(0x30f)](_0x534dd8),_0x534dd8[_0x1fad52(0x242)](),document[_0x1fad52(0x303)](_0x1fad52(0x24e)),_0x534dd8[_0x1fad52(0x367)](),_0x4d0e19(_0x1fad52(0x34f)+_0x59f167+':\x20'+_0x23203b);}});});const _0x3ab1de=document[_0x2d6be8(0x21a)]('btnSaveQr');_0x3ab1de&&_0x3ab1de[_0x2d6be8(0x43a)](_0x2d6be8(0x311),()=>{const _0xe61d15=_0x2d6be8,_0x55c962=document[_0xe61d15(0x3d8)](_0xe61d15(0x29d));if(!_0x55c962||!_0x55c962[_0xe61d15(0x2c2)]||_0x55c962[_0xe61d15(0x2c4)][_0xe61d15(0x408)]===_0xe61d15(0x377)){_0x4d0e19(_0xe61d15(0x2ac));return;}const _0x29a85a=document['createElement']('a');_0x29a85a[_0xe61d15(0x1e7)]=_0x55c962[_0xe61d15(0x2c2)],_0x29a85a[_0xe61d15(0x25b)]=_0xe61d15(0x1b9),_0x29a85a[_0xe61d15(0x311)](),_0x4d0e19('✅\x20Đang\x20tải\x20ảnh\x20QR...');});window[_0x2d6be8(0x3ec)]&&(pdfjsLib[_0x2d6be8(0x290)][_0x2d6be8(0x3ca)]=_0x2d6be8(0x248));const _0x3275fb=_0x4e8591=>document[_0x2d6be8(0x21a)](_0x4e8591);function _0xf5cce4(){const _0x5c850a=_0x2d6be8,_0x3eeca1=(document['getElementById'](_0x5c850a(0x3e3))?.[_0x5c850a(0x22f)]||'')[_0x5c850a(0x21e)](),_0x5dcd3a=(document[_0x5c850a(0x21a)]('excludeInput')?.[_0x5c850a(0x22f)]||'')[_0x5c850a(0x21e)](),_0xa4b004=_0x5dcd3a?_0x5dcd3a[_0x5c850a(0x2c7)](',')['map'](_0x18980e=>_0x18980e[_0x5c850a(0x21e)]())[_0x5c850a(0x28b)](Boolean):[];return{'selector':_0x3eeca1,'extraKeywords':_0xa4b004};}function _0x11eb95(_0x1a1d30){const _0xe5c4c0=_0x2d6be8;if(!_0x1a1d30)return'';let _0x43cab3=_0x1a1d30[_0xe5c4c0(0x22e)](/\r\n/g,'\x0a')[_0xe5c4c0(0x22e)](/\r/g,'\x0a')[_0xe5c4c0(0x22e)](/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g,'')[_0xe5c4c0(0x22e)](/!\[.*?\]\([^)]*\)/g,'')[_0xe5c4c0(0x22e)](/<img[^>]*>/gi,'')[_0xe5c4c0(0x22e)](/<iframe[^>]*>[\s\S]*?<\/iframe>/gi,'')[_0xe5c4c0(0x22e)](/https?:\/\/(?:www\.)?(?:youtube\.com|youtu\.be|tiktok\.com|facebook\.com|instagram\.)\S+/gi,'')[_0xe5c4c0(0x22e)](/\[([^\]]+)\]\((?:https?:\/\/\S+|[^)]*?\.(?:png|jpg|jpeg|gif|webp|mp4|webm))[^)]*\)/gi,'')[_0xe5c4c0(0x22e)](/\[([^\]]+)\]\([^)]+\)/g,'$1')['replace'](/https?:\/\/\S+/gi,'')[_0xe5c4c0(0x22e)](/www\.\S+/gi,'')['replace'](/<[^>]*>/g,'')[_0xe5c4c0(0x22e)](/([a-z0-9àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ])\n([a-z0-9àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ])/gi,_0xe5c4c0(0x360))[_0xe5c4c0(0x22e)](/Advertisement[\s\S]*?(?=Next|Stay|Playback|Quality|Back|$)/gi,'')[_0xe5c4c0(0x22e)](/(?:Next|Stay|Playback speed|Quality|Auto|Back|0\.25x|0\.5x|1x Normal|1\.5x|2x|322p|240p|144p)\s*/gi,'')[_0xe5c4c0(0x22e)](/\b(?:Undo|Sponsored|by Taboola|Discover|Read More Skip|Learn More|Want to know more\?|click here-?)\b/gi,'')[_0xe5c4c0(0x22e)](/\[SponsoredSponsored.*?\]/gi,'')[_0xe5c4c0(0x22e)](/organixmag\.com.*?/gi,'')[_0xe5c4c0(0x22e)](/Sustainability For All.*?ACCIONA/gi,'')['replace'](/\b(?:Ảnh|Video|Hình)\s*:\s*[A-Za-z0-9\s\.]+/gi,'')[_0xe5c4c0(0x22e)](/Huấn Hoa Hồng khoe tiền trên mạng xã hội trước khi bị bắt\.\s*/gi,'')[_0xe5c4c0(0x22e)](/Công an tống đạt quyết định với Huấn Hoa Hồng\.\s*/gi,'')['replace'](/Hàng trăm người theo dõi vụ việc trước nhà Huấn Hoa Hồng\.\s*/gi,'')[_0xe5c4c0(0x22e)](/Trở lại Pháp luật\s*/gi,'')[_0xe5c4c0(0x22e)](/Lưu;?\)?\s*/gi,'')['replace'](/Thêm VnExpress trên Google[\s\S]*?đã hoàn thành\./gi,'')[_0xe5c4c0(0x22e)](/Chọn VnExpress làm nguồn ưu tiên[\s\S]*?đã hoàn thành\./gi,'')['replace'](/Copy link thành công\s*/gi,'')[_0xe5c4c0(0x22e)](/Xem hướng dẫn\.\s*/gi,'')[_0xe5c4c0(0x22e)](/Ý kiến[\s\S]*?(?=Tiếp tục đọc|$)/gi,'')[_0xe5c4c0(0x22e)](/(?:Thích|Ngạc nhiên|Buồn)\s+\d+\s*Trả lời\s*Báo vi phạm\s*\d+h trước(?:\s*\d+\s*trả lời)?/gi,'')[_0xe5c4c0(0x22e)](/Quan tâm nhất\s*Mới nhất\s*/gi,'')['replace'](/Chuyên gia tư vấn\s*/gi,'')[_0xe5c4c0(0x22e)](/Vui lòng tuân thủ quy định khi chia sẻ quan điểm[\s\S]*?Gửi/gi,'')[_0xe5c4c0(0x22e)](/Bạn chưa nhập nội dung bình luận[\s\S]*?Gửi/gi,'')[_0xe5c4c0(0x22e)](/(?:Xem thêm|Tin liên quan|Bài viết liên quan|Có thể bạn quan tâm|Đọc thêm|Tiếp tục đọc|Phản hồi)[\s\S]*$/i,'')[_0xe5c4c0(0x22e)](/(?:Sponsored|by Taboola|Advertisement|\[Sponsored)[\s\S]*$/i,'')['replace'](/(?:Vợ gọi tên người cũ|Nhiễm độc do dị ứng|Apple tìm cách|Chủ nhà hàng Hàn Quốc|5 tàu cá bốc cháy|38 giờ truy vết|Lúa phủ xanh|Hậu trường cân não|Cảnh sát tiếp nhận 50 thỏi vàng|Trúng đấu giá|Malaysia chỉ có 16 cầu thủ|Nước nào có mỏ đất hiếm)[\s\S]*$/i,'')['replace'](/^\d+\s+[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝ].{10,120}$/gm,'')[_0xe5c4c0(0x22e)](/^(?:Vì sao|Từ '|Nhiều cảnh sát|Chủ nhà hàng|Nhiễm độc|Cảnh sát tiếp nhận|Hậu trường|5 tàu cá|38 giờ|Trúng đấu giá|Lúa phủ|Đề xuất|165 tác phẩm|6 người|Bạn gái).*$/gmi,'')[_0xe5c4c0(0x22e)](/Tất cả chuyên mục[\s\S]*?(?=Trở lại|Pháp luật|Vợ chồng|$)/gi,'')[_0xe5c4c0(0x22e)](/^(?:Đóng|VnE-GO|Discover|Shorts|Podcasts|Thời sự|Chính trị|Kỷ nguyên mới|Dân sinh|Việc làm|Giao thông|Quỹ Hy vọng|Thế giới|Phân tích|Tư liệu|Quân sự|Cuộc sống đó đây|Người Việt 5 châu|Bắc Mỹ|Kinh doanh|NetZero|Quốc tế|Doanh nghiệp|Chứng khoán|Ebank|Vĩ mô|Tiền của tôi|Hàng hóa|Khoa học công nghệ|Hoạt động Bộ|Chuyển đổi số|Đổi mới sáng tạo|AI|Vũ trụ|Thế giới tự nhiên|Thiết bị|Cửa sổ tri thức|Góc nhìn|Bất động sản|Sức khỏe|Giải trí|Thể thao|Pháp luật|Giáo dục|Đời sống|Xe|Du lịch|Ý kiến|Spotlight|Infographics|Mới nhất|Xem nhiều|Tin nổi bật|Lịch vạn niên|Rao vặt|Liên hệ|Tòa soạn|Tải ứng dụng|VnExpressInternational)\s*/gmi,'')[_0xe5c4c0(0x22e)](/^\s*(?:trang|page)?\s*\d+\s*$/gmi,'')[_0xe5c4c0(0x22e)](/^(Chương trước|Chương sau|Danh sách chương|Mục lục|Báo lỗi|Cầu kim phiếu|Cầu đánh giá|Tải app|Chia sẻ|Bình luận|Ý kiến bạn đọc|Tin liên quan|Đăng nhập|Đăng ký).*$/gmi,'')[_0xe5c4c0(0x22e)](/^(Bạn đang đọc truyện|Nguồn:|Converter:|Tác giả:|Thể loại:|Advertisements|Ads).*$/gmi,'')[_0xe5c4c0(0x22e)](/^\d{1,2}\/\d{1,2}\/\d{4}.*$/gm,'')[_0xe5c4c0(0x22e)](/[ \t]+/g,'\x20')[_0xe5c4c0(0x22e)](/\n{3,}/g,'\x0a\x0a');const {extraKeywords:_0x278e1b}=_0xf5cce4();_0x278e1b[_0xe5c4c0(0x269)]&&_0x278e1b[_0xe5c4c0(0x410)](_0x5b38ee=>{const _0x85be32=_0xe5c4c0;if(_0x5b38ee[_0x85be32(0x269)]>0x1)try{const _0x160d45=new RegExp(_0x5b38ee[_0x85be32(0x22e)](/[.*+?^${}()|[\]\\]/g,'\x5c$&'),'gi');_0x43cab3=_0x43cab3[_0x85be32(0x22e)](_0x160d45,'\x20');}catch(_0x4b0a42){}});const _0x57dc11=_0x43cab3['split']('\x0a')['map'](_0x5e8009=>_0x5e8009['trim']())['filter'](Boolean),_0x40b734=[],_0x5b9b26=[/^(Tất cả chuyên mục|Đóng|VnE-GO|Discover|Shorts|Podcasts|Thời sự|Chính trị|Xem thêm|Trở lại|Lưu|Thêm VnExpress|Chọn VnExpress|Xem hướng dẫn|Copy link|Advertisement|Next|Stay|Playback|Quality|Auto|Back|Undo|Sponsored|by Taboola|Read More|Learn More|Want to know more)/i,/^(Thích|Ngạc nhiên|Buồn|Trả lời|Báo vi phạm|\d+h trước|\d+ trả lời)/i,/^(Quan tâm nhất|Mới nhất|Chuyên gia tư vấn|Ý kiến|Phản hồi|Tiếp tục đọc)/i,/^[\[\(].*[\]\)]$/,/^[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝĂĐĨŨƠƯ\s\-]{3,50}$/,/Ảnh:\s*[A-Za-z0-9\.]+/i,/Video:\s*[A-Za-z0-9\.]+/i];for(let _0x32d7a8=0x0;_0x32d7a8<_0x57dc11[_0xe5c4c0(0x269)];_0x32d7a8++){const _0x4e4f11=_0x57dc11[_0x32d7a8];if(_0x32d7a8>0x0&&_0x4e4f11===_0x57dc11[_0x32d7a8-0x1])continue;if(_0x4e4f11[_0xe5c4c0(0x269)]<0xc&&!/^[0-9A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝ]/[_0xe5c4c0(0x267)](_0x4e4f11))continue;if(_0x5b9b26[_0xe5c4c0(0x22a)](_0x570eaa=>_0x570eaa[_0xe5c4c0(0x267)](_0x4e4f11)))continue;const _0x342bff=_0x4e4f11[_0xe5c4c0(0x2c7)](/\s+/);if(_0x342bff[_0xe5c4c0(0x269)]<=0x5&&/^[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝ]/['test'](_0x4e4f11)&&_0x4e4f11['length']<0x37)continue;_0x40b734[_0xe5c4c0(0x270)](_0x4e4f11);}return _0x40b734['join']('\x0a\x0a')[_0xe5c4c0(0x21e)]();}async function _0x234fb0(_0x4fb4e4){const _0x324d9a=_0x2d6be8,_0x4d04ee=_0x4fb4e4[_0x324d9a(0x2ce)][_0x324d9a(0x2c7)]('.')['pop']()[_0x324d9a(0x257)]();if([_0x324d9a(0x30a),_0x324d9a(0x278),'jpeg',_0x324d9a(0x205),'webp','gif'][_0x324d9a(0x390)](_0x4d04ee))return await _0x4403aa(_0x4fb4e4);else{if(_0x4d04ee===_0x324d9a(0x38e))return await _0x23071f(_0x4fb4e4);else{if(_0x4d04ee===_0x324d9a(0x24f))return await _0x8b3b95(_0x4fb4e4);else{if(_0x4d04ee===_0x324d9a(0x388))throw new Error(_0x324d9a(0x409));else return await _0x5a8de5(_0x4fb4e4);}}}}async function _0x4403aa(_0x444114){const _0x5a591f=_0x2d6be8;if(typeof Tesseract===_0x5a591f(0x3b2))throw new Error(_0x5a591f(0x1f7));const _0x52bf4b=_0x3275fb(_0x5a591f(0x251));if(_0x52bf4b)_0x52bf4b[_0x5a591f(0x1dd)]=_0x5a591f(0x1f1);const _0x2101a5=await Tesseract['recognize'](_0x444114,_0x5a591f(0x436),{'logger':_0x33fc33=>{const _0x565372=_0x5a591f;if(_0x33fc33[_0x565372(0x1e4)]===_0x565372(0x263)&&_0x52bf4b){const _0x4e085c=Math[_0x565372(0x1f4)]((_0x33fc33[_0x565372(0x3d6)]||0x0)*0x64);_0x52bf4b[_0x565372(0x1dd)]=_0x565372(0x1c0)+_0x4e085c+_0x565372(0x1db);}}}),_0xe871a3=_0x2101a5[_0x5a591f(0x3e0)][_0x5a591f(0x268)];if(!_0xe871a3||!_0xe871a3[_0x5a591f(0x21e)]())throw new Error('Không\x20tìm\x20thấy\x20chữ\x20hoặc\x20ảnh\x20quá\x20mờ/chất\x20lượng\x20thấp.');return _0x11eb95(_0xe871a3);}function _0x54fc43(_0x2ae939){const _0x2be5ff=_0x2d6be8;if(!_0x2ae939||_0x2ae939[_0x2be5ff(0x21e)]()[_0x2be5ff(0x269)]===0x0)return!![];const _0x45663a=/[¢¾¬Ë¯µ£§¥μ°±¡¿ÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßæçëîïðñö÷øûüþÿ]/g,_0x1516ff=_0x2ae939[_0x2be5ff(0x2da)](_0x45663a)||[],_0x56befb=(_0x2ae939['match'](/\b\w+[\)\¥\¿\Á\±\°]\w+\b/g)||[])[_0x2be5ff(0x269)],_0x8e963c=_0x1516ff['length']+_0x56befb*0x2;return _0x8e963c/_0x2ae939['length']>0.02;}async function _0x23071f(_0x2b7477){const _0x5dec00=_0x2d6be8,_0x22af9f=await _0x2b7477[_0x5dec00(0x379)](),_0x2b7ee8=await pdfjsLib[_0x5dec00(0x20a)]({'data':_0x22af9f})[_0x5dec00(0x338)];let _0x4e2d8e='';const _0x570a70=_0x3275fb(_0x5dec00(0x251));let _0x3017c4=null;try{for(let _0x3c19de=0x1;_0x3c19de<=_0x2b7ee8[_0x5dec00(0x207)];_0x3c19de++){_0x570a70&&(_0x570a70[_0x5dec00(0x1dd)]=_0x5dec00(0x2e7)+_0x3c19de+'/'+_0x2b7ee8[_0x5dec00(0x207)]+_0x5dec00(0x2c3));const _0x195465=await _0x2b7ee8[_0x5dec00(0x203)](_0x3c19de),_0x5d9328=await _0x195465[_0x5dec00(0x322)]();let _0x180d14=null,_0x3b928f='';for(const _0x26ca0c of _0x5d9328[_0x5dec00(0x2a9)]){if(_0x180d14!==null&&Math[_0x5dec00(0x28d)](_0x26ca0c['transform'][0x5]-_0x180d14)>0x5)_0x3b928f+='\x0a';else _0x3b928f&&!_0x3b928f[_0x5dec00(0x2cd)]('\x20')&&!_0x26ca0c[_0x5dec00(0x24c)][_0x5dec00(0x28f)]('\x20')&&(_0x3b928f+='\x20');_0x3b928f+=_0x26ca0c[_0x5dec00(0x24c)],_0x180d14=_0x26ca0c[_0x5dec00(0x2eb)][0x5];}const _0x1704c2=_0x3b928f['trim'](),_0x174040=_0x54fc43(_0x1704c2);if(_0x1704c2[_0x5dec00(0x269)]>0x1e&&!_0x174040)_0x4e2d8e+=_0x1704c2+'\x0a\x0a';else{_0x570a70&&(_0x570a70[_0x5dec00(0x1dd)]='<span\x20class=\x22loading\x22></span>\x20Trang\x20'+_0x3c19de+'/'+_0x2b7ee8[_0x5dec00(0x207)]+_0x5dec00(0x244));!_0x3017c4&&(typeof Tesseract[_0x5dec00(0x36a)]===_0x5dec00(0x25f)&&(_0x3017c4=await Tesseract[_0x5dec00(0x36a)](_0x5dec00(0x436))));const _0x3c56a7=_0x195465[_0x5dec00(0x3af)]({'scale':0x2}),_0x2144aa=document[_0x5dec00(0x399)](_0x5dec00(0x31c)),_0x31b904=_0x2144aa[_0x5dec00(0x255)]('2d');_0x2144aa[_0x5dec00(0x434)]=_0x3c56a7[_0x5dec00(0x434)],_0x2144aa[_0x5dec00(0x3b5)]=_0x3c56a7['width'],await _0x195465[_0x5dec00(0x3c0)]({'canvasContext':_0x31b904,'viewport':_0x3c56a7})[_0x5dec00(0x338)];if(_0x3017c4){const _0xdf1c04=await _0x3017c4[_0x5dec00(0x3cb)](_0x2144aa);_0x4e2d8e+=(_0xdf1c04['data']['text']||'')+'\x0a\x0a';}else{const _0x195314=await Tesseract['recognize'](_0x2144aa,_0x5dec00(0x436));_0x4e2d8e+=(_0x195314[_0x5dec00(0x3e0)]['text']||'')+'\x0a\x0a';}}}}finally{_0x3017c4&&typeof _0x3017c4[_0x5dec00(0x33a)]===_0x5dec00(0x25f)&&await _0x3017c4[_0x5dec00(0x33a)]();}if(!_0x4e2d8e[_0x5dec00(0x21e)]())throw new Error(_0x5dec00(0x26b));return _0x11eb95(_0x4e2d8e);}async function _0x8b3b95(_0xda9b8a){const _0x397380=_0x2d6be8;if(!window[_0x397380(0x1ed)])throw new Error(_0x397380(0x380));const _0x5cb0af=await _0xda9b8a[_0x397380(0x379)](),_0x1bbc7a=_0x3275fb(_0x397380(0x251));if(_0x1bbc7a)_0x1bbc7a[_0x397380(0x1dd)]=_0x397380(0x2e3);const _0x431b86=await mammoth[_0x397380(0x426)]({'arrayBuffer':_0x5cb0af});return _0x11eb95(_0x431b86[_0x397380(0x22f)]);}function _0x5a8de5(_0x4333e9){return new Promise((_0x35b90c,_0x18734a)=>{const _0x55a728=_0x520d,_0x541e1b=new FileReader();_0x541e1b[_0x55a728(0x1c4)]=_0x1dbbe0=>_0x35b90c(_0x11eb95(_0x1dbbe0[_0x55a728(0x2cb)][_0x55a728(0x204)])),_0x541e1b[_0x55a728(0x315)]=()=>_0x18734a(new Error('Không\x20thể\x20đọc\x20nội\x20dung\x20file\x20văn\x20bản.')),_0x541e1b['readAsText'](_0x4333e9,_0x55a728(0x333));});}document[_0x2d6be8(0x3f5)](_0x2d6be8(0x233))[_0x2d6be8(0x410)](_0xe86e19=>{const _0xe5640d=_0x2d6be8;_0xe86e19[_0xe5640d(0x43a)]('click',()=>{const _0xaed786=_0xe5640d;document[_0xaed786(0x3f5)]('.tab')[_0xaed786(0x410)](_0x5c9a1e=>_0x5c9a1e['classList'][_0xaed786(0x367)](_0xaed786(0x1fa))),_0xe86e19['classList'][_0xaed786(0x420)](_0xaed786(0x1fa));const _0x53511e=_0xe86e19['dataset'][_0xaed786(0x347)];if(_0x3275fb(_0xaed786(0x411)))_0x3275fb(_0xaed786(0x411))[_0xaed786(0x2c4)][_0xaed786(0x408)]=_0x53511e===_0xaed786(0x268)?'block':'none';if(_0x3275fb(_0xaed786(0x336)))_0x3275fb(_0xaed786(0x336))[_0xaed786(0x2c4)]['display']=_0x53511e===_0xaed786(0x312)?'block':'none';if(_0x3275fb(_0xaed786(0x3c7)))_0x3275fb('panel-file')[_0xaed786(0x2c4)][_0xaed786(0x408)]=_0x53511e===_0xaed786(0x41c)?'block':'none';});});const _0x1d38bd=_0x3275fb(_0x2d6be8(0x2f8)),_0x8403b4=_0x3275fb(_0x2d6be8(0x2b4)),_0x42c225=_0x3275fb('dropZoneContent'),_0x5a1aee=_0x3275fb(_0x2d6be8(0x344));_0x1d38bd&&_0x8403b4&&(_0x1d38bd[_0x2d6be8(0x43a)](_0x2d6be8(0x311),()=>_0x8403b4['click']()),_0x1d38bd[_0x2d6be8(0x43a)](_0x2d6be8(0x422),_0x551168=>{const _0x57102f=_0x2d6be8;_0x551168[_0x57102f(0x279)](),_0x1d38bd[_0x57102f(0x2c4)][_0x57102f(0x2db)]=_0x57102f(0x236);}),_0x1d38bd['addEventListener']('dragleave',()=>{const _0x449fd7=_0x2d6be8;_0x1d38bd[_0x449fd7(0x2c4)][_0x449fd7(0x2db)]='rgba(2,\x20132,\x20199,\x200.03)';}),_0x1d38bd[_0x2d6be8(0x43a)]('drop',_0x184621=>{const _0x222fad=_0x2d6be8;_0x184621['preventDefault'](),_0x1d38bd[_0x222fad(0x2c4)][_0x222fad(0x2db)]=_0x222fad(0x30e),_0x184621[_0x222fad(0x2c8)][_0x222fad(0x335)]&&_0x184621[_0x222fad(0x2c8)][_0x222fad(0x335)][_0x222fad(0x269)]>0x0&&(_0x8403b4[_0x222fad(0x335)]=_0x184621[_0x222fad(0x2c8)]['files'],_0x4e76f7(_0x184621[_0x222fad(0x2c8)][_0x222fad(0x335)][0x0]));}),_0x8403b4[_0x2d6be8(0x43a)](_0x2d6be8(0x3ff),_0x19d2d6=>{const _0x524396=_0x2d6be8;_0x19d2d6[_0x524396(0x2cb)][_0x524396(0x335)]&&_0x19d2d6[_0x524396(0x2cb)][_0x524396(0x335)][0x0]&&_0x4e76f7(_0x19d2d6[_0x524396(0x2cb)]['files'][0x0]);}));async function _0x4e76f7(_0x50d98a){const _0x405c16=_0x2d6be8;if(!_0x50d98a)return;if(_0x42c225)_0x42c225[_0x405c16(0x2c4)]['display']=_0x405c16(0x377);_0x5a1aee&&(_0x5a1aee[_0x405c16(0x2c4)]['display']=_0x405c16(0x2ad),_0x5a1aee[_0x405c16(0x1dd)]='📌\x20Đã\x20chọn:\x20<b>'+_0x50d98a['name']+_0x405c16(0x241)+(_0x50d98a[_0x405c16(0x3c1)]/0x400)['toFixed'](0x1)+_0x405c16(0x3c9));const _0x121db9=_0x3275fb(_0x405c16(0x251));try{if(_0x121db9)_0x121db9[_0x405c16(0x1dd)]=_0x405c16(0x293);const _0x162d27=await _0x234fb0(_0x50d98a),_0x3ee405=_0x3275fb(_0x405c16(0x362));if(_0x3ee405)_0x3ee405[_0x405c16(0x22f)]=_0x162d27;typeof _0x15402c===_0x405c16(0x25f)&&await _0x15402c(_0x162d27);if(_0x121db9)_0x121db9[_0x405c16(0x1dd)]=_0x405c16(0x341);}catch(_0x37de8e){console[_0x405c16(0x383)](_0x37de8e);if(_0x121db9)_0x121db9[_0x405c16(0x2f6)]='Lỗi\x20đọc\x20file:\x20'+(_0x37de8e[_0x405c16(0x3ab)]||_0x37de8e);}}const _0x34bb2e={'vi':{'speedTitle':_0x2d6be8(0x1b7),'sentenceLabel':_0x2d6be8(0x402),'jumpLabel':'Tới\x20câu:','playLabel':_0x2d6be8(0x32c),'stopTitle':_0x2d6be8(0x418),'pdfLabel':_0x2d6be8(0x369),'voiceLabel':_0x2d6be8(0x20d),'badgeText':'vi\x20·\x20Tiếng\x20Việt'},'en':{'speedTitle':_0x2d6be8(0x314),'sentenceLabel':_0x2d6be8(0x33b),'jumpLabel':_0x2d6be8(0x3c3),'playLabel':'PLAY\x20SPEECH','stopTitle':_0x2d6be8(0x343),'pdfLabel':_0x2d6be8(0x1e2),'voiceLabel':'Voice\x20(auto-selected\x20best\x20by\x20language)','badgeText':_0x2d6be8(0x3ea)},'ja':{'speedTitle':_0x2d6be8(0x2b7),'sentenceLabel':'文','jumpLabel':_0x2d6be8(0x1c1),'playLabel':'音声読み上げ','stopTitle':_0x2d6be8(0x3ed),'pdfLabel':_0x2d6be8(0x20b),'voiceLabel':_0x2d6be8(0x223),'badgeText':_0x2d6be8(0x3d2)},'zh':{'speedTitle':_0x2d6be8(0x41f),'sentenceLabel':'句','jumpLabel':_0x2d6be8(0x2a7),'playLabel':'朗读文本','stopTitle':_0x2d6be8(0x2d3),'pdfLabel':_0x2d6be8(0x305),'voiceLabel':_0x2d6be8(0x33d),'badgeText':_0x2d6be8(0x378)}};function _0x460c9e(_0x2049f1='vi',_0x39732e=0x0,_0x4a6cb0=0x0){const _0x209c07=_0x2d6be8,_0x2f8316=_0x2049f1['substring'](0x0,0x2)[_0x209c07(0x257)](),_0x3cad36=_0x34bb2e[_0x2f8316]||_0x34bb2e['vi'];document[_0x209c07(0x21a)](_0x209c07(0x42f))[_0x209c07(0x2bd)]=_0x3cad36[_0x209c07(0x3e7)],document[_0x209c07(0x21a)](_0x209c07(0x3ac))['textContent']=_0x3cad36[_0x209c07(0x29c)],document[_0x209c07(0x21a)](_0x209c07(0x353))['textContent']=_0x3cad36[_0x209c07(0x353)],document[_0x209c07(0x21a)](_0x209c07(0x1ec))['title']=_0x3cad36['stopTitle'],document[_0x209c07(0x21a)](_0x209c07(0x365))[_0x209c07(0x2f6)]=_0x3cad36[_0x209c07(0x365)],document['getElementById'](_0x209c07(0x424))[_0x209c07(0x2f6)]=_0x3cad36[_0x209c07(0x389)];const _0x36fe3e=document[_0x209c07(0x21a)](_0x209c07(0x323));_0x36fe3e&&(_0x36fe3e[_0x209c07(0x2f6)]=_0x3cad36[_0x209c07(0x282)]);const _0x1ad9d2=document['getElementById'](_0x209c07(0x1f2));_0x1ad9d2&&(_0x1ad9d2[_0x209c07(0x2f6)]=_0x3cad36[_0x209c07(0x2d4)]+':\x20'+_0x39732e+_0x209c07(0x27b)+_0x4a6cb0);}document[_0x2d6be8(0x21a)](_0x2d6be8(0x1eb))[_0x2d6be8(0x43a)](_0x2d6be8(0x3ff),_0x1bc53d=>{const _0x5f296c=_0x2d6be8,_0x1bdd6f=_0x1bc53d[_0x5f296c(0x2cb)][_0x5f296c(0x2d8)][_0x1bc53d['target'][_0x5f296c(0x2de)]];if(_0x1bdd6f&&_0x1bdd6f[_0x5f296c(0x372)][_0x5f296c(0x23c)]){const _0x403765=_0x1bdd6f[_0x5f296c(0x372)][_0x5f296c(0x23c)];_0x460c9e(_0x403765,0x0,0x0);}});function _0x30789e(){const _0x54c965=_0x2d6be8,_0x512697=document[_0x54c965(0x21a)](_0x54c965(0x431)),_0xa16ff8=document['getElementById'](_0x54c965(0x412));if(!_0x512697||!_0xa16ff8)return;const _0x181336=(_0x512697[_0x54c965(0x1d6)]||_0x512697[_0x54c965(0x2f6)]||'')[_0x54c965(0x21e)](),_0x291443=_0x181336[_0x54c965(0x269)],_0x40d373=_0x181336?_0x181336[_0x54c965(0x2c7)](/\n/)[_0x54c965(0x28b)](_0x2de4dc=>_0x2de4dc[_0x54c965(0x21e)]()[_0x54c965(0x269)]>0x0)['length']:0x0;_0xa16ff8[_0x54c965(0x2f6)]=_0x291443[_0x54c965(0x433)](_0x54c965(0x1bc))+'\x20ký\x20tự\x20·\x20'+_0x40d373+_0x54c965(0x3b4);}_0x1fc1a5(),setTimeout(_0x25ca4b,0x12c);}()));function _0x2690(){const _0x1ff312=['4P2midXIpLBHUQTUignOXRbHihrO4BQLEsbNAEg7Jw5NifrP4BQ/BMCGvMNHU4D0pc9IpI48yNi+','EwfZBwLU','twLZCW','C3vUAgK','BwfP','4PYfimsqW6mGC2fVignOW6LWia','BMuTtLa','yM9KEq','zgLZywjSzwq','CgXHEuXHyMvS','DxPTyq','B3nTyw4','DhrZu3rHDhvZ','tUg7MwKGzhvUzYb0CUg7Kw5NlG','DMLLDg5HBq','C2f2zq','lNjLywrPBMCTy29UDgvUDa','XjddOYb04BQHBsbK4BURBMCGXjhHU4mGyUg6Ow4Gy2JHU4LUAcbZ4BUTysbU4BUzAsbKDw5NlG','4Psa4Psaie90AgvYihzVAwnLCYdILidILia','yM4Tsu4','yxiTsve','z3uTsu4','jdeGjdi','EMGTseS','Dgv4DeLUChv0','C2LYAq','C3DHCMe','CgrMtgfIzwW','BwfUB2HHCG','CMvTB3zL','C2fTyw50Age','8j+tHcbyvEg6PfqGuerg','y3jLyxrLv29YA2vY','vMNHU4D0ie5HBsdeKEg7K25N','y2HYAxn0zwW','yNrUrg9UyxrL','qM91Bgv2yxjK','tM9YC2S','yxiTruC','B3rVEwe','zgf0yxnLDa','2kFzHnI52lhyQnMk2kKGkefPiepHUQ1Wkq','ihbSDxmG','u2vSzwn0B3iGDmo5EsbJAog7Iw5OigZHU5DPoG','Ahr0Chm6lY9YlMPPBMeUywKV','BM9Uzq','EMGGWRCG5lIT5PAh','yxjYyxLcDwzMzxi','mJC0ota1ow5LvKD4zW','qMfOyxnHieLUzg9UzxnPyq','ywXPBMe','BgfUz3vHz2uTDw5HDMfPBgfIBgu','BwfYzwS','mJm2mZm5nLf0DLbiwq','q2JgSgeGDog6O2KGEg9UzYb0AmAWihzP4BUhBIbnyw1TB3rOlMPZ','zMXLEa','yUg7Kw4','zxjYB3i','yw5P','pc9KAxy+cIaGicaGicaGicaGidXKAxyGC3r5Bgu9iM1HCMDPBI10B3a6idjWEdSGy29SB3i6icmWmJG0yZC7igzVBNqTD2vPz2H0oIa1mda7iJ7INiNVUi8GvgHHAvrOB25NC2Paz21HAwWUy29Tpc9KAxy+cIaGicaGicaGica8l2rPDJ4kicaGicaGica8l2rPDJ4kcIaGicaGicaGpceTlsbwW5LorYbo4BUyssbevu5hicHu4BUWienpienpieDjW4noifriru8GvfjbtKCPic0TpGOGicaGicaGidXKAxyGy2XHC3m9iNbKzI1JB250zw50iIbZDhLSzt0IzMXLEdOGmtSGBwfYz2LUoIaXohb4ida7ignVBg9YoIaJmZm0mtu1oYbVDMvYzMXVDZOGAgLKzgvUoYi+pc9KAxy+cGOGicaGicaGidWHls0GrK9pvevsifrsqu5hic0TpGOGicaGicaGidXKAxyGC3r5Bgu9iMjVCMrLCI10B3a6idfWEcbKyxnOzwqGi2nIzdvLmtSGCgfKzgLUzY10B3a6idHWEdSGzgLZCgXHEtOGzMXLEdSGANvZDgLMEs1JB250zw50oIbZCgfJzs1Izxr3zwvUoYbMB250lxnPEMu6ideWChG7ignVBg9YoIaJotrHm2i4oYi+cIaGicaGicaGica8C3bHBIbJBgfZCZ0ICgfNzs1UDw1IzxiIpLrYyw5Nide8l3nWyw4+cIaGicaGicaGica8C3bHBJ7INAtVUi8Gvw5NigHVigr1igfUoIbwAwv0y29TyMfUAYa5odK4nJyXote4pc9ZCgfUpGOGicaGicaGidWVzgL2pGOGicaGica','zgLLz28','y3rYBeTLEq','zg9J','DM9Py2vmywjLBa','vw5PDMvYC2L0Eq','A2fUEwe','DMvYC3vZ','A20Ts0G','CgrM','zgeTreS','Aw5JBhvKzxm','Dgv4DgfYzwe','y2XVBMvoB2rL','yw5Uyq','ywrKugfNzq','lNbVC3qTy29UDgvUDc1IB2r5','igDP4BUnBMCG','rMvICNvHCNK','AgKTsu4','y3jLyxrLrwXLBwvUDa','y29UDgvUDa','Aw5WDxq','rNjHBSoNywLZ','lMvUDhj5lwnVBNrLBNq','B3b0Aw9U','AM9Yz2u','w1ruu10Gs2JdTg5NihrO4BQLEsbNAEg7Jw5NifzP4BUhDcbUW6bVihrYB25NigrHBMGGC8oHy2G','A2v5zg93BG','z2fKAxm','zguTreu','AhuTsfu','sfruuca','Ahr0Chm6lY9HCgKUywXSB3jPz2LUCY53Aw4VCMf3p3vYBd0','yxvKAw8','Cg9SAw5H','4kAS4kA+4kAc4kAY4kA+icHczw5NywXPkq','BMfT','BwvZC2fNzq','BgjSsNvTCa','DMfHBMK','Dg9Nz2XL','z2v0vMLLD3bVCNq','sMLUysbivfrqia','4Psa4PsaiefSBcbHDMfPBgfIBguGDM9Py2vZicG','Dw5KzwzPBMvK','Aw1Hz2uVANbLzW','igtdSM5N','D2LKDgG','B25LBMq','zxmTrvm','ig5NAmoSBG','BxKTtu0','BwfPia','Aw1N','DgeTsu4','DgLTzw91Da','vM9SDw1L','CgvYBMLSBgu','CMvUzgvY','C2L6zq','BMLYyw5Qyw4','sNvTCcb0BZO','4PYfimsqW6mGCSo6Dcb0CSoTy2GGBUg7MwKGzhvUzYb0AmoGBMGGy8o0BMCGkhbYB3H5ks4','C2nYB2XSsgvPz2H0','yNrUsNvTCa','CgfUzwWTzMLSzq','CgeTsu4','ieTckq','D29YA2vYu3jJ','CMvJB2DUAxPL','4PQG77Ipie3dOxKGy2JgSgeGy8oZigDP4BUnBMCGBMFdTg4GBMFHU68GBSoGEs4GsmoJEsbJW6bPihrOW6PTigDP4BUnBMCGDhjVBMCGq8oGAsdeKEg6T3qGAog7HYb0Aog7Kw5NlG','DgLIzxrHBG','zM9YBq','lNrHz3m','lMjVEc1JyxrLz29YEq','lNrVyxn0','AMeGWRCG5PEL5PYS6kQE','zM9JDxm','sNvUzq','y2fUDg9UzxnL','ChjVz3jLC3m','rxnWyCoXB2W','CxvLCNLtzwXLy3rVCG','uhjVzMvZC29Y','Cgf1C2vK','sLbfrW','vog6PxqGy+g6OYbJW6fJAcbS4BQLEsbU4BUzAsbKDw5Nimsr4BUbDsb0Aog6PxqGyUg6OwKUieJdO3KGDgJHU60Gy29WEs1Wyxn0zsb0Aog7PYbJW7rUzYbOB+g6T2mGBEg7NYbI4BQXBMCGBg9JywXOB3n0lG','4PYtimsqW6mGDmoSBsb0Aog6PxKGz2NHU41UzYbuAEg6V25NifzP4BUhDa','C2XPy2u','C3jLEw1VBq','zgf0yq','uM9TW6jUXim','yxvKCMv5','C2vSzwn0B3jjBNb1Da','ChjLBwL1Bq','XjdHU4Xdifrj4BQ+ua','vfrtigvYCM9Y','C3bLzwruAxrSzq','y2XPzw50sgvPz2H0','4Psa4PsaiftHUQv0igpHUQmGz2NHU41UzYdeKwfUzYbJW7mGDhldQM4GBCoHEsaO','zw4GWRCGrw5NBgLZAa','vgLIzxrHBIaOvmoIEsbu4BQHBMCP','CgrMANnmAwi','5ygC5Q2I44gx44gMihiG5l+D5OYb','y2XHC3nmAxn0','AgfP','ihrYW6PUihrOAEg6V3qGyUg7IYbUW6b5lG','tNvTyMvY','zMKTrKK','q2JgSgeGy8oZig7HU5LPigr1BMCUieJdO3KGBMJHUQvUicjy4BUTigZdVsaMienODEg6Qw4GyUg7IYdeKEg7JwmIihrYXRdHU5TJlG','Ahr0Chm6lY8','CxvLCNLtzwXLy3rVCKfSBa','sw5JB3jWB3jHDgvK','twf5','igf0ia','tM92zw1Izxi','4lkv4lkO4lon4lkO4lkHicHlyw5UywrHkq','zxnWzwfR','AguTsuW','lMnOyxb0zxiTBMf2','CgfYC2vgCM9Tu3rYAw5N','y2HHBMDL','XjbHBMCGXjhHU41JigpdONuG','BNvTzxjPyW','q8oIDq','BM9VCMe','zw50CMLLCW','ANnWzgy','sMLUysbS4BQNBIaXigZHU5DPoG','i2nOyxb0zxiTyW','zgLZCgXHEq','rMLSzsaUzg9JigpfQsbRAmo0BMCGAog7LYb0CUg7OYdeKEg7JwmGDhlHU7fJihrP4BQ/Cc4GvNvPigZdSM5Nimsr4BUvAsbZyw5NigtHUQfUzYaUzg9JEcWGlNbKzIbOB+g6T2mGlMPWzYe','yMXLC3nPy2e','CgfNzxm','4PQG77IpieTOW7rUzYb0W6XTihrO4BQLEsbNAEg7Jw5Nia','BwfYBgvUzq','lM1LBNu','DmoHBq','zM9YrwfJAa','CgfUzwWTDgv4Da','y29UDgvUDfn0yxrZ','BM9wB2LJzuzVDw5Krgv0ywLS','BMLSyxi','BM9LBwK','DMKTvK4SDMK7Ct0WlJKSzw47Ct0WlJG','Cgf1C2u','rog7Q25NicyGDUg7GsdeKEg6P3u','zwX2AxjH','Bg8Ttee','igpdONuGWRCGtMFdTg4GBMFHU686ia','zMLSzq','XiXLXAf0Aw5H','z2v0qxr0CMLIDxrL','5PU05Ps55PYx6k+76ycF5BQM','ywrK','imk3ia','zhjHz292zxi','16lxKDEO15NxQIaOsgvICMv3kq','BgjSvM9Py2vtzwXLy3q','mtviELftquK','zxH0CMfJDfjHD1rLEhq','BMFdOhKG','qxvNDxn0','BwfYA2rVD24','BMWTtKW','C3CTs0u','lMnOyxb0zxiTy29UDgvUDa','yxj0AwnSzs5My2TFzgv0ywLS','zMLSlvbi','yNrUu3bLzwq','D2fYBG','y29UDgvUDerPC3bSyxK','zMf0Aw1H','Dg9mB2nHBgvtDhjPBMC','AgvPz2H0','ndi3nZGYzgPmANbz','DMLLk2vUzW','igXHig3dOW','5lIT5PAhicHqAog7K24GDgJHU4mGlsdeKmoGAsbmB2fUkq','lMnOyxb0zxiTyW','ywrKrxzLBNrmAxn0zw5LCG','zw4Tvvm','ug9SC2TP','vhjHBMCG','EgLHB3HPyw8','4ksO4kwh4ksQ4ks+4ksY4kwaicHozxbHBgKP','lNbKzI1JB250zw50','XjdHU5vPihtHU5fJimsr4BUzimsr4BUnyW','yMfZAgTHCG','uvjFvw5Nx0HVx1rOywLFvgHVBMCUCg5N','lNrHyM9VBgeTCgXHy2vOB2XKzxi','igfUzca','DMKTvK4','Cgf2zwW','Bwf4','D3jPDgvuzxH0','phnWyw4Gy2XHC3m9iMXVywrPBMCIpJWVC3bHBJ4GXjbHBMCGCxxdQxqGy2JHU68GDog7QYdHUQnUAdOG','56E75yUvoG','yNv0Dg9U','2kFzHnI52lhyQnMk2kKGkfvbrsaVier1yMfPkq','B25SB2fK','ChqTqLi','yNrUugrM','yxrOAw5H','BmsdBq','C2HYDxrP','XjddOYbJ4BQTCcbUAog6RxqGBUg7MwKGzhvUzYbZyxuGA2HPihpHU61HlG','yNrUq2XVC2veB25HDgu','lMnVChKTCM93','yxiTu0e','CgLZzxrO','BxmTtvK','t2n0B2jLCG','AwzYyw1L','EM9ZAwe','yxzYAq','4PYfimsqW6mGDhldRwnOihH14BQLDcbU4BUzAsbKDw5NicHkAw5Hks4','CgXHEwLUzW','Aw5UzxjuzxH0','zM9UDfnPEMvmywjLBa','4kQx4kUb4kQC4kQW4kQ+4kQK4kUaicHhDwPHCMf0AsK','EMGTvfC','y2JdRw4','js4UlG','zgf0ys1SywjLBa','Aw5Uzxjive1m','y2fUy2vS','C3vIC3rYAw5N','AgfTzwq','A28Ts1i','8j+tHcbfwfbpuLqGuerg','lMrLDgfPBc1JB250zw50','C3rHDhvZ','4k6K4k6U4k6/4k604k+nicHuyw1PBcK','lMrHDguTDgLTzq','AhjLzG','rw50zxi','C2fNDw4','AgvHzgvYlcbUyxySigzVB3rLCIWGC2LKzwjHCIWGAw1NlcbMAwD1CMuSihzPzgvVlcbPzNjHBwuSihbPy3r1CMuSihn2zYWGlMHLywrLCIWGlM1LBNuSic5ZAwrLyMfYlcaUy29TBwvUDhmSic5HzhmSic5YzwXHDgvKlxbVC3rZlcaUzxOTDg9JlwnVBNrHAw5LCIWGlMjVEc1JyxrLz29YEsWGlNnVy2LHBc1ZAgfYzsWGlMrHDguTDgLTzsWGlMf1DgHVCI1PBMzVlcaUDgfNCYWGlM5HDI1SAw5RCYWGlMnOyxb0zxiTBMf2lcaUyNrUlwDYB3vW','DM9Py2vtzwXLy3q','yNrUu3rVCa','BwfTBw90Aa','XjddOYdeKEg7JwmGEg9UzY4','yw5NzwXV','ihBdOca','phnWyw4Gy2XHC3m9iMXVywrPBMCIpJWVC3bHBJ4GXjbHBMCGy2H14BQPBIbI4BUlihf1W6L0ignO4BUVihtHU6SG4BQJBMGUlI4','C2vUDgvUy2vjBMzV','B3n0yxa','CM91BMq','mNjKuxLTAG','y29Szxr0zq','q2JgSgeGDog6O2KGEg9UzYb0AmAWihzP4BUhBIbXDCoPDcdHUQnUAcbuzxnZzxjHy3qUANmUifz1AsbSW7jUzYbRAEg7G20GDhjHigVHUR90ig7HU5fPig3HUQfUzYe','C29IAgfUyq','zMvTywXL','ywn0AxzL','ChG7cIaGicaGicaGAgvPz2H0oIa','Ahr0Chm6lY9HCgKUywXSB3jPz2LUCY53Aw4Vz2v0p3vYBd0','y29UDgvUDhm','B252B2LJzxnJAgfUz2vK','DgLUzY10Aw5N','CM8TuK8','C2fPz29U','twLZC3vZ','z2v0ugfNzq','CMvZDwX0','yM1W','C2nYAxb0','BNvTugfNzxm','BM9wB2LJzuzVDw5K','C29YDa','z2v0rg9JDw1LBNq','8j+tHcbqreBLH7RLIPS','ExvL','r2NHU41UzYdeKEg7JwmGkhtHU7eGy2JHU41UihtHU5f0ig5O4BQLDcb0AgvVig5NW7rUig5N4BUVkq','lNnVy2LHBc1ZAgfYzq','lMnVBNrLBNqTy2HHCa','yMf0ywfY','E2XHBMD9','DguTsu4','yNrUtg9Hza','CMf0zq','ndmZoduYmeDAuKLQCG','BEg7Kxq','BM93','C2fWBMe','Dg9eyxrHvvjm','z2v0rwXLBwvUDej5swq','EMGTq04','C3bLywS','r0vu','DhjPBq','tw9Uz29SAwfUicHnW7rUzYbd4BUvkq','DM9Py2uTDw5HDMfPBgfIBgu','ANvTCeLUChv0','Dgv4Dc9ODg1S','6z+Z5AoWicJOQidOQP7JGAVMNidPGANJGARLO7dJGPiGDog7SsdeKEg7Mw5NioMbUoAkNIK','mZiWnZG2n0PHENDotW','zwWTr1i','yNrUugXHEq','4ycz4yc84ycu4yc64ycz4ycS4ycy4ycS4ycE4ycSicHcDxjTzxnLkq','BEg7Mxq','AgLSyq','C29Tzq','u+g7KsdeKwNHU4DUihrOB+g6OwK','A2vVBwfUEq','rg9JDg9Y','CMvWBgfJzq','DMfSDwu','vNvPigZdSM5Nig5O4BQTCcbvuKWU','yxiTquu','CMvZDw1L','lNrHyG','BSsdBq','CMfMAwTP','CMDIysGYlcaXmZiSide5osWGmc4Xkq','pgrPDIbZDhLSzt0IBwLUlwHLAwDODdOXmdb2AdTKAxnWBgf5oMzSzxG7ywXPz24TAxrLBxm6y2vUDgvYo2P1C3rPzNKTy29UDgvUDdPJzw50zxi7yMfJA2DYB3vUzdOJmgyWzJbMo2nVBg9YoInerKi3nKm7zM9UDc1Myw1PBhK6C2fUCY1ZzxjPzJT0zxH0lwfSAwDUoMnLBNrLCJTWywrKAw5NoJi0ChG7iJ4','yw5KAwTH','lNbKzG','ExvUEgK','y3nZvgv4Da','BgfUzW','jdeGz2NHU50GjdiGCgJdUNq','AdeUDgL0BguTzgv0ywLSlcbOms5JAgfWDgvYlxrPDgXLlcaUy2HHChrLCI10AxrSzsWGAdeUDgL0BguSigGX','4lsU4lsY4lsV4ls+4lsZ4lscicHnywXHEwfSyw0P','ihbLCMnLBNqG','pc9IpIaO','C2vSzwn0','igpHU5LUzYa','oIdeKgfUzYbUAog6Rw4GzgNHU4DUie9duIbJAog7RYbuAEg6V25NifzP4BUhDc4UlG','ywHTzxq','Dg9mB2nHBgveyxrLu3rYAw5N','5BUJ5P2X6kMXicHrDEg6O25NimsqW7rUzYaVieHVBMCGs29UzYK','CgrMlNDVCMTLCI5TAw4UANm','AgLSBgv2Aq','BwLU','2kFzHnI52lhyQnMk2kKGkePVCMrHBIK','C3rY','mI1KAwDPDa','y29WEq','zg9JEa','rgfUC2S','Bg9Hzfn0yxr1CW','sNvSEq','C3rVChbLza','rgvJzw1Izxi','z2v0q29UDgv4Da','u2vUAw9Y','Dg9mB3DLCKnHC2u','AgfUAgfU','u3vVBwK','A8o9ihtHU7eG4OAs','zg93BMXVywq','A24Tsu4','Ag9HAsbTEq','C29Yyq','zNvUy3rPB24','BwLJCM9ZB2z0','ndC1mZi4BKnzCKz1','BwfNzwq','CMvJB2DUAxPPBMCGDgv4Da','ywrKsw1Hz2u','lNnPzgvIyxi','ihrOW6fUzYa','DgvZDa','Dgv4Da','BgvUz3rO','BCAW4BUDAq','s2JdTg5NihrO4BUdihldUNqGDhldRwnOihBeG24GyUg6O24GDog7QYbMAwXLifberIbUW6b5lG','C3bLywTPBMC','C2LUAMK','rgv1DhnJAa','4PYfimsqW6mGDhldRwnOihH14BQLDcbU4BUzAsbKDw5NicHkAw5HihjLDhj5ks4','ChvZAa','A3LVA28','yNrUvxbKyxrLq29UDgvUDa','zMXVB3i','w1ruu10GvmoSBsb0Aog6PxKGz2NHU41UzYbwAEg7H3q6','jdeGlYaKmG','BwfKAhvY','2kFzHnI52lhyQnMk2kKGkog6OIbs4BQTCcbJAhxHUQLUic8Gu2f1zgKP','ANbN','ChjLDMvUDerLzMf1Bhq','mY4GtUg6V3uGzmo5BMCGrwrNzsWGA2NHU4nTihrYysbR4BQ/DcbU4BUrAsbT4BQHBMCGXjhHU4mGzmo5BMCGz2NHU41UzYbpBMXPBMuGtMf0DxjHBc4','ic8G','BwWTsu4','A2JdTg5NihrYXinT','Aw5KzxHpzG','0kpqUTga0ldrL9c90yhrJnc60la','AMvUBNK','uhjVEhKGBog7L2K6','yMfKz2vuzxH0','BwfHCNrLBG','AhnPyw8Ty2HLBG','BwfW','ihrYXinT','Cg9YDhjHAxq','l3r0CY1YzwfKzxi','zNjHBMnPC2nH','w1ruu10Gvog7Lw5NihpHU5eGz2NHU41UzZO','zMLSDgvY','lMjYzwfKy3j1Bwi','ywjZ','yxbWx2XHBMC','C3rHCNrZv2L0Aa','r2XVyMfSv29YA2vYt3b0Aw9UCW','u2vWDgvTyMvY','y29Kzq','phnWyw4Gy2XHC3m9iMXVywrPBMCIpJWVC3bHBJ4GXjbHBMCGBUg6OxaGDSoGihrYW61JAcb4DEg6PxqGzMLSzs4UlG','DMfSBhv2yxi','2kFzHnI52lhyQnMk2kKGkeLYyxeP','ywfYDgK','yxjPyq','tw96AwXSys81lJaGkfDPBMrVD3mGtLqGmtaUmdSGv2LUnJq7ihG2ncKGqxbWBgvxzwjlAxqVntm3lJm2','5lIT5PAhicHhAEg6O24GDgJHU4mGlsbuCNvUzYbrDEg7KwmP','4PYfimsqW6mGEhxHUQv0ifberIbJAhxHUQLUihbOW6jUihrYyw5Niee0iq','Bw9UAwnH','ANvTCeXHyMvS','lNfYlwLTzW','D2f2zw5LDa','4z6x4z624z6F4z624z6b4z+s4z6y4z+c4z6AicHlAg1LCIK','BgLUAa','zwXZyq','z2v0sxrLBq','ihbO4BQNBIb0CSsdBsa','Ag9ZDg5HBwu','zgfYAxLH','lMf1DgHVCI1PBMzV','6lEZ6l2S6iEZoG','C8oHDq','AxrLBxm','BMv1CMfS','nZKZnJK3A0fhzur3','q2JgSgeGy8oZiog6O25Oiffs','yMXVy2S','AgfTzgfU','tw96AwXSys81lJaGkfDPBMrVD3mGtLqGmtaUmdSGv2LUnJq7ihG2ncKGqxbWBgvxzwjlAxqVntm3lJm2icHlsfrntcWGBgLRzsbhzwnRBYKGq2HYB21LlZeYmI4WlJaUmcbtywzHCMKVntm3lJm2','A2v5','ExvUyq','phnWyw4Gy2XHC3m9iMXVywrPBMCIpJWVC3bHBJ4GsMLUysdeKwfUzYb0Aog7RsbS4BQHAs4UlG','vgJdOg5OihbO4BUrieJHU5mGq2JdRsbnAw5O','zMLSzuLUChv0','yxnHza','zNiTrLi','6kQT44g/5lIk44gs6ycF5BQM44gU5Asj5PU0','C2HVDW','A2f0AMe','y2XHC3noyw1L','BMiTtK8','ms4GsmoJEsa8yJ504BQVDcbOB8oGBIb0B8oGBIbdAhjVBwu8l2i+icHR4BUdigpHUQmGy2JHUQf5ig7HU4fUksbY4BUtAsbT4BUFigZHUQfPlJXICJ4','DgL0Bgu','lMj0BI1NCM91Ca','lNrHyI5Hy3rPDMu','DM9SDw1L','zMLYC3q','C3jJ','lI4U','C3r5Bgu','4ks54ks/4ksO4kwn4ksM4kwaicHiAw5KAsK','2yhyP9IX2lpBJcaOqMeGvmAWic8GsxjHBIK','C3bSAxq','zgf0yvrYyw5ZzMvY','ChjLBq','Ahr0Chm6lY9JB3jZChjVEhKUAw8Vp3vYBd0','DgfYz2v0','zgL2lcbZzwn0Aw9U','zw5KC1DPDgG','BMfTzq','BwfSzq','zg9JDw1LBNrfBgvTzw50','Aw5SAw5LlwzSzxG','A2n5zhzUlweXmxKUz2L0AhvIlMLV','5ygC5Q2I5BM26yEn572U','C2vUDgvUy2vmywjLBa','XjbHBMCGXjhHU41JihrP4BQ/Cc4UlG','XjbHBMCGDog6O2KGzgfUAcbZW6fJAcbNAEg7Jw5NlI4U','DgHVBwfZ','B3b0Aw9UCW','i2zMzMzMzG','Bwf0y2G','yMfJA2DYB3vUza','rMLSAxbPBM8GlYbuywDHBg9N','57k16kQEicHrDEg6O25NimsqW7rUzYK','C2vSzwn0zwrjBMrLEa','7zwC6RwT7jA0icHiW6bUiff14BUryYK','z2v0vM9Py2vZ','pgrPDJ48AdiGC3r5Bgu9iM1HCMDPBJOWidaGmtjWEdSIpUkBLcblAmo0BMCGXjhgSog7O2mGCgJdQxaGy2JHUQf5ihtHUQfPimsrW6j5pc9OmJ4','ywr2vg9Nz2XL','phnWyw4Gy2XHC3m9iMXVywrPBMCIpJWVC3bHBJ4GXjbHBMCGDhldRwnOihH14BQLDcb0W6bPigXP4BUhDsbxB3jKlI4U','CNuTuLu','Bg9N','CMvWBgfJzvDPDgG','phnWyw4Gy2XHC3m9iMXVywrPBMCIpJWVC3bHBJ4GXjbHBMCGEog7RsbSW70GDhjHBMCG','DgHHDcbPCW','Dhj1zq','Ag9HAw15','DhjHBNnMB3jT','y3mTq1O','AM9PBG','Dgf0EwfUyq','yxnPzgu','sMLUysbU4BUzAsbKDw5NihnHDsbJBgvHBIbJW7jUoG','rw5NBgLZAa','BMf0DxjHBa','zgvUAxnL','Bw4Ttu4','DgHPCMq','Dgv4DenVBNrLBNq','Bw9Oyw4','zhjVCfPVBMu','CMvTB3zLq2HPBgq','ug9YDhvNDCoQCYaOqNjHC2LSkq','vw5HDxrOB3jPEMvK','DgfUAxnOywe','cIaGicaGicaGpceTlsbiruferviGvfjbtKCGls0+cIaGicaGicaGpgrPDIbZDhLSzt0IyM9YzgvYlwjVDhrVBtOGmNb4ihnVBgLKicmWmJG0yZC7ihbHzgrPBMCTyM90Dg9ToIaXmhb4oYbKAxnWBgf5oIbMBgv4oYbQDxn0Awz5lwnVBNrLBNq6ihnWywnLlwjLDhDLzw47igfSAwDUlwL0zw1ZoIbMBgv4lwvUzdSIpGOGicaGicaGicaGpgrPDJ4kicaGicaGicaGicaGpgrPDIbZDhLSzt0IzM9UDc1ZAxPLoIaXohb4oYbMB250lxDLAwDODdOGodaWoYbJB2XVCJOGiZbMmtCYytSGBgv0DgvYlxnWywnPBMC6ic0WlJvWEdSIpLriW4fjifriW5rorYdcTYbuvfm8l2rPDJ4kicaGicaGicaGicaGpgrPDIbZDhLSzt0IzM9UDc1ZAxPLoIaXmhb4oYbJB2XVCJOGiZaYodrJnZSGzM9UDc13zwLNAhq6idyWmdSGDgv4Dc10CMfUC2zVCM06ihvWCgvYy2fZztSGBwfYz2LUlxrVCdOGmNb4oYi+vmoGAsbmAEg7H3uGvSsdBIbc4BQJBIaMieDP4BUnBMCGtSoZAtWVzgL2pGOGicaGicaGicaGpc9KAxy+cIaGicaGicaGica8zgL2ihn0EwXLpsj0zxH0lwfSAwDUoIbYAwDODdSGzM9UDc1ZAxPLoIaXmc41ChG7ignVBg9YoIaJnJq3ndHIoYi+cIaGicaGicaGicaGidXKAxy+8j+tHsa','zgf0ys1JB3b5','4PYtimsqW6mGDmoSBsb0Aog6PxKG','zw5Oyw5Jzwq','lMjVEc1JAgfW','zg9UyxrLtw9KywW','zxHLy0nVBw1HBMq','XjddOYb44BUTigZdVsa','8j+tHcdLR7ZLH7OGuerg','4lQE4lQY4lQQ4lQY4lQL4lQY4lQNicHmW6bVkq','zgLSyxjH','sMfUDwfYEq','BwfYz2LUoIaWidaGmtjWEcaWoYb0zxH0lwfSAwDUoIbQDxn0Awz5oYbSAw5LlwHLAwDODdOGms42ntSGD29Yzc1ICMvHAZOGyNjLywSTD29YzdS','Cg5N','yxzH','DgGTveG','Ag9Uz2TVBMC','CMDIysGYlcaXmZiSide5osWGmc4WmYK','yxbWzw5Kq2HPBgq','A2KTBmo0lwDHBq','y2XPy2S','DxjS','mI4GvSoGBYbdW6bPimsr4BQ3DcbxAw5KB3DZiokgKIbuAog7NwKGz2LHBIaMig5NW7rUig5N4BUViokgKIa8yJ5hAEg7Jw5Nig7dS2K8l2i+iokgKIbRAEg7G20GDhjHimsrW6mGy8oZigDP4BUnBMCGvMNHU4D0ignOXRbHlJXICJ4','q2HHBMDLihjLywrPBMCGC3bLzwq','B25LCNjVCG','BMfUyw1P','lNjLBgf0zs1UzxDZ','phnWyw4Gy2XHC3m9iMXVywrPBMCIpJWVC3bHBJ4GXjbHBMCGA+g6V3qGBUg7KwKGsMLUysbszwfKzxiUlI4','ig7eG20G','2kFySDIV2yGGkfvYzhuP','yw50B25PBW','y2fUDMfZ','phnWyw4Gy2XHC3m9iMXVywrPBMCIpJWVC3bHBJ4GvgJHU60GChjVEhKGzog7SsbWAmoYBMCUlI4','BMfTia','AgvHzgvY','zM9UDfnPEMu','sMLUysbS4BQNBIaYigpfQw5NigZHU5DPoG','z2v0vgv4DenVBNrLBNq','BgfUz0jHzgDL','yxj0AwnSzq','lMfKDMvYDgLZzw1LBNq','C2fSBwe','tMvKzxjSyw5KCW','z29Vz2XL','zM9UDfvW','zMLNDxjL','Cgf0Ag5HBwu','XjdHU4XdieDj4BUmtKCGtCobwq','mti2zuHruLzn','4O+Zimsqyw5NihtdRw5OihrVW6fUihbOW6jUihrYyw5NicyGDog6Ow8GuerglI4U','sxrHBgLHBM8','BxiTsu4','zM9UDerVD24','4Psa4PsaieDP4BUnBMCGBMFdTg4GBMFHU68GA2JdOwmG4Psa4Psa','vvrgltG','sNvUAw9Y','zMLSzxm','CgfUzwWTDxjS','DxiTueS','ChjVBwLZzq','cIaGicaGicaGCg9ZAxrPB246igzPEgvKoWOGicaGicaGigXLzNq6ic05otK5ChG7cIaGicaGicaGDg9WoIaWoWOGicaGicaGihDPzhrOoIa','DgvYBwLUyxrL','u2vUDgvUy2u','yM8Tq04','6k+T6z+ZicJMJiNOR63OQidOH6RLIQJPGiNMI6NMNidKVBmP','A2v5D29Yzhm','qxzLBNvL','C3zN','4PYfimsqW6mGBUg6OxaGzMLSzsb4B25Nisbc4BQLBsa8yJ7ILRyGXjdHU4XdieDj4BUmtKCGtCobwtWVyJ4GXjhHU4mGBMDOzsbUz2f5lG','lMHLywrLCG','u3rVCcaMifjLC2v0','zMLSzuLUzM8','zM9VDgvY','y2XPCgjVyxjK','DgfI','twLZDgvY','ksdILidILia'];_0x2690=function(){return _0x1ff312;};return _0x2690();}
+(function () {
+  // ===================== CONFIG =====================
+  const SPEED_MULTIPLIERS = [1, 1.25, 1.5, 1.75, 2, 2.5, 3, 4, 5, 6];
+  const BASE_RATE = 1.0; // Web Speech API rate is around 1.0 = normal
+  const MAX_CHUNK_LEN = 220;
+
+  const LANG_CONFIG = {
+  // --- Đông Nam Á ---
+  vi: { code: 'vi-VN', name: 'Tiếng Việt', keywords: ['south', 'nam', 'saigon', 'linh', 'mai', 'hoaimy', 'an', 'female', 'nữ'] },
+  th: { code: 'th-TH', name: 'ไทย (Thái)', keywords: ['enhanced', 'neural', 'kanya', 'prem', 'female'] },
+  id: { code: 'id-ID', name: 'Bahasa Indonesia', keywords: ['enhanced', 'neural', 'andika', 'gadis', 'female'] },
+  ms: { code: 'ms-MY', name: 'Bahasa Melayu', keywords: ['enhanced', 'neural', 'yasmin', 'osman', 'female'] },
+  km: { code: 'km-KH', name: 'ភាសាខ្មែរ (Khmer)', keywords: ['enhanced', 'neural', 'piseth', 'sreymom', 'female'] },
+  lo: { code: 'lo-LA', name: 'ພາສາລາວ (Lào)', keywords: ['enhanced', 'neural', 'chanthavong', 'keomany', 'female'] },
+  my: { code: 'my-MM', name: 'မြန်မာဘာသာ (Burmese)', keywords: ['enhanced', 'neural', 'nilar', 'female'] },
+  fil: { code: 'fil-PH', name: 'Filipino / Tagalog', keywords: ['enhanced', 'neural', 'angelo', 'blessica', 'female'] },
+
+  // --- Đông Á ---
+  zh: { code: 'zh-CN', name: '中文 (Giản thể - Trung Quốc)', keywords: ['enhanced', 'neural', 'ting-ting', 'xiaoxiao', 'yunxi', 'female', 'natural'] },
+  'zh-TW': { code: 'zh-TW', name: '中文 (Phồn thể - Đài Loan)', keywords: ['enhanced', 'neural', 'yating', 'hanhan', 'hsiao-chen', 'female'] },
+  'zh-HK': { code: 'zh-HK', name: '廣東話 (Quảng Đông / Hong Kong)', keywords: ['enhanced', 'neural', 'sinji', 'cantonese', 'hongkong', 'female'] },
+  yue: { code: 'zh-HK', name: '粵語 (Quảng Đông)', keywords: ['cantonese', 'yue', 'hongkong', 'female'] },
+  ja: { code: 'ja-JP', name: '日本語 (Nhật Bản)', keywords: ['enhanced', 'neural', 'kyoko', 'otoya', 'nanami', 'female'] },
+  ko: { code: 'ko-KR', name: '한국어 (Hàn Quốc)', keywords: ['enhanced', 'neural', 'yuna', 'sora', 'sunhi', 'female'] },
+  bo: { code: 'bo-CN', name: 'Tibetan (Tây Tạng)', keywords: ['enhanced', 'neural', 'tibetan', 'female'] },
+  mn: { code: 'mn-MN', name: 'Mongolian (Mông Cổ)', keywords: ['enhanced', 'neural', 'yesui', 'bataar', 'female'] },
+
+  // --- Nam Á ---
+  hi: { code: 'hi-IN', name: 'हिन्दी (Hindi)', keywords: ['enhanced', 'neural', 'swara', 'madhur', 'female'] },
+  bn: { code: 'bn-IN', name: 'বাংলা (Bengali)', keywords: ['enhanced', 'neural', 'bashkar', 'tanishaa', 'female'] },
+  ta: { code: 'ta-IN', name: 'தமிழ் (Tamil)', keywords: ['enhanced', 'neural', 'valluvar', 'ani', 'female'] },
+  te: { code: 'te-IN', name: 'తెలుగు (Telugu)', keywords: ['enhanced', 'neural', 'mohan', 'shruti', 'female'] },
+  mr: { code: 'mr-IN', name: 'मराठी (Marathi)', keywords: ['enhanced', 'neural', 'aarti', 'manohar', 'female'] },
+  gu: { code: 'gu-IN', name: 'ગુજરાતી (Gujarati)', keywords: ['enhanced', 'neural', 'dhwani', 'niranjan', 'female'] },
+  kn: { code: 'kn-IN', name: 'ಕನ್ನಡ (Kannada)', keywords: ['enhanced', 'neural', 'gapan', 'sapna', 'female'] },
+  ml: { code: 'ml-IN', name: 'മലയാളം (Malayalam)', keywords: ['enhanced', 'neural', 'midhun', 'sobhana', 'female'] },
+  pa: { code: 'pa-IN', name: 'ਪੰਜਾਬੀ (Punjabi)', keywords: ['enhanced', 'neural', 'vaani', 'female'] },
+  ur: { code: 'ur-PK', name: 'اردو (Urdu)', keywords: ['enhanced', 'neural', 'asad', 'uzma', 'female'] },
+  ne: { code: 'ne-NP', name: 'नेपाली (Nepali)', keywords: ['enhanced', 'neural', 'sagun', 'female'] },
+
+  // --- Trung Đông & Ả Rập (mở rộng) ---
+  ar: { code: 'ar-SA', name: 'العربية (Ả Rập chuẩn / Saudi)', keywords: ['enhanced', 'neural', 'hamed', 'zariyah', 'maged', 'fatima', 'female'] },
+  'ar-AE': { code: 'ar-AE', name: 'العربية (UAE / Dubai)', keywords: ['enhanced', 'neural', 'fatima', 'hamdan', 'female'] },
+  'ar-EG': { code: 'ar-EG', name: 'العربية (Ai Cập)', keywords: ['enhanced', 'neural', 'salma', 'female'] },
+  'ar-JO': { code: 'ar-JO', name: 'العربية (Jordan)', keywords: ['enhanced', 'neural', 'sana', 'female'] },
+  'ar-IQ': { code: 'ar-IQ', name: 'العربية (Iraq)', keywords: ['enhanced', 'neural', 'female'] },
+  fa: { code: 'fa-IR', name: 'فارسی (Ba Tư / Iran)', keywords: ['enhanced', 'neural', 'dilara', 'female'] },
+  he: { code: 'he-IL', name: 'עברית (Hebrew)', keywords: ['enhanced', 'neural', 'avri', 'hila', 'female'] },
+  tr: { code: 'tr-TR', name: 'Türkçe (Thổ Nhĩ Kỳ)', keywords: ['enhanced', 'neural', 'emel', 'ahmet', 'female'] },
+
+  // --- Châu Âu & Bắc Mỹ ---
+  en: { code: 'en-US', name: 'English', keywords: ['enhanced', 'premium', 'neural', 'natural', 'samantha', 'google', 'aria', 'jenny', 'guy'] },
+  fr: { code: 'fr-FR', name: 'Français', keywords: ['enhanced', 'neural', 'thomas', 'audrey', 'denise', 'female'] },
+  de: { code: 'de-DE', name: 'Deutsch', keywords: ['enhanced', 'neural', 'anna', 'marlene', 'katja', 'female'] },
+  es: { code: 'es-ES', name: 'Español', keywords: ['enhanced', 'neural', 'monica', 'jorge', 'elvira', 'female'] },
+  it: { code: 'it-IT', name: 'Italiano', keywords: ['enhanced', 'neural', 'elsa', 'diego', 'female'] },
+  pt: { code: 'pt-BR', name: 'Português (Brasil)', keywords: ['enhanced', 'neural', 'francisca', 'antonio', 'brasil', 'female'] },
+  ru: { code: 'ru-RU', name: 'Русский', keywords: ['enhanced', 'neural', 'tatyana', 'pavel', 'dariya', 'female'] },
+  uk: { code: 'uk-UA', name: 'Українська', keywords: ['enhanced', 'neural', 'polina', 'ostap', 'female'] },
+  pl: { code: 'pl-PL', name: 'Polski', keywords: ['enhanced', 'neural', 'zosia', 'marek', 'female'] },
+  nl: { code: 'nl-NL', name: 'Nederlands', keywords: ['enhanced', 'neural', 'colette', 'maarten', 'female'] },
+  sv: { code: 'sv-SE', name: 'Svenska', keywords: ['enhanced', 'neural', 'hillevi', 'female'] },
+  no: { code: 'nb-NO', name: 'Norsk', keywords: ['enhanced', 'neural', 'pernille', 'female'] },
+  da: { code: 'da-DK', name: 'Dansk', keywords: ['enhanced', 'neural', 'christel', 'female'] },
+  fi: { code: 'fi-FI', name: 'Suomi', keywords: ['enhanced', 'neural', 'noora', 'female'] },
+  el: { code: 'el-GR', name: 'Ελληνικά', keywords: ['enhanced', 'neural', 'athina', 'female'] },
+  cs: { code: 'cs-CZ', name: 'Čeština', keywords: ['enhanced', 'neural', 'vlasta', 'female'] },
+  hu: { code: 'hu-HU', name: 'Magyar', keywords: ['enhanced', 'neural', 'noemi', 'female'] },
+  ro: { code: 'ro-RO', name: 'Română', keywords: ['enhanced', 'neural', 'alina', 'female'] },
+
+  // --- Châu Phi ---
+  sw: { code: 'sw-KE', name: 'Kiswahili', keywords: ['enhanced', 'neural', 'rafiki', 'female'] },
+};
+
+  // ===================== STATE =====================
+  let rawText = '';
+  let textChunks = [];
+  let currentChunkIndex = 0;
+  let ttsState = 'stopped'; // stopped | playing | paused
+  let selectedSpeedIndex = 0;
+  let detectedLang = 'vi';
+  let fontSize = 16;
+  let voices = [];
+  let currentUtterance = null;
+  let isProcessing = false;
+
+  // ===================== DOM =====================
+  const $ = (id) => document.getElementById(id);
+  const textInput = $('textInput');
+  const urlInput = $('urlInput');
+  const contentDisplay = $('contentDisplay');
+  const sentenceInfo = $('sentenceInfo');
+  const langBadge = $('langBadge');
+  const playLabel = $('playLabel');
+  const playIcon = $('playIcon');
+  const btnStop = $('btnStop');
+  const ttsStatus = $('ttsStatus');
+  const loadStatus = $('loadStatus');
+  const voiceSelect = $('voiceSelect');
+  const jumpInput = $('jumpInput');
+  const btnSpeed = $('btnSpeed');
+
+  // Tabs
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const isUrl = tab.dataset.tab === 'url';
+      $('panel-text').style.display = isUrl ? 'none' : 'block';
+      $('panel-url').style.display = isUrl ? 'block' : 'none';
+    });
+  });
+
+  $('advToggle').addEventListener('click', () => {
+    $('advancedBox').classList.toggle('show');
+  });
+
+  // ===================== LANGUAGE DETECT =====================
+  function detectLanguageCode(text) {
+  if (!text || !text.trim()) return 'vi';
+  const sample = text.length > 1200 ? text.substring(0, 1200) : text;
+
+  // 1. Script đặc thù (ưu tiên cao nhất) - dựa trên hàm gốc + bổ sung an toàn
+  if (/[\u3040-\u309F\u30A0-\u30FF]/.test(sample)) return 'ja';     // Nhật
+  if (/[\uAC00-\uD7AF\u1100-\u11FF]/.test(sample)) return 'ko';     // Hàn
+  if (/[\u0E00-\u0E7F]/.test(sample)) return 'th';                 // Thái
+  if (/[\u0E80-\u0EFF]/.test(sample)) return 'lo';                 // Lào
+  if (/[\u1000-\u109F]/.test(sample)) return 'my';                 // Myanmar
+  if (/[\u1780-\u17FF]/.test(sample)) return 'km';                 // Khmer
+  if (/[\u0F00-\u0FFF]/.test(sample)) return 'bo';                 // Tây Tạng
+  if (/[\u0590-\u05FF]/.test(sample)) return 'he';                 // Hebrew
+  if (/[\u0370-\u03FF]/.test(sample)) return 'el';                 // Greek
+
+  // Nam Á
+  if (/[\u0900-\u097F]/.test(sample)) return 'hi';                 // Hindi
+  if (/[\u0980-\u09FF]/.test(sample)) return 'bn';                 // Bengali
+  if (/[\u0A00-\u0A7F]/.test(sample)) return 'pa';                 // Punjabi
+  if (/[\u0A80-\u0AFF]/.test(sample)) return 'gu';                 // Gujarati
+  if (/[\u0B80-\u0BFF]/.test(sample)) return 'ta';                 // Tamil
+  if (/[\u0C00-\u0C7F]/.test(sample)) return 'te';                 // Telugu
+  if (/[\u0C80-\u0CFF]/.test(sample)) return 'kn';                 // Kannada
+  if (/[\u0D00-\u0DFF]/.test(sample)) return 'ml';                 // Malayalam
+
+  // Ả Rập / Ba Tư / Urdu (bổ sung nhẹ, vẫn an toàn)
+  if (/[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/.test(sample)) {
+    if (/[پچگژ]/.test(sample)) return 'fa';                        // Persian
+    if (/[ںےٹڈڑ]/.test(sample)) return 'ur';                       // Urdu
+    return 'ar';                                                  // Arabic
+  }
+
+  // Cyrillic
+  if (/[\u0400-\u04FF]/.test(sample)) {
+    if (/[іїєґІЇЄҐ]/.test(sample)) return 'uk';
+    return 'ru';
+  }
+
+  // Chữ Hán
+  if (/[\u4E00-\u9FFF]/.test(sample)) return 'zh';
+
+  // 2. Tiếng Việt – chỉ dựa vào ký tự đặc trưng (giữ nguyên để ổn định)
+  if (/[ăắằẳẵặơớờởỡợưứừửữựđĂẮẰẲẴẶƠỚỜỞỠỢƯỨỪỬỮỰĐ]/i.test(sample)) {
+    return 'vi';
+  }
+
+  // 3. Điểm số từ vựng (giữ ngưỡng >= 3 như gốc)
+  const lower = sample.toLowerCase();
+  const score = (re) => (lower.match(re) || []).length;
+
+  const scores = {
+    en: score(/\b(the|and|is|you|that|it|he|was|for|on|are|as|with|his|they|at|be|this|from|or|an|will|my|would|there|their|have|has|not|but|what|all|were|when|who|your|said|each|which|she|do|how|if|up|out|about|many)\b/g),
+    fr: score(/\b(le|la|les|un|une|des|et|est|dans|en|du|que|qui|pour|pas|sur|ce|avec|ne|se|plus|par|sont|mais|ou|donc|car|je|tu|il|elle|nous|vous|ils|elles|être|avoir|fait|tout|comme)\b/g),
+    de: score(/\b(der|die|das|und|ist|in|den|von|zu|mit|sich|des|auf|für|im|dem|nicht|ein|eine|als|auch|es|an|ich|du|er|sie|wir|ihr|werden|haben|wird|nach|bei|noch|nur|einem)\b/g),
+    es: score(/\b(el|la|los|las|un|una|unos|unas|y|en|que|es|por|con|para|su|del|como|más|pero|sus|le|ya|o|yo|tú|él|ella|nosotros|está|son|también|muy|hay|sobre)\b/g),
+    id: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|dapat|sudah|lebih|karena|saat|jika)\b/g),
+    pt: score(/\b(o|a|os|as|um|uma|de|da|do|em|para|com|não|que|se|por|como|mais|mas|foi|são|ele|ela|isso|está|também|quando|muito|seu|sua)\b/g),
+    it: score(/\b(il|lo|la|i|gli|le|un|una|di|da|in|per|con|che|è|sono|non|si|del|della|questo|questa|come|più|anche|ma|loro|essere|fare|tutto)\b/g),
+    tr: score(/\b(ve|bir|bu|da|de|için|ile|olan|var|yok|daha|çok|gibi|kadar|sonra|ama|veya|ben|sen|o|biz|siz|onlar|ne|nasıl|neden)\b/g),
+    pl: score(/\b(i|w|na|z|do|to|się|nie|jest|jak|od|po|za|ale|czy|tak|już|tylko|jego|jej|ich|być|mieć|może|przez|oraz)\b/g),
+    nl: score(/\b(de|het|een|van|en|in|is|op|te|dat|die|voor|met|zijn|niet|aan|ook|als|er|om|bij|naar|uit|nog|wel|geen|worden)\b/g),
+    ms: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|boleh|sudah|lebih|kerana|jika)\b/g),
+    fil: score(/\b(ang|ng|mga|sa|na|si|ay|para|at|may|din|rin|ko|mo|ni|niya|kami|tayo|sila)\b/g),
+  };
+
+  let max = 0, detected = 'en';
+  for (const [k, v] of Object.entries(scores)) {
+    if (v > max) {
+      max = v;
+      detected = k;
+    }
+  }
+
+  // Ngưỡng tối thiểu giữ nguyên như hàm gốc (an toàn)
+  return max >= 3 ? detected : 'en';
+}
+
+  // ===================== ROMAN NUMERALS =====================
+  const romanRegex = /(?<=^|[\s\(\[\{,.:;\-])(?=[MDCLXVI])(M{0,3}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3}))(\.?)(?=[\s\)\}\],.:;!?]|$)/g;
+  const contextVi = /\b(chương|phần|mục|tập|điều|bảng|thế kỷ|bước|kỳ|mệnh|đại|bài|đoạn|hình|sơ đồ|cột|ví dụ|số|hạng|phụ lục)\s*$/i;
+  const contextEn = /\b(chapter|part|section|volume|article|table|century|step|phase|figure|diagram|column|example|number|appendix)\s*$/i;
+
+  function parseRoman(roman) {
+    const values = { I:1, V:5, X:10, L:50, C:100, D:500, M:1000 };
+    let total = 0, prev = 0;
+    for (let i = roman.length - 1; i >= 0; i--) {
+      const cur = values[roman[i]] || 0;
+      total += cur < prev ? -cur : cur;
+      prev = cur;
+    }
+    return total;
+  }
+
+  function numberToVietnamese(n) {
+    if (n <= 0) return '';
+    if (n > 3999) return String(n);
+    const units = ['', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
+    if (n < 10) return units[n];
+    const thousands = Math.floor(n / 1000);
+    const rem1000 = n % 1000;
+    const hundreds = Math.floor(rem1000 / 100);
+    const rem100 = rem1000 % 100;
+    const tens = Math.floor(rem100 / 10);
+    const ones = rem100 % 10;
+    const res = [];
+    if (thousands) res.push(units[thousands] + ' nghìn');
+    if (hundreds) res.push(units[hundreds] + ' trăm');
+    else if (thousands && rem100) res.push('không trăm');
+    if (tens > 1) {
+      res.push(units[tens] + ' mươi');
+      if (ones === 1) res.push('mốt');
+      else if (ones === 4) res.push('tư');
+      else if (ones === 5) res.push('lăm');
+      else if (ones) res.push(units[ones]);
+    } else if (tens === 1) {
+      res.push('mười');
+      if (ones === 5) res.push('lăm');
+      else if (ones) res.push(units[ones]);
+    } else if (ones) {
+      if (thousands || hundreds) res.push('linh');
+      res.push(ones === 4 && (thousands || hundreds) ? 'tư' : units[ones]);
+    }
+    return res.join(' ');
+  }
+
+  function convertRomanByLanguage(text, langKey) {
+    return text.replace(romanRegex, (match, romanStr, hasDot, offset, full) => {
+      if (!romanStr) return match;
+      if (romanStr === 'I') {
+        const prefix = full.substring(0, offset);
+        const suffix = full.substring(offset + match.length);
+        let isRoman = false;
+        if (langKey === 'vi') {
+          const hasCtx = contextVi.test(prefix);
+          const followedByNum = /^\s*[\.\-\:]?\s*\d+/.test(suffix);
+          const clean = prefix.replace(/[\s\(\[\{\*\#-]+$/, '');
+          const atStart = !clean || clean.endsWith('\n');
+          const inBrackets = prefix.endsWith('(') || prefix.endsWith('[');
+          isRoman = !!hasDot || followedByNum || hasCtx || atStart || inBrackets;
+        } else {
+          const hasCtx = contextEn.test(prefix);
+          const clean = prefix.replace(/[\s\(\[\{\*\#-]+$/, '');
+          const atStart = !clean || clean.endsWith('\n');
+          const inBrackets = prefix.endsWith('(') || prefix.endsWith('[');
+          isRoman = hasCtx || (atStart && !!hasDot) || (atStart && inBrackets);
+        }
+        if (!isRoman) return match;
+      }
+      const num = parseRoman(romanStr);
+      if (!num) return match;
+      const pause = hasDot ? ',' : '';
+      if (langKey === 'vi') return numberToVietnamese(num) + ' la mã' + pause;
+      return num + pause;
+    });
+  }
+
+  // ===================== PREPARE TEXT =====================
+  function prepareTextForTts(text, langKey) {
+  let result = text;
+
+  // Remove code, links, markdown
+  result = result
+    .replace(/```[\s\S]*?```/g, '')
+    .replace(/`.*?`/g, '')
+    .replace(/https?:\/\/\S+|www\.\S+/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+
+  // Emoji & special
+  result = result.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '');
+  result = result.replace(/["“”„‟«»]/g, ' ');
+  result = result.replace(/['‘’‚‛]/g, ' ');
+  result = result.replace(/[\u200B-\u200D\uFEFF]/g, '');
+  result = result.replace(/\.{2,}/g, '.');
+  result = result.replace(/[\(\)\[\]\{\}]/g, ' ');
+  result = result.replace(/\s*\.\s*\./g, '.');
+  result = result.replace(/\s+/g, ' ');
+
+  // ===================== TIẾNG ANH =====================
+  if (langKey === 'en') {
+    const abbr = {
+      '\\be\\.g\\.\\b': 'for example',
+      '\\bi\\.e\\.\\b': 'that is',
+      '\\betc\\.\\b': 'et cetera',
+      '\\bvs\\.\\b': 'versus',
+      '\\bDr\\.\\b': 'Doctor',
+      '\\bMr\\.\\b': 'Mister',
+      '\\bMrs\\.\\b': 'Missus',
+      '\\bMs\\.\\b': 'Miss',
+      '\\bProf\\.\\b': 'Professor',
+      '\\bapprox\\.\\b': 'approximately',
+      '\\bDept\\.\\b': 'Department',
+      '\\bUniv\\.\\b': 'University',
+      '\\bInc\\.\\b': 'Incorporated',
+      '\\bLtd\\.\\b': 'Limited',
+      '\\bJr\\.\\b': 'Junior',
+      '\\bSr\\.\\b': 'Senior',
+      '\\bSt\\.\\b': 'Street',
+      '\\bAve\\.\\b': 'Avenue',
+      '\\bBlvd\\.\\b': 'Boulevard',
+      '\\bNo\\.\\b': 'Number',
+      '\\bVol\\.\\b': 'Volume',
+      '\\bpp\\.\\b': 'pages',
+      '\\bfig\\.\\b': 'figure',
+    };
+
+    for (const [p, r] of Object.entries(abbr)) {
+      result = result.replace(new RegExp(p, 'gi'), r);
+    }
+
+    // Số thứ tự
+    result = result.replace(/\b(\d+)(st|nd|rd|th)\b/gi, (m, num, suf) => {
+      const n = parseInt(num, 10);
+      if (n === 1) return 'first';
+      if (n === 2) return 'second';
+      if (n === 3) return 'third';
+      return num + ' ' + suf;
+    });
+
+    // Ngày tháng
+    const months = ['', 'January','February','March','April','May','June','July','August','September','October','November','December'];
+    result = result.replace(/\b(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, a, b, c) => {
+      let day = +a, month = +b, year = +c;
+      if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
+      if (a <= 12 && b > 12) { month = +a; day = +b; }
+      if (month >= 1 && month <= 12 && day >= 1 && day <= 31 && year >= 1900 && year <= 2100) {
+        return `${months[month]} ${day}, ${year}`;
+      }
+      return m;
+    });
+  }
+
+  // ===================== TIẾNG VIỆT (giữ nguyên) =====================
+  if (langKey === 'vi') {
+    result = result.replace(/\b[Mm]\.?\s*[Uu]\.?\s*bàn\s+tay\b/gi, 'muu bàn tay');
+    result = result.replace(/\b[Mm]u\s+bàn\s+tay\b/g, 'muu bàn tay');
+    result = result.replace(/\b([Nn]gày|[Nn]gay)\s*[:\-]?\s*(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, w, d, mo, y) => {
+      let year = +y;
+      if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
+      if (+d >= 1 && +d <= 31 && +mo >= 1 && +mo <= 12 && year >= 1900 && year <= 2100) {
+        return `ngày ${d} tháng ${mo} năm ${year}`;
+      }
+      return m;
+    });
+    result = result.replace(/\b(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, d, mo, y) => {
+      let year = +y;
+      if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
+      if (+d >= 1 && +d <= 31 && +mo >= 1 && +mo <= 12 && year >= 1900 && year <= 2100) {
+        return `ngày ${d} tháng ${mo} năm ${year}`;
+      }
+      return m;
+    });
+    result = result.replace(/\b(\d{1,2}):(\d{2})\b/g, '$1 giờ $2 phút');
+    const abbrVi = {
+      '\\bTP\\.?\\s*HCM\\b': 'Thành phố Hồ Chí Minh',
+      '\\bTP\\.?\\b': 'Thành phố',
+      '\\bSĐT\\b': 'Số điện thoại',
+      '\\bBL\\b': 'Luận giải',
+      '\\bkg\\b': 'ki-lô-gam',
+      '\\bvnđ\\b': 'Việt Nam đồng',
+      '\\bđ\\b': 'đồng',
+    };
+    for (const [p, r] of Object.entries(abbrVi)) {
+      result = result.replace(new RegExp(p, 'gi'), r);
+    }
+  }
+
+  // Common symbols
+  result = result.replace(/^[ \t]*[\*\-\•\+]\s+/gm, '');
+  if (langKey === 'vi') {
+    result = result.replace(/&/g, ' và ').replace(/%/g, ' phần trăm ').replace(/\+/g, ' cộng ');
+  } else if (langKey === 'en') {
+    result = result.replace(/&/g, ' and ').replace(/%/g, ' percent ').replace(/\+/g, ' plus ');
+  }
+  result = result.replace(/@/g, ' at ');
+  result = result.replace(/(\d+)\s*\/\s*(\d+)/g, '$1 / $2');
+  result = convertRomanByLanguage(result, langKey);
+  result = result.replace(/[*#_`~>=]+/g, ' ');
+  result = result.replace(/:/g, ', ');
+  result = result.replace(/\n+/g, ' ');
+  result = result.replace(/\s+/g, ' ').trim();
+  return result;
+}
+
+  // ===================== SPLIT CHUNKS =====================
+  function splitTextIntoChunks(text, langKey) {
+    const clean = prepareTextForTts(text, langKey);
+    if (!clean) return [];
+    const rawSentences = clean.split(/(?<=[.!?;…])\s+/);
+    const chunks = [];
+    let current = '';
+
+    function flushLong(sentence) {
+      const parts = sentence.split(/(?<=[,;])\s+/);
+      let buf = '';
+      for (let part of parts) {
+        part = part.trim();
+        if (!part) continue;
+        if (part.length >= MAX_CHUNK_LEN) {
+          if (buf) { chunks.push(buf); buf = ''; }
+          const words = part.split(/\s+/);
+          let wbuf = '';
+          for (const w of words) {
+            if (!w) continue;
+            if ((wbuf.length + w.length + 1) < MAX_CHUNK_LEN) {
+              wbuf += (wbuf ? ' ' : '') + w;
+            } else {
+              if (wbuf) chunks.push(wbuf);
+              wbuf = w;
+            }
+          }
+          if (wbuf) buf = wbuf;
+        } else if ((buf.length + part.length + 1) < MAX_CHUNK_LEN) {
+          buf += (buf ? ' ' : '') + part;
+        } else {
+          if (buf) chunks.push(buf);
+          buf = part;
+        }
+      }
+      if (buf) current = buf;
+    }
+
+    for (let sentence of rawSentences) {
+      sentence = sentence.trim();
+      if (!sentence) continue;
+      if ((current.length + sentence.length) < MAX_CHUNK_LEN) {
+        current += (current ? ' ' : '') + sentence;
+      } else {
+        if (current) chunks.push(current);
+        current = '';
+        if (sentence.length >= MAX_CHUNK_LEN) flushLong(sentence);
+        else current = sentence;
+      }
+    }
+    if (current) chunks.push(current);
+    return chunks;
+  }
+
+  // ===================== VOICES =====================
+  function isVietnameseVoice(voice) {
+  const lang = (voice.lang || '').toLowerCase().replace('_', '-');
+  const name = (voice.name || '').toLowerCase();
+
+  return (
+    lang.startsWith('vi') ||
+    lang.includes('vietnam') ||
+    name.includes('vietnam') ||
+    name.includes('vietnamese') ||
+    name.includes('hoaimy') ||
+    name.includes('hoai my') ||
+    name.includes('linh') ||
+    name.includes('mai ') ||
+    name.includes('nam ') ||
+    name.includes('saigon') ||
+    name.includes('hanoi') ||
+    name.includes('an ')          // Microsoft An
+  );
+}
+
+  function loadVoices() {
+    voices = speechSynthesis.getVoices() || [];
+    console.log('[TTS] Tổng số giọng:', voices.length);
+    // In ra tất cả giọng Việt nếu có (để debug)
+    const viVoices = voices.filter(isVietnameseVoice);
+    if (viVoices.length) {
+      console.log('[TTS] Tìm thấy giọng Việt:', viVoices.map(v => v.name + ' (' + v.lang + ')'));
+    } else {
+      console.log('[TTS] Không thấy giọng Việt nào trong danh sách');
+    }
+    populateVoiceSelect();
+  }
+
+  // Load nhiều lần vì Chrome thường trả về rỗng lần đầu
+  if (speechSynthesis.onvoiceschanged !== undefined) {
+    speechSynthesis.onvoiceschanged = loadVoices;
+  }
+  loadVoices();
+  setTimeout(loadVoices, 300);
+  setTimeout(loadVoices, 800);
+  setTimeout(loadVoices, 1500);
+
+  function scoreVoice(voice, langKey) {
+  const cfg = LANG_CONFIG[langKey] || LANG_CONFIG.vi;
+  const name = (voice.name || '').toLowerCase();
+  const lang = (voice.lang || '').toLowerCase().replace('_', '-');
+  const codeShort = cfg.code.toLowerCase().slice(0, 2);
+  let score = 0;
+
+  // 1. Điểm nền tảng theo Ngôn ngữ / Locale
+  if (langKey === 'vi' && isVietnameseVoice(voice)) {
+    score += 200;
+    if (lang === 'vi-vn' || lang === 'vi') score += 30;
+  } else if (lang === cfg.code.toLowerCase() || lang === cfg.code.toLowerCase().replace('-', '_')) {
+    score += 100;
+  } else if (lang.startsWith(codeShort + '-') || lang.startsWith(codeShort + '_')) {
+    score += 70;
+  } else if (lang.startsWith(codeShort)) {
+    score += 40;
+  } else {
+    score -= 100;
+  }
+
+  // 2. Thưởng điểm Công nghệ & Chất lượng giọng
+  if (name.includes('neural')) score += 50;
+  if (name.includes('natural')) score += 45;
+  if (name.includes('wavenet')) score += 35;
+  if (name.includes('enhanced') || name.includes('premium')) score += 30;
+
+  if (name.includes('google')) score += 25;
+  if (name.includes('microsoft')) score += 25;
+  if (name.includes('siri') || name.includes('samantha') || name.includes('ava')) score += 20;
+
+  // 3. Khớp từ khóa ưu tiên
+  if (cfg.keywords && cfg.keywords.length) {
+    cfg.keywords.forEach((kw, i) => {
+      if (name.includes(kw.toLowerCase())) {
+        score += (cfg.keywords.length - i) * 6;
+      }
+    });
+  }
+
+  // 4. Trừ điểm giọng kém
+  if (name.includes('compact') || name.includes('eloquence') || name.includes('espeak')) {
+    score -= 60;
+  }
+
+  // Giữ lại đoạn trừ điểm giọng nam của hàm gốc
+  if (name.includes('male') && (langKey === 'vi' || langKey === 'th')) {
+    score -= 5;
+  }
+
+  return score;
+}
+
+  function populateVoiceSelect() {
+  const langKey = detectedLang;
+  const cfg = LANG_CONFIG[langKey] || LANG_CONFIG.vi;
+
+  // 1. Lưu lại giọng người dùng đang chọn trước khi làm mới dropdown
+  const previousSelectedIndex = voiceSelect.value;
+  const previousSelectedVoice = (previousSelectedIndex !== '' && voices[previousSelectedIndex])
+    ? voices[previousSelectedIndex]
+    : null;
+
+  voiceSelect.innerHTML = '';
+
+  if (!voices.length) {
+    const opt = document.createElement('option');
+    opt.textContent = 'Đang tải danh sách giọng...';
+    voiceSelect.appendChild(opt);
+    return;
+  }
+
+  // Chấm điểm và sắp xếp giọng đọc theo ngôn ngữ hiện tại
+  const scored = voices
+    .map(v => ({ v, s: scoreVoice(v, langKey) }))
+    .sort((a, b) => b.s - a.s);
+
+  let matched = scored.filter(x => x.s > 0);
+  const hasVietnamese = voices.some(isVietnameseVoice);
+
+  const currentUILang = localStorage.getItem('app_lang') || 'vi';
+  const t = (typeof translations !== 'undefined' && translations[currentUILang]) 
+            ? translations[currentUILang] 
+            : null;
+
+  // ========== TRƯỜNG HỢP 1: Không tìm thấy giọng phù hợp ==========
+  if (matched.length === 0 || (langKey === 'vi' && !hasVietnamese)) {
+    const opt = document.createElement('option');
+    opt.value = '';
+    opt.textContent = t 
+      ? t.noVoiceFound.replace('{lang}', cfg.name) 
+      : `⚠️ Không tìm thấy giọng ${cfg.name}`;
+    voiceSelect.appendChild(opt);
+
+    const sep = document.createElement('option');
+    sep.disabled = true;
+    sep.textContent = currentUILang === 'en'
+      ? `── All available voices (${voices.length}) ──`
+      : `── Tất cả giọng đang có trên máy (${voices.length}) ──`;
+    voiceSelect.appendChild(sep);
+
+    scored.forEach(({ v }) => {
+      const o = document.createElement('option');
+      o.value = voices.indexOf(v);
+      o.textContent = `${v.name} (${v.lang})`;
+      voiceSelect.appendChild(o);
+    });
+
+    if (langKey === 'vi') {
+      ttsStatus.innerHTML = '❌ <b>Vẫn chưa thấy giọng Tiếng Việt</b>.<br>' +
+        '1. Hãy <b>tắt hoàn toàn Chrome</b> (kể cả chạy nền) rồi mở lại.<br>' +
+        '2. Vào Cài đặt Windows → Thời gian & ngôn ngữ → <b>Giọng nói</b> → kiểm tra đã có giọng Việt chưa.<br>' +
+        '3. Nếu dùng Edge, kiểm tra kết nối mạng để dùng giọng Online Natural.';
+    } else {
+      ttsStatus.textContent = t 
+        ? t.noVoiceFoundDetail.replace('{lang}', cfg.name)
+        : `⚠️ Không tìm thấy giọng ${cfg.name} trên thiết bị này.`;
+    }
+    return;
+  }
+
+  // ========== TRƯỜNG HỢP 2: Có giọng phù hợp ==========
+  matched.forEach(({ v }, i) => {
+    const opt = document.createElement('option');
+    opt.value = voices.indexOf(v);
+    const star = i === 0 ? ' ★' : '';
+    opt.textContent = `${v.name} (${v.lang})${star}`;
+    voiceSelect.appendChild(opt);
+  });
+
+  // Thêm danh sách các giọng ngôn ngữ khác ở bên dưới
+  const unmatched = scored.filter(x => x.s <= 0);
+  if (unmatched.length > 0) {
+    const sep = document.createElement('option');
+    sep.disabled = true;
+    sep.textContent = currentUILang === 'en' ? '── Other voices ──' : '── Giọng ngôn ngữ khác ──';
+    voiceSelect.appendChild(sep);
+
+    unmatched.slice(0, 15).forEach(({ v }) => {
+      const o = document.createElement('option');
+      o.value = voices.indexOf(v);
+      o.textContent = `${v.name} (${v.lang})`;
+      voiceSelect.appendChild(o);
+    });
+  }
+
+  // 1. Tự động chọn giọng tốt nhất (ngôi sao ★) của ngôn ngữ mới
+  voiceSelect.value = voices.indexOf(matched[0].v);
+
+  // 2. KHÔI PHỤC LỰA CHỌN CŨ (Chỉ áp dụng NẾU giọng cũ CÙNG NGÔN NGỮ với file mới)
+  const targetCode = (cfg.code || langKey).toLowerCase().split('-')[0];
+  const prevLang = (previousSelectedVoice?.lang || '').toLowerCase().replace('_', '-');
+
+  const isSameLanguage = previousSelectedVoice && (
+    prevLang.startsWith(targetCode) || 
+    prevLang.startsWith(langKey.toLowerCase())
+  );
+
+  if (isSameLanguage && scoreVoice(previousSelectedVoice, langKey) > 0) {
+    const newIdx = voices.indexOf(previousSelectedVoice);
+    if (newIdx !== -1) {
+      voiceSelect.value = newIdx;
+    }
+  }
+
+  // Thông báo thành công
+  if (langKey === 'vi') {
+    ttsStatus.textContent = hasVietnamese ? '✓ Đã tìm thấy giọng Tiếng Việt' : '';
+  } else {
+    ttsStatus.textContent = `✓ Đã tìm thấy ${matched.length} giọng ${cfg.name}`;
+  }
+}
+
+function getSelectedVoice() {
+  const idx = parseInt(voiceSelect.value, 10);
+  // Nếu người dùng chọn hợp lệ từ danh sách dropdown
+  if (!isNaN(idx) && voices[idx]) {
+    return voices[idx];
+  }
+  
+  // Fallback: Tự động lấy giọng có điểm số cao nhất cho ngôn ngữ hiện tại
+  const sorted = voices
+    .map(v => ({ v, s: scoreVoice(v, detectedLang) }))
+    .sort((a, b) => b.s - a.s);
+    
+  return sorted[0]?.v || null;
+}
+
+  // ===================== TTS ENGINE =====================
+  function updateUI() {
+  sentenceInfo.textContent = `Câu: ${textChunks.length ? currentChunkIndex + 1 : 0} / ${textChunks.length}`;
+  if (ttsState === 'playing') {
+    playLabel.textContent = 'TẠM DỪNG';
+    playIcon.textContent = '⏸';
+    btnStop.style.display = 'inline-flex';
+  } else if (ttsState === 'paused') {
+    playLabel.textContent = 'ĐỌC TIẾP';
+    playIcon.textContent = '▶';
+    btnStop.style.display = 'inline-flex';
+  } else {
+    playLabel.textContent = 'ĐỌC GIỌNG MÁY';
+    playIcon.textContent = '▶';
+    btnStop.style.display = 'none';
+  }
+  btnSpeed.textContent = SPEED_MULTIPLIERS[selectedSpeedIndex] === 1
+    ? '1x'
+    : SPEED_MULTIPLIERS[selectedSpeedIndex] + 'x';
+}
+
+function speakChunk(index) {
+  if (ttsState !== 'playing' || index >= textChunks.length) {
+    ttsState = 'stopped';
+    isProcessing = false;
+    currentUtterance = null;
+    updateUI();
+    ttsStatus.textContent = index >= textChunks.length ? 'Đã đọc xong.' : '';
+    return;
+  }
+  if (isProcessing) return;
+  isProcessing = true;
+  currentChunkIndex = index;
+  updateUI();
+
+  const isFirstChunk = index === 0;
+  const startDelay = isFirstChunk ? 160 : 0;
+
+  const doSpeak = () => {
+    const text = textChunks[index];
+    const utter = new SpeechSynthesisUtterance(text);
+    const voice = getSelectedVoice();
+    const langCode = (LANG_CONFIG[detectedLang] || LANG_CONFIG.vi).code;
+
+    if (voice) {
+      utter.voice = voice;
+      utter.lang = voice.lang || langCode;
+    } else {
+      utter.lang = langCode;
+    }
+
+    let rate = BASE_RATE * SPEED_MULTIPLIERS[selectedSpeedIndex];
+    if (detectedLang === 'vi') {
+      rate = Math.min(rate * 0.85, 1.6);
+    } else if (detectedLang === 'en') {
+      rate = Math.min(rate * 0.92, 1.8);
+    } else if (['ja', 'zh', 'ko', 'th'].includes(detectedLang)) {
+      rate = Math.min(rate * 0.90, 1.7);
+    }
+    utter.rate = Math.max(0.5, Math.min(rate, 2));
+    utter.pitch = 1;
+    utter.volume = 1;
+
+    utter.onend = () => {
+      isProcessing = false;
+      currentUtterance = null;
+      if (ttsState === 'playing') {
+        currentChunkIndex++;
+        const pause = detectedLang === 'en' ? 180 : 140;
+        setTimeout(() => speakChunk(currentChunkIndex), pause);
+      }
+    };
+
+    utter.onerror = (e) => {
+      console.warn('TTS error', e);
+      isProcessing = false;
+      currentUtterance = null;
+      if (e.error === 'language-unavailable' || e.error === 'voice-unavailable') {
+        ttsStatus.textContent = '⚠️ Máy chưa có giọng ngôn ngữ này. Hãy cài thêm giọng trong Cài đặt hệ thống.';
+        ttsState = 'stopped';
+        updateUI();
+        return;
+      }
+      if (ttsState === 'playing') {
+        currentChunkIndex++;
+        setTimeout(() => speakChunk(currentChunkIndex), 80);
+      }
+    };
+
+    currentUtterance = utter;
+
+    // Hủy sạch trước khi nói (thêm cả trường hợp paused)
+    try {
+      if (speechSynthesis.speaking || speechSynthesis.pending || speechSynthesis.paused) {
+        speechSynthesis.cancel();
+      }
+    } catch (_) {}
+
+    speechSynthesis.speak(utter);
+    ttsStatus.textContent = `Đang đọc câu ${index + 1}/${textChunks.length} · ${langCode}`;
+  };
+
+  if (startDelay > 0) {
+    setTimeout(doSpeak, startDelay);
+  } else {
+    doSpeak();
+  }
+}
+
+function togglePlay() {
+  if (!textChunks.length) {
+    ttsStatus.textContent = 'Chưa có nội dung. Hãy nhấn "Xử lý & Chuẩn bị đọc" trước.';
+    return;
+  }
+
+  if (ttsState === 'playing') {
+    // Pause thật → giữ đúng vị trí đang đọc
+    try { speechSynthesis.pause(); } catch (_) {}
+    ttsState = 'paused';
+    isProcessing = false;          // ← quan trọng, tránh bị kẹt
+    ttsStatus.textContent = 'Đã tạm dừng.';
+    updateUI();
+  } else if (ttsState === 'paused') {
+    // Resume thật từ đúng chỗ
+    try { speechSynthesis.resume(); } catch (_) {}
+    ttsState = 'playing';
+    ttsStatus.textContent = 'Đang đọc tiếp...';
+    updateUI();
+
+    // Fallback nhẹ nếu browser không resume được (thường gặp sau obfuscate hoặc Chrome)
+    setTimeout(() => {
+      if (ttsState === 'playing' && !speechSynthesis.speaking && !speechSynthesis.paused) {
+        isProcessing = false;
+        speakChunk(currentChunkIndex);
+      }
+    }, 80);
+  } else {
+    // Từ stopped → bắt đầu mới
+    try { speechSynthesis.cancel(); } catch (_) {}
+    ttsState = 'playing';
+    isProcessing = false;
+    currentUtterance = null;
+    if (currentChunkIndex >= textChunks.length) currentChunkIndex = 0;
+    updateUI();
+    speakChunk(currentChunkIndex);
+  }
+}
+
+function stopTts() {
+  try { speechSynthesis.cancel(); } catch (_) {}
+  ttsState = 'stopped';
+  isProcessing = false;
+  currentUtterance = null;
+  currentChunkIndex = 0;
+  selectedSpeedIndex = 0;
+  updateUI();
+  ttsStatus.textContent = 'Đã dừng.';
+}
+
+function cycleSpeed() {
+  selectedSpeedIndex = (selectedSpeedIndex + 1) % SPEED_MULTIPLIERS.length;
+  updateUI();
+  if (ttsState === 'playing') {
+    try { speechSynthesis.cancel(); } catch (_) {}
+    isProcessing = false;
+    currentUtterance = null;
+    setTimeout(() => speakChunk(currentChunkIndex), 50);
+  }
+}
+
+function jumpToSentence(n) {
+  if (!textChunks.length) return;
+  const idx = Math.max(0, Math.min(textChunks.length - 1, n - 1));
+  currentChunkIndex = idx;
+  jumpInput.value = idx + 1;
+  updateUI();
+  if (ttsState === 'playing') {
+    try { speechSynthesis.cancel(); } catch (_) {}
+    isProcessing = false;
+    currentUtterance = null;
+    setTimeout(() => speakChunk(currentChunkIndex), 50);
+  }
+}
+
+  // ===================== LOAD CONTENT & JINA READER PRO =====================
+async function processText(text) {
+  rawText = text.trim();
+  if (!rawText) {
+    loadStatus.textContent = 'Không có nội dung.';
+    return;
+  }
+  detectedLang = detectLanguageCode(rawText);
+  const cfg = LANG_CONFIG[detectedLang] || LANG_CONFIG.vi;
+  langBadge.textContent = `${detectedLang} · ${cfg.name}`;
+  textChunks = splitTextIntoChunks(rawText, detectedLang);
+  contentDisplay.textContent = rawText;
+  contentDisplay.style.fontSize = fontSize + 'px';
+  updateContentStats();   // ← thêm dòng này
+  currentChunkIndex = 0;
+  updateUI();
+  populateVoiceSelect();
+  loadStatus.textContent = `Đã xử lý ${textChunks.length} câu · Ngôn ngữ: ${cfg.name}`;
+  ttsStatus.textContent = '';
+}
+
+// ===================== LẤY NỘI DUNG NGUYÊN BẢN (CHUYÊN TRUYỆN CHỮ & BÁO CHÍ) =====================
+async function fetchUrlContent(url) {
+  loadStatus.innerHTML = '<span class="loading"></span> Đang kết nối Jina Reader...';
+
+  if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
+
+  // ========== Hàm thử Jina (có retry 1 lần) ==========
+  async function tryJina(attempt = 1) {
+    const jinaUrl = 'https://r.jina.ai/' + url;
+    const res = await fetch(jinaUrl, {
+      method: 'GET',
+      signal: AbortSignal.timeout(18000), // tăng nhẹ timeout
+      headers: {
+        'Accept': 'text/plain',
+        'X-Remove-Selector': 'header, nav, footer, sidebar, img, figure, video, iframe, picture, svg, .header, .menu, .sidebar, .comments, .ads, .related-posts, .ez-toc-container, .box-category, .social-share, .date-time, .author-info, .tags, .nav-links, .chapter-nav, .btn-group',
+        'X-Respond-With': 'markdown',
+        'X-No-Cache': 'true',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      }
+    });
+
+    if (!res.ok) throw new Error('Jina HTTP ' + res.status);
+
+    let text = await res.text();
+
+    // Lọc metadata
+    text = text
+      .replace(/^Title:.*$/im, '')
+      .replace(/^URL Source:.*$/im, '')
+      .replace(/^Published Time:.*$/im, '')
+      .replace(/^Markdown Content:.*$/im, '');
+
+    // Lọc ảnh + link + markdown
+    text = text
+      .replace(/!\[.*?\]\([^)]*\)/g, '')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/\]\([^)]*\)/g, '')
+      .replace(/https?:\/\/\S+/gi, '')
+      .replace(/<[^>]*>/g, '')
+      .replace(/#{1,6}\s?/g, '')
+      .replace(/[\*_~`>]/g, '')
+      .replace(/^\s*[\*\-]\s*/gm, '');
+
+    // Lọc rác truyện
+    text = text
+      .replace(/^(Chương trước|Chương sau|Danh sách chương|Mục lục|Báo lỗi|Cầu kim phiếu|Cầu đánh giá|Tải app).*$/gmi, '')
+      .replace(/^(Bạn đang đọc truyện|Nguồn:|Converter:|Tác giả:|Thể loại:).*$/gmi, '')
+      .replace(/^Thứ\s+[a-z0-9,:\s/()+-]+/gmi, '')
+      .replace(/^\d{1,2}\/\d{1,2}\/\d{4}.*$/gm, '');
+
+    // Làm sạch dòng
+    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+    let cleanLines = [];
+    for (let i = 0; i < lines.length; i++) {
+      if (i > 0 && lines[i] === lines[i - 1]) continue;
+      if (lines[i].length < 6 && !/^[0-9A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝĂĐĨŨƠƯ]/i.test(lines[i])) continue;
+      cleanLines.push(lines[i]);
+    }
+    text = cleanLines.join('\n\n');
+
+    // Clean mạnh
+    text = cleanDocumentText(text);
+
+    if (text.length > 60) return text;   // hạ xuống 60
+console.warn('Jina nội dung sau clean còn:', text.length, 'ký tự →', text.slice(0, 150));
+throw new Error('Jina trả về nội dung quá ngắn');
+  }
+
+  // Thử Jina lần 1
+  try {
+    const text = await tryJina(1);
+    loadStatus.textContent = '✅ Đã trích xuất nội dung (Jina).';
+    return text;
+  } catch (e1) {
+    console.warn('Jina lần 1 lỗi:', e1.message);
+  }
+
+  // Thử Jina lần 2 (đợi 1.2 giây)
+  try {
+    loadStatus.innerHTML = '<span class="loading"></span> Jina đang thử lại...';
+    await new Promise(r => setTimeout(r, 1200));
+    const text = await tryJina(2);
+    loadStatus.textContent = '✅ Đã trích xuất nội dung (Jina retry).';
+    return text;
+  } catch (e2) {
+    console.warn('Jina lần 2 cũng lỗi:', e2.message);
+  }
+
+  // ========== CÁCH 2: PROXY DỰ PHÒNG (chỉ giữ 2 cái ổn nhất) ==========
+  loadStatus.innerHTML = '<span class="loading"></span> Thử proxy dự phòng...';
+
+  const proxies = [
+    (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+    (u) => `https://api.allorigins.win/get?url=${encodeURIComponent(u)}`,
+    (u) => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
+  ];
+
+  let html = null;
+  let lastErr = null;
+
+  for (const make of proxies) {
+    try {
+      const res = await fetch(make(url), {
+  signal: AbortSignal.timeout(12000),
+  headers: {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'vi-VN,vi;q=0.9,en;q=0.8'
+  }
+});
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+
+      let body = await res.text();
+      if (body.trim().startsWith('{')) {
+        try {
+          const json = JSON.parse(body);
+          body = json.contents || json.content || body;
+        } catch (_) {}
+      }
+      if (body && body.length > 500) {
+        html = body;
+        break;
+      }
+    } catch (e) {
+      lastErr = e;
+      console.warn('Proxy lỗi:', e.message);
+    }
+  }
+
+  if (!html) {
+    throw lastErr || new Error('Tất cả cách lấy nội dung đều thất bại. Hãy thử copy-paste thủ công hoặc mở bằng localhost.');
+  }
+
+  // ===== DOM Parser (giữ nguyên logic gốc) =====
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+
+  const removeSelectors = [
+    'script', 'style', 'noscript', 'iframe', 'svg', 'canvas', 'form', 'img', 'picture', 'figure', 'video', 'audio',
+    'nav', 'header', 'footer', 'aside', 'button', 'input', 'select',
+    '.header', '.menu', '.sidebar', '.ads', '.advertisement', '.comments', '#comments',
+    '.breadcrumb', '.social-share', '.date-time', '.box-category', '.taboola-placeholder',
+    '.author-info', '.tags', '.relate-news', '.chapter-nav', '.nav-spec', '.btn-group'
+  ];
+  removeSelectors.forEach(sel => {
+    try { doc.querySelectorAll(sel).forEach(el => el.remove()); } catch (_) {}
+  });
+
+  const title = doc.querySelector('h1.title-detail, h1.chapter-title, .chapter-title, h1.title, h1')?.innerText?.trim() || '';
+
+    const { selector: customSelector } = getManualConfig();
+
+  let contentEl = null;
+
+  // 1. Ưu tiên selector người dùng nhập
+  if (customSelector) {
+    try {
+      const selectors = customSelector.split(',').map(s => s.trim()).filter(Boolean);
+      for (const sel of selectors) {
+        const el = doc.querySelector(sel);
+        if (el && el.innerText.trim().length > 120) {
+          contentEl = el;
+          break;
+        }
+      }
+    } catch (e) {
+      console.warn('Selector tùy chỉnh lỗi:', e);
+    }
+  }
+
+  // 2. Nếu chưa có thì dùng selector mặc định
+  if (!contentEl) {
+    const candidateSelectors = [
+      '.chapter-c', '#chapter-c', '.chapter-content', '.reading-content', '.chap-content', '.content-chap', '.box-chap',
+      '.fck_detail', 'article.fck_detail', '.detail-content', '.post-content-body', '.entry-content', 'article', 'main'
+    ];
+
+    for (const sel of candidateSelectors) {
+      const el = doc.querySelector(sel);
+      if (el && el.innerText.trim().length > 150) {
+        contentEl = el;
+        break;
+      }
+    }
+  }
+
+  // 3. Fallback cuối cùng
+  if (!contentEl) {
+    let maxLen = 0;
+    doc.querySelectorAll('div, section').forEach(el => {
+      const len = el.innerText.trim().length;
+      if (len > maxLen) {
+        maxLen = len;
+        contentEl = el;
+      }
+    });
+  }
+
+  let bodyText = '';
+  if (contentEl) {
+    const cloneEl = contentEl.cloneNode(true);
+    cloneEl.querySelectorAll('br').forEach(br => br.replaceWith('\n'));
+    const rawParagraphs = cloneEl.innerText.split('\n');
+    bodyText = rawParagraphs
+      .map(p => p.trim())
+      .filter(p => {
+        if (p.length < 3) return false;
+        if (/^(Chương trước|Chương sau|Danh sách chương|Mục lục|Báo lỗi|Cầu kim phiếu|Cầu đánh giá)/i.test(p)) return false;
+        return true;
+      })
+      .join('\n\n');
+  }
+
+  let resultText = [title, bodyText].filter(Boolean).join('\n\n');
+  resultText = resultText
+    .replace(/https?:\/\/\S+/gi, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
+  resultText = cleanDocumentText(resultText);
+
+  if (resultText.length < 50) throw new Error('Không thể bóc tách nội dung bài viết/truyện.');
+
+  loadStatus.textContent = '✅ Đã rút trích nội dung thành công (proxy).';
+  return resultText;
+}
+
+// ===================== EVENT LISTENERS =====================
+$('btnLoad').addEventListener('click', async () => {
+  const isUrl = document.querySelector('.tab.active').dataset.tab === 'url';
+  try {
+    if (isUrl) {
+      const url = urlInput.value.trim();
+      if (!url) {
+        loadStatus.textContent = 'Vui lòng nhập URL.';
+        return;
+      }
+      const text = await fetchUrlContent(url);
+      textInput.value = text; // Tự động điền vào textarea
+      await processText(text);
+    } else {
+      await processText(textInput.value);
+    }
+  } catch (e) {
+    console.error(e);
+    loadStatus.textContent = 'Lỗi: ' + (e.message || e);
+  }
+});
+
+$('btnClear').addEventListener('click', () => {
+  stopTts();
+  textInput.value = '';
+  urlInput.value = '';
+  contentDisplay.textContent = '';
+  textChunks = [];
+  rawText = '';
+  currentChunkIndex = 0;
+  updateUI();
+  loadStatus.textContent = '';
+  ttsStatus.textContent = '';
+});
+
+
+// ===================== CONTROLS EVENTS =====================
+$('btnPlay').addEventListener('click', togglePlay);
+$('btnStop').addEventListener('click', stopTts);
+btnSpeed.addEventListener('click', cycleSpeed);
+$('btnJump').addEventListener('click', () => {
+  const n = parseInt(jumpInput.value, 10);
+  if (!isNaN(n)) jumpToSentence(n);
+});
+jumpInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    const n = parseInt(jumpInput.value, 10);
+    if (!isNaN(n)) jumpToSentence(n);
+  }
+});
+
+$('fontDown').addEventListener('click', () => {
+  if (fontSize > 12) {
+    fontSize -= 2;
+    contentDisplay.style.fontSize = fontSize + 'px';
+    $('fontSizeLabel').textContent = fontSize;
+  }
+});
+$('fontUp').addEventListener('click', () => {
+  if (fontSize < 32) {
+    fontSize += 2;
+    contentDisplay.style.fontSize = fontSize + 'px';
+    $('fontSizeLabel').textContent = fontSize;
+  }
+});
+
+    // ===================== PDF PHÂN TRANG CHUẨN A4 (KHÔNG BỊ CẮT CHỮ) =====================
+$('btnPdf').addEventListener('click', async () => {
+  const text = (rawText || contentDisplay.innerText || '').trim();
+  if (!text) {
+    ttsStatus.textContent = '❌ Chưa có nội dung để xuất PDF.';
+    return;
+  }
+
+  ttsStatus.textContent = '⏳ Đang tính toán phân trang & tạo PDF...';
+
+  try {
+    const { jsPDF } = window.jspdf;
+    const today = new Date().toLocaleDateString('vi-VN', { 
+      year: 'numeric', month: '2-digit', day: '2-digit', 
+      hour: '2-digit', minute: '2-digit' 
+    });
+
+    // Kích thước chuẩn A4 tỉ lệ pixel (750 x 1060px)
+    const PAGE_WIDTH = 750;
+    const PAGE_HEIGHT = 1060;
+
+    // Hàm tạo 1 trang A4 DOM ảo
+    function createPageElement() {
+      const page = document.createElement('div');
+      page.style.cssText = `
+        position: fixed;
+        left: -9999px;
+        top: 0;
+        width: ${PAGE_WIDTH}px;
+        height: ${PAGE_HEIGHT}px;
+        padding: 40px 45px 35px 45px;
+        background: #ffffff;
+        color: #1e293b;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 13.5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      `;
+
+      page.innerHTML = `
+        <!-- HEADER TRANG -->
+        <div style="border-bottom: 2px solid #0284c7; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end;">
+          <div>
+            <div style="font-size: 18px; font-weight: 800; color: #0f172a; letter-spacing: -0.5px;">THÁI THÔNG · TTS</div>
+            <div style="font-size: 10px; color: #0284c7; font-weight: 600; text-transform: uppercase; margin-top: 2px;">Tài Liệu Văn Bản & Giọng Nói</div>
+          </div>
+          <div style="text-align: right; font-size: 10.5px; color: #64748b;">
+            <div>📅 ${today}</div>
+            <div style="margin-top: 2px; color: #0284c7; font-weight: 500;">✉️ ThaiThongsj@gmail.com</div>
+          </div>
+        </div>
+
+        <!-- VÙNG NỘI DUNG (TỰ CO CO GIÃN THEO TRANG) -->
+        <div class="pdf-content" style="flex: 1; margin: 18px 0; color: #334155; overflow: hidden;"></div>
+
+        <!-- FOOTER TRANG -->
+        <div style="border-top: 1px dashed #cbd5e1; padding-top: 8px; display: flex; justify-content: space-between; font-size: 10px; color: #94a3b8;">
+          <span class="page-number">Trang 1</span>
+          <span>❤️ Ung ho du an: Vietcombank 9898661918</span>
+        </div>
+      `;
+      return page;
+    }
+
+    // Tách nhỏ văn bản thành các đoạn/câu để đưa vào trang
+    const rawParagraphs = text.split('\n').filter(p => p.trim() !== '');
+    const blocks = [];
+    for (const rawP of rawParagraphs) {
+      if (rawP.length > 350) {
+        // Nếu đoạn quá dài, tự tách theo câu để xếp trang mịn hơn
+        const sentences = rawP.match(/[^.!?]+[.!?]+|\s*[^.!?]+$/g) || [rawP];
+        blocks.push(...sentences);
+      } else {
+        blocks.push(rawP);
+      }
+    }
+
+    // Tiến hành xếp nội dung vào từng trang A4
+    const pages = [];
+    let currentPage = createPageElement();
+    document.body.appendChild(currentPage);
+    pages.push(currentPage);
+
+    let contentBox = currentPage.querySelector('.pdf-content');
+
+    for (const block of blocks) {
+      const p = document.createElement('p');
+      p.style.cssText = "margin: 0 0 12px 0; text-align: justify; line-height: 1.65; word-break: break-word;";
+      p.textContent = block;
+
+      contentBox.appendChild(p);
+
+      // Nếu tràn chiều cao trang A4 hiện tại -> Chuyển đoạn này sang trang mới
+      if (contentBox.scrollHeight > contentBox.clientHeight) {
+        contentBox.removeChild(p);
+
+        currentPage = createPageElement();
+        document.body.appendChild(currentPage);
+        pages.push(currentPage);
+
+        contentBox = currentPage.querySelector('.pdf-content');
+        contentBox.appendChild(p);
+      }
+    }
+
+    // Cập nhật số trang chuẩn (Trang X / Y)
+    const totalPages = pages.length;
+    pages.forEach((pg, idx) => {
+      const pageNumEl = pg.querySelector('.page-number');
+      if (pageNumEl) pageNumEl.textContent = `Trang ${idx + 1} / ${totalPages}`;
+    });
+
+    // Xuất sang PDF
+    const pdf = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
+
+    for (let i = 0; i < pages.length; i++) {
+      if (i > 0) pdf.addPage();
+      
+      const canvas = await html2canvas(pages[i], {
+        scale: 2, // Độ nét HD
+        useCORS: true,
+        backgroundColor: '#ffffff',
+        logging: false,
+      });
+
+      pdf.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 210, 297);
+      document.body.removeChild(pages[i]); // Dọn dẹp DOM ẩn
+    }
+
+    pdf.save(`ThaiThong_TTS_${Date.now()}.pdf`);
+    ttsStatus.textContent = '✅ Đã xuất PDF chuẩn phân trang A4!';
+  } catch (e) {
+    console.error(e);
+    ttsStatus.textContent = '❌ Lỗi xuất PDF: ' + (e.message || e);
+  }
+});
+    // ===================== TỰ ĐỘNG XỬ LÝ + SỬA NỘI DUNG =====================
+
+ // A. Tự xử lý khi dán hoặc ngừng gõ
+let pasteTimer = null;
+textInput.addEventListener('input', () => {
+  clearTimeout(pasteTimer);
+  pasteTimer = setTimeout(async () => {
+    const rawVal = textInput.value;
+    const cleanedVal = cleanDocumentText(rawVal);
+
+    if (cleanedVal && cleanedVal !== rawVal) {
+      textInput.value = cleanedVal;
+    }
+    if (cleanedVal && typeof processText === 'function') {
+      await processText(cleanedVal);
+      const statusEl = document.getElementById('loadStatus');
+      if (statusEl) statusEl.innerHTML = '✅ Đã tự động lọc rác và sẵn sàng đọc!';
+    }
+  }, 600);
+});
+
+// B. Cập nhật thống kê khi sửa khung nội dung
+contentDisplay.addEventListener('input', () => {
+  updateContentStats();
+});
+
+  // B. Nút Cập nhật sau khi sửa khung nội dung
+  const btnUpdateContent = document.getElementById('btnUpdateContent');
+  if (btnUpdateContent) {
+    btnUpdateContent.addEventListener('click', () => {
+      const edited = (contentDisplay.innerText || contentDisplay.textContent || '').trim();
+      if (!edited) {
+        ttsStatus.textContent = 'Nội dung trống.';
+        return;
+      }
+      // Dừng đọc nếu đang chạy
+      if (ttsState === 'playing' || ttsState === 'paused') {
+        speechSynthesis.cancel();
+        ttsState = 'stopped';
+        isProcessing = false;
+      }
+      textInput.value = edited;
+      processText(edited);
+      ttsStatus.textContent = 'Đã cập nhật nội dung sau khi sửa.';
+      updateUI();
+    });
+  }
+
+  // Ctrl + Enter trong khung nội dung = Cập nhật nhanh
+  contentDisplay.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.key === 'Enter') {
+      e.preventDefault();
+      if (btnUpdateContent) btnUpdateContent.click();
+    }
+  });
+
+  // C. Đang sửa nội dung thì tự tạm dừng đọc
+  contentDisplay.addEventListener('focus', () => {
+    if (ttsState === 'playing') {
+      try { speechSynthesis.pause(); } catch (_) {}
+      ttsState = 'paused';
+      updateUI();
+      ttsStatus.textContent = 'Đã tạm dừng để bạn chỉnh sửa nội dung.';
+    }
+  });
+    // ===================== DONATE MODAL =====================
+  const donateModal = document.getElementById('donateModal');
+  const btnDonate = document.getElementById('btnDonate');
+  const btnCloseDonate = document.getElementById('btnCloseDonate');
+
+  function showToast(msg) {
+    const old = document.querySelector('.toast');
+    if (old) old.remove();
+    const t = document.createElement('div');
+    t.className = 'toast';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2200);
+  }
+
+  if (btnDonate && donateModal) {
+    btnDonate.addEventListener('click', () => {
+      donateModal.style.display = 'flex';
+    });
+  }
+  if (btnCloseDonate) {
+    btnCloseDonate.addEventListener('click', () => {
+      donateModal.style.display = 'none';
+    });
+  }
+  // Bấm nền tối để đóng
+  if (donateModal) {
+    donateModal.addEventListener('click', (e) => {
+      if (e.target === donateModal) donateModal.style.display = 'none';
+    });
+  }
+
+  // Copy số TK / email
+  document.querySelectorAll('.copy-row').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const text = btn.getAttribute('data-copy') || '';
+      const label = btn.getAttribute('data-label') || '';
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast('✅ Đã sao chép ' + label + ': ' + text);
+      } catch (_) {
+        // fallback
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+        showToast('✅ Đã sao chép ' + label + ': ' + text);
+      }
+    });
+  });
+
+  // Lưu ảnh QR
+  const btnSaveQr = document.getElementById('btnSaveQr');
+  if (btnSaveQr) {
+    btnSaveQr.addEventListener('click', () => {
+      const img = document.querySelector('.qr-img');
+      if (!img || !img.src || img.style.display === 'none') {
+        showToast('Chưa có ảnh QR');
+        return;
+      }
+      const a = document.createElement('a');
+      a.href = img.src;
+      a.download = 'QR_Ung_Ho_Thai_Thong.png';
+      a.click();
+      showToast('✅ Đang tải ảnh QR...');
+    });
+  }
+  // ===================== KHỞI TẠO WORKER CHO PDF.JS =====================
+if (window.pdfjsLib) {
+  // Trỏ trực tiếp đến file worker đã tải về cùng thư mục
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.worker.min.js';
+}
+
+// Khai báo an toàn tránh đụng độ biến $ ở đầu file T2.js
+const $el = (id) => document.getElementById(id);
+
+// ===================== LẤY CẤU HÌNH CHỈNH TAY TỪ UI =====================
+function getManualConfig() {
+  const selector = (document.getElementById('selectorInput')?.value || '').trim();
+  const excludeRaw = (document.getElementById('excludeInput')?.value || '').trim();
+  const extraKeywords = excludeRaw
+    ? excludeRaw.split(',').map(k => k.trim()).filter(Boolean)
+    : [];
+  return { selector, extraKeywords };
+}
+
+// ===================== THUẬT TOÁN LÀM SẠCH & LỌC RÁC THÔNG MINH (DÙNG CHUNG CHO PASTE & URL) =====================
+function cleanDocumentText(text) {
+  if (!text) return '';
+
+  let cleaned = text
+    // 1. Chuẩn hóa xuống dòng
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    // 2. Bỏ ký tự điều khiển
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g, '')
+
+    // 3. XÓA ẢNH / VIDEO / IFRAME
+    .replace(/!\[.*?\]\([^)]*\)/g, '')
+    .replace(/<img[^>]*>/gi, '')
+    .replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '')
+    .replace(/https?:\/\/(?:www\.)?(?:youtube\.com|youtu\.be|tiktok\.com|facebook\.com|instagram\.)\S+/gi, '')
+
+    // 4. XỬ LÝ LINK
+    .replace(/\[([^\]]+)\]\((?:https?:\/\/\S+|[^)]*?\.(?:png|jpg|jpeg|gif|webp|mp4|webm))[^)]*\)/gi, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/https?:\/\/\S+/gi, '')
+    .replace(/www\.\S+/gi, '')
+
+    // 5. Xóa thẻ HTML còn sót
+    .replace(/<[^>]*>/g, '')
+
+    // 6. Nối dòng bị gãy (PDF / một số trang)
+    .replace(/([a-z0-9àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ])\n([a-z0-9àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ])/gi, '$1 $2')
+
+    // ===== RÁC ĐẶC THÙ VNEXPRESS + TABOOLA + VIDEO PLAYER =====
+    .replace(/Advertisement[\s\S]*?(?=Next|Stay|Playback|Quality|Back|$)/gi, '')
+    .replace(/(?:Next|Stay|Playback speed|Quality|Auto|Back|0\.25x|0\.5x|1x Normal|1\.5x|2x|322p|240p|144p)\s*/gi, '')
+    .replace(/\b(?:Undo|Sponsored|by Taboola|Discover|Read More Skip|Learn More|Want to know more\?|click here-?)\b/gi, '')
+    .replace(/\[SponsoredSponsored.*?\]/gi, '')
+    .replace(/organixmag\.com.*?/gi, '')
+    .replace(/Sustainability For All.*?ACCIONA/gi, '')
+
+    // Caption ảnh / video
+    .replace(/\b(?:Ảnh|Video|Hình)\s*:\s*[A-Za-z0-9\s\.]+/gi, '')
+    .replace(/Huấn Hoa Hồng khoe tiền trên mạng xã hội trước khi bị bắt\.\s*/gi, '')
+    .replace(/Công an tống đạt quyết định với Huấn Hoa Hồng\.\s*/gi, '')
+    .replace(/Hàng trăm người theo dõi vụ việc trước nhà Huấn Hoa Hồng\.\s*/gi, '')
+
+    // Hướng dẫn Google / Trở lại / Lưu
+    .replace(/Trở lại Pháp luật\s*/gi, '')
+    .replace(/Lưu;?\)?\s*/gi, '')
+    .replace(/Thêm VnExpress trên Google[\s\S]*?đã hoàn thành\./gi, '')
+    .replace(/Chọn VnExpress làm nguồn ưu tiên[\s\S]*?đã hoàn thành\./gi, '')
+    .replace(/Copy link thành công\s*/gi, '')
+    .replace(/Xem hướng dẫn\.\s*/gi, '')
+
+    // Phần bình luận
+    .replace(/Ý kiến[\s\S]*?(?=Tiếp tục đọc|$)/gi, '')
+    .replace(/(?:Thích|Ngạc nhiên|Buồn)\s+\d+\s*Trả lời\s*Báo vi phạm\s*\d+h trước(?:\s*\d+\s*trả lời)?/gi, '')
+    .replace(/Quan tâm nhất\s*Mới nhất\s*/gi, '')
+    .replace(/Chuyên gia tư vấn\s*/gi, '')
+    .replace(/Vui lòng tuân thủ quy định khi chia sẻ quan điểm[\s\S]*?Gửi/gi, '')
+    .replace(/Bạn chưa nhập nội dung bình luận[\s\S]*?Gửi/gi, '')
+
+    // ===== CẮT ĐUÔI BÀI LIÊN QUAN + SPONSORED (mới thêm) =====
+    .replace(/(?:Xem thêm|Tin liên quan|Bài viết liên quan|Có thể bạn quan tâm|Đọc thêm|Tiếp tục đọc|Phản hồi)[\s\S]*$/i, '')
+    .replace(/(?:Sponsored|by Taboola|Advertisement|\[Sponsored)[\s\S]*$/i, '')
+    .replace(/(?:Vợ gọi tên người cũ|Nhiễm độc do dị ứng|Apple tìm cách|Chủ nhà hàng Hàn Quốc|5 tàu cá bốc cháy|38 giờ truy vết|Lúa phủ xanh|Hậu trường cân não|Cảnh sát tiếp nhận 50 thỏi vàng|Trúng đấu giá|Malaysia chỉ có 16 cầu thủ|Nước nào có mỏ đất hiếm)[\s\S]*$/i, '')
+
+    // Tiêu đề bài liên quan + số view
+    .replace(/^\d+\s+[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝ].{10,120}$/gm, '')
+    .replace(/^(?:Vì sao|Từ '|Nhiều cảnh sát|Chủ nhà hàng|Nhiễm độc|Cảnh sát tiếp nhận|Hậu trường|5 tàu cá|38 giờ|Trúng đấu giá|Lúa phủ|Đề xuất|165 tác phẩm|6 người|Bạn gái).*$/gmi, '')
+
+    // Menu + chuyên mục dài
+    .replace(/Tất cả chuyên mục[\s\S]*?(?=Trở lại|Pháp luật|Vợ chồng|$)/gi, '')
+    .replace(/^(?:Đóng|VnE-GO|Discover|Shorts|Podcasts|Thời sự|Chính trị|Kỷ nguyên mới|Dân sinh|Việc làm|Giao thông|Quỹ Hy vọng|Thế giới|Phân tích|Tư liệu|Quân sự|Cuộc sống đó đây|Người Việt 5 châu|Bắc Mỹ|Kinh doanh|NetZero|Quốc tế|Doanh nghiệp|Chứng khoán|Ebank|Vĩ mô|Tiền của tôi|Hàng hóa|Khoa học công nghệ|Hoạt động Bộ|Chuyển đổi số|Đổi mới sáng tạo|AI|Vũ trụ|Thế giới tự nhiên|Thiết bị|Cửa sổ tri thức|Góc nhìn|Bất động sản|Sức khỏe|Giải trí|Thể thao|Pháp luật|Giáo dục|Đời sống|Xe|Du lịch|Ý kiến|Spotlight|Infographics|Mới nhất|Xem nhiều|Tin nổi bật|Lịch vạn niên|Rao vặt|Liên hệ|Tòa soạn|Tải ứng dụng|VnExpressInternational)\s*/gmi, '')
+
+    // Rác truyện chữ + số trang
+    .replace(/^\s*(?:trang|page)?\s*\d+\s*$/gmi, '')
+    .replace(/^(Chương trước|Chương sau|Danh sách chương|Mục lục|Báo lỗi|Cầu kim phiếu|Cầu đánh giá|Tải app|Chia sẻ|Bình luận|Ý kiến bạn đọc|Tin liên quan|Đăng nhập|Đăng ký).*$/gmi, '')
+    .replace(/^(Bạn đang đọc truyện|Nguồn:|Converter:|Tác giả:|Thể loại:|Advertisements|Ads).*$/gmi, '')
+    .replace(/^\d{1,2}\/\d{1,2}\/\d{4}.*$/gm, '')
+
+    // Chuẩn hóa khoảng trắng
+        // Chuẩn hóa khoảng trắng
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n{3,}/g, '\n\n');
+
+  // ===== Loại bỏ từ khóa người dùng nhập thêm =====
+  const { extraKeywords } = getManualConfig();
+  if (extraKeywords.length) {
+    extraKeywords.forEach(kw => {
+      if (kw.length > 1) {
+        try {
+          const re = new RegExp(kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+          cleaned = cleaned.replace(re, ' ');
+        } catch (_) {}
+      }
+    });
+  }
+
+  // ===== LỌC TỪNG DÒNG =====
+  const lines = cleaned.split('\n').map(l => l.trim()).filter(Boolean);
+  const cleanLines = [];
+  const junkLineRe = [
+    /^(Tất cả chuyên mục|Đóng|VnE-GO|Discover|Shorts|Podcasts|Thời sự|Chính trị|Xem thêm|Trở lại|Lưu|Thêm VnExpress|Chọn VnExpress|Xem hướng dẫn|Copy link|Advertisement|Next|Stay|Playback|Quality|Auto|Back|Undo|Sponsored|by Taboola|Read More|Learn More|Want to know more)/i,
+    /^(Thích|Ngạc nhiên|Buồn|Trả lời|Báo vi phạm|\d+h trước|\d+ trả lời)/i,
+    /^(Quan tâm nhất|Mới nhất|Chuyên gia tư vấn|Ý kiến|Phản hồi|Tiếp tục đọc)/i,
+    /^[\[\(].*[\]\)]$/,
+    /^[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝĂĐĨŨƠƯ\s\-]{3,50}$/,
+    /Ảnh:\s*[A-Za-z0-9\.]+/i,
+    /Video:\s*[A-Za-z0-9\.]+/i,
+  ];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (i > 0 && line === lines[i - 1]) continue;
+    if (line.length < 12 && !/^[0-9A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝ]/.test(line)) continue;
+    if (junkLineRe.some(re => re.test(line))) continue;
+
+    const words = line.split(/\s+/);
+    if (words.length <= 5 && /^[A-ZĐÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝ]/.test(line) && line.length < 55) {
+      continue;
+    }
+    cleanLines.push(line);
+  }
+
+  return cleanLines.join('\n\n').trim();
+}
+
+// 1. Cập nhật hàm điều hướng đọc file (bổ sung dạng ảnh)
+async function readTextFromFile(file) {
+  const ext = file.name.split('.').pop().toLowerCase();
+  
+  // Kiểm tra đuôi file hình ảnh
+  if (['png', 'jpg', 'jpeg', 'bmp', 'webp', 'gif'].includes(ext)) {
+    return await readImageFile(file);
+  } else if (ext === 'pdf') {
+    return await readPdfFile(file);
+  } else if (ext === 'docx') {
+    return await readDocxFile(file);
+  } else if (ext === 'doc') {
+    throw new Error('File .doc cũ không hỗ trợ đọc trực tiếp. Vui lòng đổi sang dạng .docx, .pdf hoặc .jpg!');
+  } else {
+    return await readTextFile(file);
+  }
+}
+
+// 2. Thêm hàm quét OCR nhận diện chữ từ file ảnh
+async function readImageFile(file) {
+  if (typeof Tesseract === 'undefined') {
+    throw new Error('Chưa tải xong thư viện quét ảnh Tesseract.js. Vui lòng kiểm tra kết nối mạng!');
+  }
+
+  const statusEl = $el('loadStatus');
+  if (statusEl) statusEl.innerHTML = '<span class="loading"></span> Đang chuẩn bị quét chữ từ ảnh...';
+
+  // Quét kết hợp cả Tiếng Việt (vie) và Tiếng Anh (eng)
+  const result = await Tesseract.recognize(file, 'vie+eng', {
+    logger: m => {
+      if (m.status === 'recognizing text' && statusEl) {
+        const progress = Math.round((m.progress || 0) * 100);
+        statusEl.innerHTML = `<span class="loading"></span> Đang quét chữ từ ảnh: ${progress}%...`;
+      }
+    }
+  });
+
+  const extractedText = result.data.text;
+  if (!extractedText || !extractedText.trim()) {
+    throw new Error('Không tìm thấy chữ hoặc ảnh quá mờ/chất lượng thấp.');
+  }
+
+  return cleanDocumentText(extractedText);
+}
+
+// 1. Hàm kiểm tra văn bản bị lỗi font mã hóa (Mojibake/Vỡ nét)
+function isMangledText(text) {
+  if (!text || text.trim().length === 0) return true;
+
+  // Tập hợp các ký tự rác/mã hóa sai TCVN3/Windows-1252 phổ biến khi bóc tách PDF lỗi font
+  const mangledPattern = /[¢¾¬Ë¯µ£§¥μ°±¡¿ÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßæçëîïðñö÷øûüþÿ]/g;
+  const matches = text.match(mangledPattern) || [];
+
+  // Bắt các lỗi kết hợp ký tự rác phổ biến như: "V)nh", "nh¥t", "Hu¿", "TiÁn"
+  const structureMangle = (text.match(/\b\w+[\)\¥\¿\Á\±\°]\w+\b/g) || []).length;
+
+  const totalBadHits = matches.length + (structureMangle * 2);
+
+  // Nếu tỷ lệ ký tự rác > 2% tổng số ký tự -> Xác định file bị vỡ font
+  return (totalBadHits / text.length) > 0.02;
+}
+
+// 2. Hàm đọc file PDF tối ưu tốc độ OCR & khắc phục cảnh báo lặp
+async function readPdfFile(file) {
+  const arrayBuffer = await file.arrayBuffer();
+  const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+  let fullText = '';
+  const statusEl = $el('loadStatus');
+
+  // Khởi tạo trước 1 Tesseract Worker dùng chung cho tất cả các trang
+  let ocrWorker = null;
+
+  try {
+    for (let i = 1; i <= pdf.numPages; i++) {
+      if (statusEl) {
+        statusEl.innerHTML = `<span class="loading"></span> Đang xử lý trang ${i}/${pdf.numPages}...`;
+      }
+
+      const page = await pdf.getPage(i);
+      const textContent = await page.getTextContent();
+      
+      // Ghép văn bản trực tiếp từ PDF
+      let lastY = null;
+      let pageText = '';
+      for (const item of textContent.items) {
+        if (lastY !== null && Math.abs(item.transform[5] - lastY) > 5) {
+          pageText += '\n';
+        } else if (pageText && !pageText.endsWith(' ') && !item.str.startsWith(' ')) {
+          pageText += ' ';
+        }
+        pageText += item.str;
+        lastY = item.transform[5];
+      }
+
+      const cleanExtract = pageText.trim();
+      const isCorrupted = isMangledText(cleanExtract);
+
+      // Nếu văn bản bóc ra đủ dài VÀ KHÔNG BỊ LỖI FONT -> Dùng trực tiếp
+      if (cleanExtract.length > 30 && !isCorrupted) {
+        fullText += cleanExtract + '\n\n';
+      } else {
+        // Nếu bị vỡ font hoặc là PDF dạng ảnh -> Dùng OCR
+        if (statusEl) {
+          statusEl.innerHTML = `<span class="loading"></span> Trang ${i}/${pdf.numPages}: Đang nhận diện OCR chữ Tiếng Việt...`;
+        }
+
+        // Tạo Worker Tesseract một lần duy nhất khi gặp trang cần OCR
+        if (!ocrWorker) {
+          if (typeof Tesseract.createWorker === 'function') {
+            ocrWorker = await Tesseract.createWorker('vie+eng');
+          }
+        }
+
+        // Render trang PDF ra Canvas chất lượng cao (Scale 2.0)
+        const viewport = page.getViewport({ scale: 2.0 });
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        await page.render({ canvasContext: context, viewport: viewport }).promise;
+
+        // Quét OCR bằng Worker đã khởi tạo
+        if (ocrWorker) {
+          const ret = await ocrWorker.recognize(canvas);
+          fullText += (ret.data.text || '') + '\n\n';
+        } else {
+          // Fallback nếu dùng bản Tesseract.js cũ
+          const ret = await Tesseract.recognize(canvas, 'vie+eng');
+          fullText += (ret.data.text || '') + '\n\n';
+        }
+      }
+    }
+  } finally {
+    // Giải phóng bộ nhớ Tesseract Worker sau khi hoàn thành toàn bộ các trang
+    if (ocrWorker && typeof ocrWorker.terminate === 'function') {
+      await ocrWorker.terminate();
+    }
+  }
+
+  if (!fullText.trim()) {
+    throw new Error('Không thể rút trích văn bản từ file PDF này.');
+  }
+
+  return cleanDocumentText(fullText);
+}
+
+// 2. Đọc file Word (.docx)
+async function readDocxFile(file) {
+  if (!window.mammoth) throw new Error('Chưa tải xong thư viện Mammoth.js');
+  const arrayBuffer = await file.arrayBuffer();
+  const statusEl = $el('loadStatus');
+  if (statusEl) statusEl.innerHTML = '<span class="loading"></span> Đang trích xuất tài liệu Word...';
+  const result = await mammoth.extractRawText({ arrayBuffer: arrayBuffer });
+  return cleanDocumentText(result.value);
+}
+
+// 3. Đọc file Văn bản (.txt, .md)
+function readTextFile(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (e) => resolve(cleanDocumentText(e.target.result));
+    reader.onerror = () => reject(new Error('Không thể đọc nội dung file văn bản.'));
+    reader.readAsText(file, 'UTF-8');
+  });
+}
+
+// ===================== CẬP NHẬT TAB EVENTS & KÉO THẢ FILE =====================
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const target = tab.dataset.tab;
+    if ($el('panel-text')) $el('panel-text').style.display = target === 'text' ? 'block' : 'none';
+    if ($el('panel-url')) $el('panel-url').style.display = target === 'url' ? 'block' : 'none';
+    if ($el('panel-file')) $el('panel-file').style.display = target === 'file' ? 'block' : 'none';
+  });
+});
+
+const dropZone = $el('dropZone');
+const fileInput = $el('fileInput');
+const dropZoneContent = $el('dropZoneContent');
+const fileInfo = $el('fileInfo');
+
+if (dropZone && fileInput) {
+  dropZone.addEventListener('click', () => fileInput.click());
+
+  dropZone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropZone.style.background = 'rgba(2, 132, 199, 0.1)';
+  });
+
+  dropZone.addEventListener('dragleave', () => {
+    dropZone.style.background = 'rgba(2, 132, 199, 0.03)';
+  });
+
+  dropZone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropZone.style.background = 'rgba(2, 132, 199, 0.03)';
+    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      fileInput.files = e.dataTransfer.files;
+      handleFileSelect(e.dataTransfer.files[0]);
+    }
+  });
+
+  fileInput.addEventListener('change', (e) => {
+    if (e.target.files && e.target.files[0]) {
+      handleFileSelect(e.target.files[0]);
+    }
+  });
+}
+
+// TỰ ĐỘNG CHẠY NGAY KHI CHỌN HOẶC THẢ FILE
+async function handleFileSelect(file) {
+  if (!file) return;
+
+  if (dropZoneContent) dropZoneContent.style.display = 'none';
+  if (fileInfo) {
+    fileInfo.style.display = 'block';
+    fileInfo.innerHTML = `📌 Đã chọn: <b>${file.name}</b> (${(file.size / 1024).toFixed(1)} KB)`;
+  }
+
+  const statusEl = $el('loadStatus');
+  try {
+    if (statusEl) statusEl.innerHTML = '<span class="loading"></span> Đang nạp và trích xuất file...';
+    
+    // Đọc nội dung file
+    const extractedText = await readTextFromFile(file);
+    
+    // Đổ vào ô nhập
+    const textInput = $el('textInput');
+    if (textInput) textInput.value = extractedText;
+
+    // Nạp trực tiếp vào bộ xử lý câu để đọc ngay
+    if (typeof processText === 'function') {
+      await processText(extractedText);
+    }
+
+    if (statusEl) statusEl.innerHTML = '✅ Đã nạp file xong! Bấm <b>▶ ĐỌC GIỌNG MÁY</b> để nghe ngay.';
+  } catch (err) {
+    console.error(err);
+    if (statusEl) statusEl.textContent = 'Lỗi đọc file: ' + (err.message || err);
+  }
+}
+
+// Bảng từ điển ngôn ngữ mở rộng cho khung Controls
+const controlsTranslations = {
+  vi: {
+    speedTitle: "Đổi tốc độ đọc",
+    sentenceLabel: "Câu",
+    jumpLabel: "Tới câu:",
+    playLabel: "ĐỌC GIỌNG MÁY",
+    stopTitle: "Dừng & về đầu",
+    pdfLabel: "📄 XUẤT PDF",
+    voiceLabel: "Giọng đọc (tự chọn tốt nhất theo ngôn ngữ)",
+    badgeText: "vi · Tiếng Việt"
+  },
+  en: {
+    speedTitle: "Change reading speed",
+    sentenceLabel: "Sentence",
+    jumpLabel: "Jump to:",
+    playLabel: "PLAY SPEECH",
+    stopTitle: "Stop & Reset",
+    pdfLabel: "📄 EXPORT PDF",
+    voiceLabel: "Voice (auto-selected best by language)",
+    badgeText: "en · English"
+  },
+  ja: {
+    speedTitle: "読み上げ速度の変更",
+    sentenceLabel: "文",
+    jumpLabel: "移動:",
+    playLabel: "音声読み上げ",
+    stopTitle: "停止して r 保持",
+    pdfLabel: "📄 PDF出力",
+    voiceLabel: "音声 (言語に最適な声を tự động 選択)",
+    badgeText: "ja · 日本語"
+  },
+  zh: {
+    speedTitle: "更改朗读速度",
+    sentenceLabel: "句",
+    jumpLabel: "跳转至:",
+    playLabel: "朗读文本",
+    stopTitle: "停止并重置",
+    pdfLabel: "📄 导出 PDF",
+    voiceLabel: "语音 (按语言自动选择最佳)",
+    badgeText: "zh · 中文"
+  }
+};
+
+// Hàm cập nhật riêng cho khu vực Controls
+function updateControlsUI(langCode = 'vi', currentSentence = 0, totalSentences = 0) {
+  // Lấy ngôn ngữ tương ứng (mặc định 'vi' nếu chưa hỗ trợ)
+  const langKey = langCode.substring(0, 2).toLowerCase();
+  const t = controlsTranslations[langKey] || controlsTranslations.vi;
+
+  // Cập nhật các phần tử HTML
+  document.getElementById('btnSpeed').title = t.speedTitle;
+  document.getElementById('lblJump').textContent = t.jumpLabel;
+  document.getElementById('playLabel').textContent = t.playLabel;
+  document.getElementById('btnStop').title = t.stopTitle;
+  document.getElementById('pdfLabel').textContent = t.pdfLabel;
+  document.getElementById('lblVoiceSelect').textContent = t.voiceLabel;
+
+  // Cập nhật thẻ Badge hiển thị ngôn ngữ
+  const langBadge = document.getElementById('langBadge');
+  if (langBadge) {
+    langBadge.textContent = t.badgeText;
+  }
+
+  // Cập nhật chỉ số câu (Sentence Info)
+  const sentenceInfo = document.getElementById('sentenceInfo');
+  if (sentenceInfo) {
+    sentenceInfo.textContent = `${t.sentenceLabel}: ${currentSentence} / ${totalSentences}`;
+  }
+}
+
+// Ví dụ tích hợp khi người dùng chọn giọng đọc hoặc thay đổi ngôn ngữ:
+document.getElementById('voiceSelect').addEventListener('change', (e) => {
+  const selectedOption = e.target.options[e.target.selectedIndex];
+  if (selectedOption && selectedOption.dataset.lang) {
+    const lang = selectedOption.dataset.lang; // VD: 'en-US', 'vi-VN', 'ja-JP'
+    updateControlsUI(lang, 0, 0);
+  }
+});
+  function updateContentStats() {
+  const el = document.getElementById('contentDisplay');
+  const statsEl = document.getElementById('contentStats');
+  if (!el || !statsEl) return;
+
+  const text = (el.innerText || el.textContent || '').trim();
+  const charCount = text.length;
+  const lineCount = text ? text.split(/\n/).filter(l => l.trim().length > 0).length : 0;
+
+  statsEl.textContent = `${charCount.toLocaleString('vi-VN')} ký tự · ${lineCount} dòng`;
+}
+  // Init
+  updateUI();
+  // Preload voices
+  setTimeout(loadVoices, 300);
+})();
