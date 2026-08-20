@@ -5,72 +5,28 @@
   const MAX_CHUNK_LEN = 220;
 
   const LANG_CONFIG = {
-  // --- Đông Nam Á ---
-  vi: { code: 'vi-VN', name: 'Tiếng Việt', keywords: ['south', 'nam', 'saigon', 'linh', 'mai', 'hoaimy', 'an', 'female', 'nữ'] },
-  th: { code: 'th-TH', name: 'ไทย (Thái)', keywords: ['enhanced', 'neural', 'kanya', 'prem', 'female'] },
-  id: { code: 'id-ID', name: 'Bahasa Indonesia', keywords: ['enhanced', 'neural', 'andika', 'gadis', 'female'] },
-  ms: { code: 'ms-MY', name: 'Bahasa Melayu', keywords: ['enhanced', 'neural', 'yasmin', 'osman', 'female'] },
-  km: { code: 'km-KH', name: 'ភាសាខ្មែរ (Khmer)', keywords: ['enhanced', 'neural', 'piseth', 'sreymom', 'female'] },
-  lo: { code: 'lo-LA', name: 'ພາສາລາວ (Lào)', keywords: ['enhanced', 'neural', 'chanthavong', 'keomany', 'female'] },
-  my: { code: 'my-MM', name: 'မြန်မာဘာသာ (Burmese)', keywords: ['enhanced', 'neural', 'nilar', 'female'] },
-  fil: { code: 'fil-PH', name: 'Filipino / Tagalog', keywords: ['enhanced', 'neural', 'angelo', 'blessica', 'female'] },
-
-  // --- Đông Á ---
-  zh: { code: 'zh-CN', name: '中文 (Giản thể - Trung Quốc)', keywords: ['enhanced', 'neural', 'ting-ting', 'xiaoxiao', 'yunxi', 'female', 'natural'] },
-  'zh-TW': { code: 'zh-TW', name: '中文 (Phồn thể - Đài Loan)', keywords: ['enhanced', 'neural', 'yating', 'hanhan', 'hsiao-chen', 'female'] },
-  'zh-HK': { code: 'zh-HK', name: '廣東話 (Quảng Đông / Hong Kong)', keywords: ['enhanced', 'neural', 'sinji', 'cantonese', 'hongkong', 'female'] },
-  yue: { code: 'zh-HK', name: '粵語 (Quảng Đông)', keywords: ['cantonese', 'yue', 'hongkong', 'female'] },
-  ja: { code: 'ja-JP', name: '日本語 (Nhật Bản)', keywords: ['enhanced', 'neural', 'kyoko', 'otoya', 'nanami', 'female'] },
-  ko: { code: 'ko-KR', name: '한국어 (Hàn Quốc)', keywords: ['enhanced', 'neural', 'yuna', 'sora', 'sunhi', 'female'] },
-  bo: { code: 'bo-CN', name: 'Tibetan (Tây Tạng)', keywords: ['enhanced', 'neural', 'tibetan', 'female'] },
-  mn: { code: 'mn-MN', name: 'Mongolian (Mông Cổ)', keywords: ['enhanced', 'neural', 'yesui', 'bataar', 'female'] },
-
-  // --- Nam Á ---
-  hi: { code: 'hi-IN', name: 'हिन्दी (Hindi)', keywords: ['enhanced', 'neural', 'swara', 'madhur', 'female'] },
-  bn: { code: 'bn-IN', name: 'বাংলা (Bengali)', keywords: ['enhanced', 'neural', 'bashkar', 'tanishaa', 'female'] },
-  ta: { code: 'ta-IN', name: 'தமிழ் (Tamil)', keywords: ['enhanced', 'neural', 'valluvar', 'ani', 'female'] },
-  te: { code: 'te-IN', name: 'తెలుగు (Telugu)', keywords: ['enhanced', 'neural', 'mohan', 'shruti', 'female'] },
-  mr: { code: 'mr-IN', name: 'मराठी (Marathi)', keywords: ['enhanced', 'neural', 'aarti', 'manohar', 'female'] },
-  gu: { code: 'gu-IN', name: 'ગુજરાતી (Gujarati)', keywords: ['enhanced', 'neural', 'dhwani', 'niranjan', 'female'] },
-  kn: { code: 'kn-IN', name: 'ಕನ್ನಡ (Kannada)', keywords: ['enhanced', 'neural', 'gapan', 'sapna', 'female'] },
-  ml: { code: 'ml-IN', name: 'മലയാളം (Malayalam)', keywords: ['enhanced', 'neural', 'midhun', 'sobhana', 'female'] },
-  pa: { code: 'pa-IN', name: 'ਪੰਜਾਬੀ (Punjabi)', keywords: ['enhanced', 'neural', 'vaani', 'female'] },
-  ur: { code: 'ur-PK', name: 'اردو (Urdu)', keywords: ['enhanced', 'neural', 'asad', 'uzma', 'female'] },
-  ne: { code: 'ne-NP', name: 'नेपाली (Nepali)', keywords: ['enhanced', 'neural', 'sagun', 'female'] },
-
-  // --- Trung Đông & Ả Rập (mở rộng) ---
-  ar: { code: 'ar-SA', name: 'العربية (Ả Rập chuẩn / Saudi)', keywords: ['enhanced', 'neural', 'hamed', 'zariyah', 'maged', 'fatima', 'female'] },
-  'ar-AE': { code: 'ar-AE', name: 'العربية (UAE / Dubai)', keywords: ['enhanced', 'neural', 'fatima', 'hamdan', 'female'] },
-  'ar-EG': { code: 'ar-EG', name: 'العربية (Ai Cập)', keywords: ['enhanced', 'neural', 'salma', 'female'] },
-  'ar-JO': { code: 'ar-JO', name: 'العربية (Jordan)', keywords: ['enhanced', 'neural', 'sana', 'female'] },
-  'ar-IQ': { code: 'ar-IQ', name: 'العربية (Iraq)', keywords: ['enhanced', 'neural', 'female'] },
-  fa: { code: 'fa-IR', name: 'فارسی (Ba Tư / Iran)', keywords: ['enhanced', 'neural', 'dilara', 'female'] },
-  he: { code: 'he-IL', name: 'עברית (Hebrew)', keywords: ['enhanced', 'neural', 'avri', 'hila', 'female'] },
-  tr: { code: 'tr-TR', name: 'Türkçe (Thổ Nhĩ Kỳ)', keywords: ['enhanced', 'neural', 'emel', 'ahmet', 'female'] },
-
-  // --- Châu Âu & Bắc Mỹ ---
-  en: { code: 'en-US', name: 'English', keywords: ['enhanced', 'premium', 'neural', 'natural', 'samantha', 'google', 'aria', 'jenny', 'guy'] },
-  fr: { code: 'fr-FR', name: 'Français', keywords: ['enhanced', 'neural', 'thomas', 'audrey', 'denise', 'female'] },
-  de: { code: 'de-DE', name: 'Deutsch', keywords: ['enhanced', 'neural', 'anna', 'marlene', 'katja', 'female'] },
-  es: { code: 'es-ES', name: 'Español', keywords: ['enhanced', 'neural', 'monica', 'jorge', 'elvira', 'female'] },
-  it: { code: 'it-IT', name: 'Italiano', keywords: ['enhanced', 'neural', 'elsa', 'diego', 'female'] },
-  pt: { code: 'pt-BR', name: 'Português (Brasil)', keywords: ['enhanced', 'neural', 'francisca', 'antonio', 'brasil', 'female'] },
-  ru: { code: 'ru-RU', name: 'Русский', keywords: ['enhanced', 'neural', 'tatyana', 'pavel', 'dariya', 'female'] },
-  uk: { code: 'uk-UA', name: 'Українська', keywords: ['enhanced', 'neural', 'polina', 'ostap', 'female'] },
-  pl: { code: 'pl-PL', name: 'Polski', keywords: ['enhanced', 'neural', 'zosia', 'marek', 'female'] },
-  nl: { code: 'nl-NL', name: 'Nederlands', keywords: ['enhanced', 'neural', 'colette', 'maarten', 'female'] },
-  sv: { code: 'sv-SE', name: 'Svenska', keywords: ['enhanced', 'neural', 'hillevi', 'female'] },
-  no: { code: 'nb-NO', name: 'Norsk', keywords: ['enhanced', 'neural', 'pernille', 'female'] },
-  da: { code: 'da-DK', name: 'Dansk', keywords: ['enhanced', 'neural', 'christel', 'female'] },
-  fi: { code: 'fi-FI', name: 'Suomi', keywords: ['enhanced', 'neural', 'noora', 'female'] },
-  el: { code: 'el-GR', name: 'Ελληνικά', keywords: ['enhanced', 'neural', 'athina', 'female'] },
-  cs: { code: 'cs-CZ', name: 'Čeština', keywords: ['enhanced', 'neural', 'vlasta', 'female'] },
-  hu: { code: 'hu-HU', name: 'Magyar', keywords: ['enhanced', 'neural', 'noemi', 'female'] },
-  ro: { code: 'ro-RO', name: 'Română', keywords: ['enhanced', 'neural', 'alina', 'female'] },
-
-  // --- Châu Phi ---
-  sw: { code: 'sw-KE', name: 'Kiswahili', keywords: ['enhanced', 'neural', 'rafiki', 'female'] },
-};
+    vi: { code: 'vi-VN', name: 'Tiếng Việt', keywords: ['south', 'nam', 'saigon', 'linh', 'mai', 'hoaimy', 'an', 'female', 'nữ'] },
+    en: { code: 'en-US', name: 'English', keywords: ['enhanced', 'premium', 'neural', 'natural', 'samantha', 'google', 'aria', 'jenny'] },
+    ja: { code: 'ja-JP', name: '日本語', keywords: ['enhanced', 'neural', 'kyoko', 'otoya', 'nanami', 'female'] },
+    zh: { code: 'zh-CN', name: '中文', keywords: ['enhanced', 'neural', 'ting-ting', 'xiaoxiao', 'yunxi', 'female', 'natural'] },
+    ko: { code: 'ko-KR', name: '한국어', keywords: ['enhanced', 'neural', 'yuna', 'sora', 'sunhi', 'female'] },
+    fr: { code: 'fr-FR', name: 'Français', keywords: ['enhanced', 'neural', 'thomas', 'audrey', 'denise', 'female'] },
+    de: { code: 'de-DE', name: 'Deutsch', keywords: ['enhanced', 'neural', 'anna', 'marlene', 'katja', 'female'] },
+    es: { code: 'es-ES', name: 'Español', keywords: ['enhanced', 'neural', 'monica', 'jorge', 'elvira', 'female'] },
+    ru: { code: 'ru-RU', name: 'Русский', keywords: ['enhanced', 'neural', 'tatyana', 'pavel', 'dariya', 'female'] },
+    th: { code: 'th-TH', name: 'ไทย', keywords: ['enhanced', 'neural', 'kanya', 'prem', 'female'] },
+    id: { code: 'id-ID', name: 'Bahasa Indonesia', keywords: ['enhanced', 'neural', 'andika', 'gadis', 'female'] },
+    // Ngôn ngữ bổ sung
+    pt: { code: 'pt-BR', name: 'Português', keywords: ['enhanced', 'neural', 'francisca', 'antonio', 'female', 'brasil'] },
+    it: { code: 'it-IT', name: 'Italiano', keywords: ['enhanced', 'neural', 'elsa', 'diego', 'female'] },
+    hi: { code: 'hi-IN', name: 'हिन्दी', keywords: ['enhanced', 'neural', 'swara', 'madhur', 'female'] },
+    ar: { code: 'ar-SA', name: 'العربية', keywords: ['enhanced', 'neural', 'hamed', 'zariyah', 'female'] },
+    tr: { code: 'tr-TR', name: 'Türkçe', keywords: ['enhanced', 'neural', 'emel', 'ahmet', 'female'] },
+    pl: { code: 'pl-PL', name: 'Polski', keywords: ['enhanced', 'neural', 'zosia', 'marek', 'female'] },
+    nl: { code: 'nl-NL', name: 'Nederlands', keywords: ['enhanced', 'neural', 'colette', 'maarten', 'female'] },
+    ms: { code: 'ms-MY', name: 'Bahasa Melayu', keywords: ['enhanced', 'neural', 'yasmin', 'osman', 'female'] },
+    uk: { code: 'uk-UA', name: 'Українська', keywords: ['enhanced', 'neural', 'polina', 'ostap', 'female'] },
+  };
 
   // ===================== STATE =====================
   let rawText = '';
@@ -117,81 +73,50 @@
 
   // ===================== LANGUAGE DETECT =====================
   function detectLanguageCode(text) {
-  if (!text || !text.trim()) return 'vi';
-  const sample = text.length > 1200 ? text.substring(0, 1200) : text;
+    if (!text || !text.trim()) return 'vi';
+    const sample = text.length > 1200 ? text.substring(0, 1200) : text;
 
-  // 1. Script đặc thù (ưu tiên cao nhất) - dựa trên hàm gốc + bổ sung an toàn
-  if (/[\u3040-\u309F\u30A0-\u30FF]/.test(sample)) return 'ja';     // Nhật
-  if (/[\uAC00-\uD7AF\u1100-\u11FF]/.test(sample)) return 'ko';     // Hàn
-  if (/[\u0E00-\u0E7F]/.test(sample)) return 'th';                 // Thái
-  if (/[\u0E80-\u0EFF]/.test(sample)) return 'lo';                 // Lào
-  if (/[\u1000-\u109F]/.test(sample)) return 'my';                 // Myanmar
-  if (/[\u1780-\u17FF]/.test(sample)) return 'km';                 // Khmer
-  if (/[\u0F00-\u0FFF]/.test(sample)) return 'bo';                 // Tây Tạng
-  if (/[\u0590-\u05FF]/.test(sample)) return 'he';                 // Hebrew
-  if (/[\u0370-\u03FF]/.test(sample)) return 'el';                 // Greek
-
-  // Nam Á
-  if (/[\u0900-\u097F]/.test(sample)) return 'hi';                 // Hindi
-  if (/[\u0980-\u09FF]/.test(sample)) return 'bn';                 // Bengali
-  if (/[\u0A00-\u0A7F]/.test(sample)) return 'pa';                 // Punjabi
-  if (/[\u0A80-\u0AFF]/.test(sample)) return 'gu';                 // Gujarati
-  if (/[\u0B80-\u0BFF]/.test(sample)) return 'ta';                 // Tamil
-  if (/[\u0C00-\u0C7F]/.test(sample)) return 'te';                 // Telugu
-  if (/[\u0C80-\u0CFF]/.test(sample)) return 'kn';                 // Kannada
-  if (/[\u0D00-\u0DFF]/.test(sample)) return 'ml';                 // Malayalam
-
-  // Ả Rập / Ba Tư / Urdu (bổ sung nhẹ, vẫn an toàn)
-  if (/[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/.test(sample)) {
-    if (/[پچگژ]/.test(sample)) return 'fa';                        // Persian
-    if (/[ںےٹڈڑ]/.test(sample)) return 'ur';                       // Urdu
-    return 'ar';                                                  // Arabic
-  }
-
-  // Cyrillic
-  if (/[\u0400-\u04FF]/.test(sample)) {
-    if (/[іїєґІЇЄҐ]/.test(sample)) return 'uk';
-    return 'ru';
-  }
-
-  // Chữ Hán
-  if (/[\u4E00-\u9FFF]/.test(sample)) return 'zh';
-
-  // 2. Tiếng Việt – chỉ dựa vào ký tự đặc trưng (giữ nguyên để ổn định)
-  if (/[ăắằẳẵặơớờởỡợưứừửữựđĂẮẰẲẴẶƠỚỜỞỠỢƯỨỪỬỮỰĐ]/i.test(sample)) {
-    return 'vi';
-  }
-
-  // 3. Điểm số từ vựng (giữ ngưỡng >= 3 như gốc)
-  const lower = sample.toLowerCase();
-  const score = (re) => (lower.match(re) || []).length;
-
-  const scores = {
-    en: score(/\b(the|and|is|you|that|it|he|was|for|on|are|as|with|his|they|at|be|this|from|or|an|will|my|would|there|their|have|has|not|but|what|all|were|when|who|your|said|each|which|she|do|how|if|up|out|about|many)\b/g),
-    fr: score(/\b(le|la|les|un|une|des|et|est|dans|en|du|que|qui|pour|pas|sur|ce|avec|ne|se|plus|par|sont|mais|ou|donc|car|je|tu|il|elle|nous|vous|ils|elles|être|avoir|fait|tout|comme)\b/g),
-    de: score(/\b(der|die|das|und|ist|in|den|von|zu|mit|sich|des|auf|für|im|dem|nicht|ein|eine|als|auch|es|an|ich|du|er|sie|wir|ihr|werden|haben|wird|nach|bei|noch|nur|einem)\b/g),
-    es: score(/\b(el|la|los|las|un|una|unos|unas|y|en|que|es|por|con|para|su|del|como|más|pero|sus|le|ya|o|yo|tú|él|ella|nosotros|está|son|también|muy|hay|sobre)\b/g),
-    id: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|dapat|sudah|lebih|karena|saat|jika)\b/g),
-    pt: score(/\b(o|a|os|as|um|uma|de|da|do|em|para|com|não|que|se|por|como|mais|mas|foi|são|ele|ela|isso|está|também|quando|muito|seu|sua)\b/g),
-    it: score(/\b(il|lo|la|i|gli|le|un|una|di|da|in|per|con|che|è|sono|non|si|del|della|questo|questa|come|più|anche|ma|loro|essere|fare|tutto)\b/g),
-    tr: score(/\b(ve|bir|bu|da|de|için|ile|olan|var|yok|daha|çok|gibi|kadar|sonra|ama|veya|ben|sen|o|biz|siz|onlar|ne|nasıl|neden)\b/g),
-    pl: score(/\b(i|w|na|z|do|to|się|nie|jest|jak|od|po|za|ale|czy|tak|już|tylko|jego|jej|ich|być|mieć|może|przez|oraz)\b/g),
-    nl: score(/\b(de|het|een|van|en|in|is|op|te|dat|die|voor|met|zijn|niet|aan|ook|als|er|om|bij|naar|uit|nog|wel|geen|worden)\b/g),
-    ms: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|boleh|sudah|lebih|kerana|jika)\b/g),
-    fil: score(/\b(ang|ng|mga|sa|na|si|ay|para|at|may|din|rin|ko|mo|ni|niya|kami|tayo|sila)\b/g),
-  };
-
-  let max = 0, detected = 'en';
-  for (const [k, v] of Object.entries(scores)) {
-    if (v > max) {
-      max = v;
-      detected = k;
+    // 1. Script đặc thù (ưu tiên cao nhất)
+    if (/[\u3040-\u309F\u30A0-\u30FF]/.test(sample)) return 'ja';
+    if (/[\uAC00-\uD7AF\u1100-\u11FF]/.test(sample)) return 'ko';
+    if (/[\u0E00-\u0E7F]/.test(sample)) return 'th';
+    if (/[\u0600-\u06FF]/.test(sample)) return 'ar';           // Arabic
+    if (/[\u0900-\u097F]/.test(sample)) return 'hi';           // Devanagari (Hindi)
+    if (/[\u0400-\u04FF]/.test(sample)) {
+      // Phân biệt Nga / Ukraina đơn giản
+      if (/[іїєґІЇЄҐ]/.test(sample)) return 'uk';
+      return 'ru';
     }
-  }
+    if (/[\u4E00-\u9FFF]/.test(sample)) return 'zh';
 
-  // Ngưỡng tối thiểu giữ nguyên như hàm gốc (an toàn)
-  return max >= 3 ? detected : 'en';
-}
+    // 2. Tiếng Việt – ký tự đặc trưng
+    if (/[ăắằẳẵặơớờởỡợưứừửữựđĂẮẰẲẴẶƠỚỜỞỠỢƯỨỪỬỮỰĐ]/i.test(sample)) return 'vi';
+
+    // 3. Điểm số từ vựng cho các ngôn ngữ Latin
+    const lower = sample.toLowerCase();
+    const score = (re) => (lower.match(re) || []).length;
+
+    const scores = {
+      en: score(/\b(the|and|is|you|that|it|he|was|for|on|are|as|with|his|they|at|be|this|from|or|an|will|my|would|there|their|have|has|not|but|what|all|were|when|who|your|said|each|which|she|do|how|if|up|out|about|many)\b/g),
+      fr: score(/\b(le|la|les|un|une|des|et|est|dans|en|du|que|qui|pour|pas|sur|ce|avec|ne|se|plus|par|sont|mais|ou|donc|car|je|tu|il|elle|nous|vous|ils|elles|être|avoir|fait|tout|comme)\b/g),
+      de: score(/\b(der|die|das|und|ist|in|den|von|zu|mit|sich|des|auf|für|im|dem|nicht|ein|eine|als|auch|es|an|ich|du|er|sie|wir|ihr|werden|haben|wird|nach|bei|noch|nur|einem)\b/g),
+      es: score(/\b(el|la|los|las|un|una|unos|unas|y|en|que|es|por|con|para|su|del|como|más|pero|sus|le|ya|o|yo|tú|él|ella|nosotros|está|son|también|muy|hay|sobre)\b/g),
+      id: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|dapat|sudah|lebih|karena|saat|jika)\b/g),
+      pt: score(/\b(o|a|os|as|um|uma|de|da|do|em|para|com|não|que|se|por|como|mais|mas|foi|são|ele|ela|isso|está|também|quando|muito|seu|sua)\b/g),
+      it: score(/\b(il|lo|la|i|gli|le|un|una|di|da|in|per|con|che|è|sono|non|si|del|della|questo|questa|come|più|anche|ma|loro|essere|fare|tutto)\b/g),
+      tr: score(/\b(ve|bir|bu|da|de|için|ile|olan|var|yok|daha|çok|gibi|kadar|sonra|ama|veya|ben|sen|o|biz|siz|onlar|ne|nasıl|neden)\b/g),
+      pl: score(/\b(i|w|na|z|do|to|się|nie|jest|jak|od|po|za|ale|czy|tak|już|tylko|jego|jej|ich|być|mieć|może|przez|oraz)\b/g),
+      nl: score(/\b(de|het|een|van|en|in|is|op|te|dat|die|voor|met|zijn|niet|aan|ook|als|er|om|bij|naar|uit|nog|wel|geen|worden)\b/g),
+      ms: score(/\b(yang|dan|di|dari|untuk|pada|ke|dengan|ini|itu|atau|adalah|tidak|akan|juga|sebagai|oleh|ada|dalam|mereka|boleh|sudah|lebih|kerana|jika)\b/g),
+    };
+
+    let max = 0, detected = 'en';
+    for (const [k, v] of Object.entries(scores)) {
+      if (v > max) { max = v; detected = k; }
+    }
+    // Ngưỡng tối thiểu
+    return max >= 3 ? detected : 'en';
+  }
 
   // ===================== ROMAN NUMERALS =====================
   const romanRegex = /(?<=^|[\s\(\[\{,.:;\-])(?=[MDCLXVI])(M{0,3}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3}))(\.?)(?=[\s\)\}\],.:;!?]|$)/g;
@@ -274,130 +199,104 @@
 
   // ===================== PREPARE TEXT =====================
   function prepareTextForTts(text, langKey) {
-  let result = text;
+    let result = text;
+    // Remove code, links, markdown
+    result = result
+      .replace(/```[\s\S]*?```/g, '')
+      .replace(/`.*?`/g, '')
+      .replace(/https?:\/\/\S+|www\.\S+/g, '')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
 
-  // Remove code, links, markdown
-  result = result
-    .replace(/```[\s\S]*?```/g, '')
-    .replace(/`.*?`/g, '')
-    .replace(/https?:\/\/\S+|www\.\S+/g, '')
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+    // Emoji & special
+    result = result.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '');
+    result = result.replace(/["“”„‟«»]/g, ' ');
+    result = result.replace(/['‘’‚‛]/g, ' ');
+    result = result.replace(/[\u200B-\u200D\uFEFF]/g, '');
+    result = result.replace(/\.{2,}/g, '.');
+    result = result.replace(/[\(\)\[\]\{\}]/g, ' ');
+    result = result.replace(/\s*\.\s*\./g, '.');
+    result = result.replace(/\s+/g, ' ');
 
-  // Emoji & special
-  result = result.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '');
-  result = result.replace(/["“”„‟«»]/g, ' ');
-  result = result.replace(/['‘’‚‛]/g, ' ');
-  result = result.replace(/[\u200B-\u200D\uFEFF]/g, '');
-  result = result.replace(/\.{2,}/g, '.');
-  result = result.replace(/[\(\)\[\]\{\}]/g, ' ');
-  result = result.replace(/\s*\.\s*\./g, '.');
-  result = result.replace(/\s+/g, ' ');
-
-  // ===================== TIẾNG ANH =====================
-  if (langKey === 'en') {
-    const abbr = {
-      '\\be\\.g\\.\\b': 'for example',
-      '\\bi\\.e\\.\\b': 'that is',
-      '\\betc\\.\\b': 'et cetera',
-      '\\bvs\\.\\b': 'versus',
-      '\\bDr\\.\\b': 'Doctor',
-      '\\bMr\\.\\b': 'Mister',
-      '\\bMrs\\.\\b': 'Missus',
-      '\\bMs\\.\\b': 'Miss',
-      '\\bProf\\.\\b': 'Professor',
-      '\\bapprox\\.\\b': 'approximately',
-      '\\bDept\\.\\b': 'Department',
-      '\\bUniv\\.\\b': 'University',
-      '\\bInc\\.\\b': 'Incorporated',
-      '\\bLtd\\.\\b': 'Limited',
-      '\\bJr\\.\\b': 'Junior',
-      '\\bSr\\.\\b': 'Senior',
-      '\\bSt\\.\\b': 'Street',
-      '\\bAve\\.\\b': 'Avenue',
-      '\\bBlvd\\.\\b': 'Boulevard',
-      '\\bNo\\.\\b': 'Number',
-      '\\bVol\\.\\b': 'Volume',
-      '\\bpp\\.\\b': 'pages',
-      '\\bfig\\.\\b': 'figure',
-    };
-
-    for (const [p, r] of Object.entries(abbr)) {
-      result = result.replace(new RegExp(p, 'gi'), r);
+    if (langKey === 'en') {
+      const abbr = {
+        '\\be\\.g\\.\\b': 'for example',
+        '\\bi\\.e\\.\\b': 'that is',
+        '\\betc\\.\\b': 'et cetera',
+        '\\bvs\\.\\b': 'versus',
+        '\\bDr\\.\\b': 'Doctor',
+        '\\bMr\\.\\b': 'Mister',
+        '\\bMrs\\.\\b': 'Missus',
+        '\\bMs\\.\\b': 'Miss',
+        '\\bProf\\.\\b': 'Professor',
+        '\\bapprox\\.\\b': 'approximately',
+      };
+      for (const [p, r] of Object.entries(abbr)) {
+        result = result.replace(new RegExp(p, 'gi'), r);
+      }
+      const months = ['', 'January','February','March','April','May','June','July','August','September','October','November','December'];
+      result = result.replace(/\b(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, a, b, c) => {
+        let day = +a, month = +b, year = +c;
+        if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
+        if (a <= 12 && b > 12) { month = +a; day = +b; }
+        if (month >= 1 && month <= 12 && day >= 1 && day <= 31 && year >= 1900 && year <= 2100) {
+          return `${months[month]} ${day}, ${year}`;
+        }
+        return m;
+      });
     }
 
-    // Số thứ tự
-    result = result.replace(/\b(\d+)(st|nd|rd|th)\b/gi, (m, num, suf) => {
-      const n = parseInt(num, 10);
-      if (n === 1) return 'first';
-      if (n === 2) return 'second';
-      if (n === 3) return 'third';
-      return num + ' ' + suf;
-    });
-
-    // Ngày tháng
-    const months = ['', 'January','February','March','April','May','June','July','August','September','October','November','December'];
-    result = result.replace(/\b(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, a, b, c) => {
-      let day = +a, month = +b, year = +c;
-      if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
-      if (a <= 12 && b > 12) { month = +a; day = +b; }
-      if (month >= 1 && month <= 12 && day >= 1 && day <= 31 && year >= 1900 && year <= 2100) {
-        return `${months[month]} ${day}, ${year}`;
+    if (langKey === 'vi') {
+      result = result.replace(/\b[Mm]\.?\s*[Uu]\.?\s*bàn\s+tay\b/gi, 'muu bàn tay');
+      result = result.replace(/\b[Mm]u\s+bàn\s+tay\b/g, 'muu bàn tay');
+      result = result.replace(/\b([Nn]gày|[Nn]gay)\s*[:\-]?\s*(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, w, d, mo, y) => {
+        let year = +y;
+        if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
+        if (+d >= 1 && +d <= 31 && +mo >= 1 && +mo <= 12 && year >= 1900 && year <= 2100) {
+          return `ngày ${d} tháng ${mo} năm ${year}`;
+        }
+        return m;
+      });
+      result = result.replace(/\b(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, d, mo, y) => {
+        let year = +y;
+        if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
+        if (+d >= 1 && +d <= 31 && +mo >= 1 && +mo <= 12 && year >= 1900 && year <= 2100) {
+          return `ngày ${d} tháng ${mo} năm ${year}`;
+        }
+        return m;
+      });
+      result = result.replace(/\b(\d{1,2}):(\d{2})\b/g, '$1 giờ $2 phút');
+      const abbrVi = {
+        '\\bTP\\.?\\s*HCM\\b': 'Thành phố Hồ Chí Minh',
+        '\\bTP\\.?\\b': 'Thành phố',
+        '\\bSĐT\\b': 'Số điện thoại',
+        '\\bBL\\b': 'Luận giải',
+        '\\bkg\\b': 'ki-lô-gam',
+        '\\bvnđ\\b': 'Việt Nam đồng',
+        '\\bđ\\b': 'đồng',
+      };
+      for (const [p, r] of Object.entries(abbrVi)) {
+        result = result.replace(new RegExp(p, 'gi'), r);
       }
-      return m;
-    });
-  }
-
-  // ===================== TIẾNG VIỆT (giữ nguyên) =====================
-  if (langKey === 'vi') {
-    result = result.replace(/\b[Mm]\.?\s*[Uu]\.?\s*bàn\s+tay\b/gi, 'muu bàn tay');
-    result = result.replace(/\b[Mm]u\s+bàn\s+tay\b/g, 'muu bàn tay');
-    result = result.replace(/\b([Nn]gày|[Nn]gay)\s*[:\-]?\s*(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, w, d, mo, y) => {
-      let year = +y;
-      if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
-      if (+d >= 1 && +d <= 31 && +mo >= 1 && +mo <= 12 && year >= 1900 && year <= 2100) {
-        return `ngày ${d} tháng ${mo} năm ${year}`;
-      }
-      return m;
-    });
-    result = result.replace(/\b(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})\b/g, (m, d, mo, y) => {
-      let year = +y;
-      if (year > 0 && year < 100) year = year >= 50 ? 1900 + year : 2000 + year;
-      if (+d >= 1 && +d <= 31 && +mo >= 1 && +mo <= 12 && year >= 1900 && year <= 2100) {
-        return `ngày ${d} tháng ${mo} năm ${year}`;
-      }
-      return m;
-    });
-    result = result.replace(/\b(\d{1,2}):(\d{2})\b/g, '$1 giờ $2 phút');
-    const abbrVi = {
-      '\\bTP\\.?\\s*HCM\\b': 'Thành phố Hồ Chí Minh',
-      '\\bTP\\.?\\b': 'Thành phố',
-      '\\bSĐT\\b': 'Số điện thoại',
-      '\\bBL\\b': 'Luận giải',
-      '\\bkg\\b': 'ki-lô-gam',
-      '\\bvnđ\\b': 'Việt Nam đồng',
-      '\\bđ\\b': 'đồng',
-    };
-    for (const [p, r] of Object.entries(abbrVi)) {
-      result = result.replace(new RegExp(p, 'gi'), r);
     }
-  }
 
-  // Common symbols
-  result = result.replace(/^[ \t]*[\*\-\•\+]\s+/gm, '');
-  if (langKey === 'vi') {
-    result = result.replace(/&/g, ' và ').replace(/%/g, ' phần trăm ').replace(/\+/g, ' cộng ');
-  } else if (langKey === 'en') {
-    result = result.replace(/&/g, ' and ').replace(/%/g, ' percent ').replace(/\+/g, ' plus ');
+    // Common symbols
+    result = result.replace(/^[ \t]*[\*\-\•\+]\s+/gm, '');
+    if (langKey === 'vi') {
+      result = result.replace(/&/g, ' và ').replace(/%/g, ' phần trăm ').replace(/\+/g, ' cộng ');
+    } else if (langKey === 'en') {
+      result = result.replace(/&/g, ' and ').replace(/%/g, ' percent ').replace(/\+/g, ' plus ');
+    }
+    result = result.replace(/@/g, ' at ');
+    result = result.replace(/(\d+)\s*\/\s*(\d+)/g, '$1 / $2');
+
+    result = convertRomanByLanguage(result, langKey);
+
+    result = result.replace(/[*#_`~>=]+/g, ' ');
+    result = result.replace(/:/g, ', ');
+    result = result.replace(/\n+/g, ' ');
+    result = result.replace(/\s+/g, ' ').trim();
+    return result;
   }
-  result = result.replace(/@/g, ' at ');
-  result = result.replace(/(\d+)\s*\/\s*(\d+)/g, '$1 / $2');
-  result = convertRomanByLanguage(result, langKey);
-  result = result.replace(/[*#_`~>=]+/g, ' ');
-  result = result.replace(/:/g, ', ');
-  result = result.replace(/\n+/g, ' ');
-  result = result.replace(/\s+/g, ' ').trim();
-  return result;
-}
 
   // ===================== SPLIT CHUNKS =====================
   function splitTextIntoChunks(text, langKey) {
@@ -455,24 +354,24 @@
 
   // ===================== VOICES =====================
   function isVietnameseVoice(voice) {
-  const lang = (voice.lang || '').toLowerCase().replace('_', '-');
-  const name = (voice.name || '').toLowerCase();
-
-  return (
-    lang.startsWith('vi') ||
-    lang.includes('vietnam') ||
-    name.includes('vietnam') ||
-    name.includes('vietnamese') ||
-    name.includes('hoaimy') ||
-    name.includes('hoai my') ||
-    name.includes('linh') ||
-    name.includes('mai ') ||
-    name.includes('nam ') ||
-    name.includes('saigon') ||
-    name.includes('hanoi') ||
-    name.includes('an ')          // Microsoft An
-  );
-}
+    const lang = (voice.lang || '').toLowerCase().replace('_', '-');
+    const name = (voice.name || '').toLowerCase();
+    // Bắt mọi biến thể có thể của giọng Việt
+    return (
+      lang.startsWith('vi') ||
+      lang.includes('vietnam') ||
+      name.includes('vietnam') ||
+      name.includes('vietnamese') ||
+      name.includes('an ') ||          // Microsoft An
+      name.includes('hoaimy') ||
+      name.includes('hoai my') ||
+      name.includes('linh') ||
+      name.includes('mai ') ||
+      name.includes('nam ') ||
+      name.includes('saigon') ||
+      name.includes('hanoi')
+    );
+  }
 
   function loadVoices() {
     voices = speechSynthesis.getVoices() || [];
@@ -505,7 +404,7 @@
 
   // 1. Điểm nền tảng theo Ngôn ngữ / Locale
   if (langKey === 'vi' && isVietnameseVoice(voice)) {
-    score += 200;
+    score += 200; // Đặt điểm sàn cao tuyệt đối cho giọng Việt
     if (lang === 'vi-vn' || lang === 'vi') score += 30;
   } else if (lang === cfg.code.toLowerCase() || lang === cfg.code.toLowerCase().replace('-', '_')) {
     score += 100;
@@ -514,7 +413,7 @@
   } else if (lang.startsWith(codeShort)) {
     score += 40;
   } else {
-    score -= 100;
+    score -= 100; // Ngôn ngữ không khớp
   }
 
   // 2. Thưởng điểm Công nghệ & Chất lượng giọng
@@ -523,25 +422,25 @@
   if (name.includes('wavenet')) score += 35;
   if (name.includes('enhanced') || name.includes('premium')) score += 30;
 
+  // Điểm uy tín Thương hiệu (Google / Microsoft / Apple)
   if (name.includes('google')) score += 25;
   if (name.includes('microsoft')) score += 25;
   if (name.includes('siri') || name.includes('samantha') || name.includes('ava')) score += 20;
 
-  // 3. Khớp từ khóa ưu tiên
+  // 3. Khớp từ khóa ưu tiên riêng từng ngôn ngữ trong LANG_CONFIG
   if (cfg.keywords && cfg.keywords.length) {
     cfg.keywords.forEach((kw, i) => {
-      if (name.includes(kw.toLowerCase())) {
+      if (name.includes(kw)) {
         score += (cfg.keywords.length - i) * 6;
       }
     });
   }
 
-  // 4. Trừ điểm giọng kém
+  // 4. Trừ điểm giọng giả lập cũ / chất lượng kém
+  // (Đã BỎ 'online' để tránh trừ nhầm giọng Microsoft Neural)
   if (name.includes('compact') || name.includes('eloquence') || name.includes('espeak')) {
     score -= 60;
   }
-
-  // Giữ lại đoạn trừ điểm giọng nam của hàm gốc
   if (name.includes('male') && (langKey === 'vi' || langKey === 'th')) {
     score -= 5;
   }
@@ -553,10 +452,10 @@
   const langKey = detectedLang;
   const cfg = LANG_CONFIG[langKey] || LANG_CONFIG.vi;
 
-  // 1. Lưu lại giọng người dùng đang chọn trước khi làm mới dropdown
+  // 1. Lưu lại giọng người dùng đang chọn trước khi dựng lại dropdown
   const previousSelectedIndex = voiceSelect.value;
-  const previousSelectedVoice = (previousSelectedIndex !== '' && voices[previousSelectedIndex])
-    ? voices[previousSelectedIndex]
+  const previousSelectedVoice = (previousSelectedIndex !== '' && voices[previousSelectedIndex]) 
+    ? voices[previousSelectedIndex] 
     : null;
 
   voiceSelect.innerHTML = '';
@@ -568,33 +467,25 @@
     return;
   }
 
-  // Chấm điểm và sắp xếp giọng đọc theo ngôn ngữ hiện tại
+  // Chấm điểm và sắp xếp giọng theo điểm giảm dần
   const scored = voices
     .map(v => ({ v, s: scoreVoice(v, langKey) }))
     .sort((a, b) => b.s - a.s);
 
+  // Lấy các giọng có điểm > 0 (là giọng đúng/gần đúng ngôn ngữ đang chọn)
   let matched = scored.filter(x => x.s > 0);
   const hasVietnamese = voices.some(isVietnameseVoice);
 
-  const currentUILang = localStorage.getItem('app_lang') || 'vi';
-  const t = (typeof translations !== 'undefined' && translations[currentUILang]) 
-            ? translations[currentUILang] 
-            : null;
-
-  // ========== TRƯỜNG HỢP 1: Không tìm thấy giọng phù hợp ==========
+  // TRƯỜNG HỢP 1: Không tìm thấy giọng phù hợp cho ngôn ngữ này
   if (matched.length === 0 || (langKey === 'vi' && !hasVietnamese)) {
     const opt = document.createElement('option');
     opt.value = '';
-    opt.textContent = t 
-      ? t.noVoiceFound.replace('{lang}', cfg.name) 
-      : `⚠️ Không tìm thấy giọng ${cfg.name}`;
+    opt.textContent = '⚠️ Không tìm thấy giọng ' + cfg.name;
     voiceSelect.appendChild(opt);
 
     const sep = document.createElement('option');
     sep.disabled = true;
-    sep.textContent = currentUILang === 'en'
-      ? `── All available voices (${voices.length}) ──`
-      : `── Tất cả giọng đang có trên máy (${voices.length}) ──`;
+    sep.textContent = `── Tất cả giọng đang có trên máy (${voices.length}) ──`;
     voiceSelect.appendChild(sep);
 
     scored.forEach(({ v }) => {
@@ -610,14 +501,12 @@
         '2. Vào Cài đặt Windows → Thời gian & ngôn ngữ → <b>Giọng nói</b> → kiểm tra đã có giọng Việt chưa.<br>' +
         '3. Nếu dùng Edge, kiểm tra kết nối mạng để dùng giọng Online Natural.';
     } else {
-      ttsStatus.textContent = t 
-        ? t.noVoiceFoundDetail.replace('{lang}', cfg.name)
-        : `⚠️ Không tìm thấy giọng ${cfg.name} trên thiết bị này.`;
+      ttsStatus.textContent = `⚠️ Không tìm thấy giọng ${cfg.name} trên thiết bị này.`;
     }
     return;
   }
 
-  // ========== TRƯỜNG HỢP 2: Có giọng phù hợp ==========
+  // TRƯỜNG HỢP 2: Đã tìm thấy giọng phù hợp -> Thêm giọng khớp vào danh sách
   matched.forEach(({ v }, i) => {
     const opt = document.createElement('option');
     opt.value = voices.indexOf(v);
@@ -626,12 +515,12 @@
     voiceSelect.appendChild(opt);
   });
 
-  // Thêm danh sách các giọng ngôn ngữ khác ở bên dưới
+  // Thêm phân cách + các giọng khác ngôn ngữ (nếu còn)
   const unmatched = scored.filter(x => x.s <= 0);
   if (unmatched.length > 0) {
     const sep = document.createElement('option');
     sep.disabled = true;
-    sep.textContent = currentUILang === 'en' ? '── Other voices ──' : '── Giọng ngôn ngữ khác ──';
+    sep.textContent = '── Giọng ngôn ngữ khác ──';
     voiceSelect.appendChild(sep);
 
     unmatched.slice(0, 15).forEach(({ v }) => {
@@ -642,26 +531,15 @@
     });
   }
 
-  // 1. Tự động chọn giọng tốt nhất (ngôi sao ★) của ngôn ngữ mới
-  voiceSelect.value = voices.indexOf(matched[0].v);
-
-  // 2. KHÔI PHỤC LỰA CHỌN CŨ (Chỉ áp dụng NẾU giọng cũ CÙNG NGÔN NGỮ với file mới)
-  const targetCode = (cfg.code || langKey).toLowerCase().split('-')[0];
-  const prevLang = (previousSelectedVoice?.lang || '').toLowerCase().replace('_', '-');
-
-  const isSameLanguage = previousSelectedVoice && (
-    prevLang.startsWith(targetCode) || 
-    prevLang.startsWith(langKey.toLowerCase())
-  );
-
-  if (isSameLanguage && scoreVoice(previousSelectedVoice, langKey) > 0) {
+  // 2. Khôi phục lại giọng người dùng đã chọn trước đó (CHỈ KHI score > 0)
+  if (previousSelectedVoice && scoreVoice(previousSelectedVoice, langKey) > 0) {
     const newIdx = voices.indexOf(previousSelectedVoice);
     if (newIdx !== -1) {
       voiceSelect.value = newIdx;
     }
   }
 
-  // Thông báo thành công
+  // Cập nhật trạng thái thông báo
   if (langKey === 'vi') {
     ttsStatus.textContent = hasVietnamese ? '✓ Đã tìm thấy giọng Tiếng Việt' : '';
   } else {
@@ -686,30 +564,29 @@ function getSelectedVoice() {
 
   // ===================== TTS ENGINE =====================
   function updateUI() {
-  sentenceInfo.textContent = `Câu: ${textChunks.length ? currentChunkIndex + 1 : 0} / ${textChunks.length}`;
-  if (ttsState === 'playing') {
-    playLabel.textContent = 'TẠM DỪNG';
-    playIcon.textContent = '⏸';
-    btnStop.style.display = 'inline-flex';
-  } else if (ttsState === 'paused') {
-    playLabel.textContent = 'ĐỌC TIẾP';
-    playIcon.textContent = '▶';
-    btnStop.style.display = 'inline-flex';
-  } else {
-    playLabel.textContent = 'ĐỌC GIỌNG MÁY';
-    playIcon.textContent = '▶';
-    btnStop.style.display = 'none';
+    sentenceInfo.textContent = `Câu: ${textChunks.length ? currentChunkIndex + 1 : 0} / ${textChunks.length}`;
+    if (ttsState === 'playing') {
+      playLabel.textContent = 'TẠM DỪNG';
+      playIcon.textContent = '⏸';
+      btnStop.style.display = 'inline-flex';
+    } else if (ttsState === 'paused') {
+      playLabel.textContent = 'ĐỌC TIẾP';
+      playIcon.textContent = '▶';
+      btnStop.style.display = 'inline-flex';
+    } else {
+      playLabel.textContent = 'ĐỌC GIỌNG MÁY';
+      playIcon.textContent = '▶';
+      btnStop.style.display = 'none';
+    }
+    btnSpeed.textContent = SPEED_MULTIPLIERS[selectedSpeedIndex] === 1
+      ? '1x'
+      : SPEED_MULTIPLIERS[selectedSpeedIndex] + 'x';
   }
-  btnSpeed.textContent = SPEED_MULTIPLIERS[selectedSpeedIndex] === 1
-    ? '1x'
-    : SPEED_MULTIPLIERS[selectedSpeedIndex] + 'x';
-}
 
-function speakChunk(index) {
+  function speakChunk(index) {
   if (ttsState !== 'playing' || index >= textChunks.length) {
     ttsState = 'stopped';
     isProcessing = false;
-    currentUtterance = null;
     updateUI();
     ttsStatus.textContent = index >= textChunks.length ? 'Đã đọc xong.' : '';
     return;
@@ -719,6 +596,7 @@ function speakChunk(index) {
   currentChunkIndex = index;
   updateUI();
 
+  // Delay mềm khi bắt đầu đọc chunk đầu tiên (giống Android)
   const isFirstChunk = index === 0;
   const startDelay = isFirstChunk ? 160 : 0;
 
@@ -728,6 +606,7 @@ function speakChunk(index) {
     const voice = getSelectedVoice();
     const langCode = (LANG_CONFIG[detectedLang] || LANG_CONFIG.vi).code;
 
+    // Quan trọng: phải set cả voice + lang
     if (voice) {
       utter.voice = voice;
       utter.lang = voice.lang || langCode;
@@ -735,23 +614,19 @@ function speakChunk(index) {
       utter.lang = langCode;
     }
 
+    // Tốc độ: tiếng Việt chậm và êm hơn
     let rate = BASE_RATE * SPEED_MULTIPLIERS[selectedSpeedIndex];
-    if (detectedLang === 'vi') {
-      rate = Math.min(rate * 0.85, 1.6);
-    } else if (detectedLang === 'en') {
-      rate = Math.min(rate * 0.92, 1.8);
-    } else if (['ja', 'zh', 'ko', 'th'].includes(detectedLang)) {
-      rate = Math.min(rate * 0.90, 1.7);
-    }
+    if (detectedLang === 'vi') rate = Math.min(rate * 0.85, 1.6);   // giảm từ 0.92 → 0.85
+    if (detectedLang === 'en') rate = Math.min(rate * 0.92, 1.8);
     utter.rate = Math.max(0.5, Math.min(rate, 2));
     utter.pitch = 1;
     utter.volume = 1;
 
     utter.onend = () => {
       isProcessing = false;
-      currentUtterance = null;
       if (ttsState === 'playing') {
         currentChunkIndex++;
+        // Nghỉ giữa câu dài hơn một chút để tự nhiên
         const pause = detectedLang === 'en' ? 180 : 140;
         setTimeout(() => speakChunk(currentChunkIndex), pause);
       }
@@ -760,7 +635,6 @@ function speakChunk(index) {
     utter.onerror = (e) => {
       console.warn('TTS error', e);
       isProcessing = false;
-      currentUtterance = null;
       if (e.error === 'language-unavailable' || e.error === 'voice-unavailable') {
         ttsStatus.textContent = '⚠️ Máy chưa có giọng ngôn ngữ này. Hãy cài thêm giọng trong Cài đặt hệ thống.';
         ttsState = 'stopped';
@@ -775,13 +649,10 @@ function speakChunk(index) {
 
     currentUtterance = utter;
 
-    // Hủy sạch trước khi nói (thêm cả trường hợp paused)
-    try {
-      if (speechSynthesis.speaking || speechSynthesis.pending || speechSynthesis.paused) {
-        speechSynthesis.cancel();
-      }
-    } catch (_) {}
-
+    // Hủy hàng đợi cũ trước khi nói
+    if (speechSynthesis.speaking || speechSynthesis.pending) {
+      speechSynthesis.cancel();
+    }
     speechSynthesis.speak(utter);
     ttsStatus.textContent = `Đang đọc câu ${index + 1}/${textChunks.length} · ${langCode}`;
   };
@@ -792,103 +663,68 @@ function speakChunk(index) {
     doSpeak();
   }
 }
-
-let lastToggleTime = 0; // Biến toàn cục dùng để chặn spam click
-
-function togglePlay() {
-  if (!textChunks.length) {
-    ttsStatus.textContent = 'Chưa có nội dung. Hãy nhấn "Xử lý & Chuẩn bị đọc" trước.';
-    return;
-  }
-
-  // 1. CHỐNG SPAM CLICK: Ngăn bấm quá nhanh (< 250ms) gây nghẽn Web Speech Engine
-  const now = Date.now();
-  if (now - lastToggleTime < 250) return;
-  lastToggleTime = now;
-
-  if (ttsState === 'playing') {
-    // --- TẠM DỪNG ---
-    ttsState = 'paused';
-    isProcessing = false;
-    ttsStatus.textContent = 'Đã tạm dừng.';
-    updateUI();
-
-    try { speechSynthesis.pause(); } catch (_) {}
-
-  } else if (ttsState === 'paused') {
-    // --- ĐỌC TIẾP ---
-    ttsState = 'playing';
-    ttsStatus.textContent = 'Đang đọc tiếp...';
-    updateUI();
-
-    // Thử resume chuẩn từ trình duyệt
-    try { speechSynthesis.resume(); } catch (_) {}
-
-    // 2. CƠ CHẾ GIẢI CỨU (PC / Android / iOS):
-    // Nếu sau 150ms trình duyệt bị kẹt (paused vẫn bằng true hoặc không phát tiếng) -> Ép reset và đọc lại câu hiện tại
-    setTimeout(() => {
-      if (ttsState !== 'playing') return;
-
-      if (speechSynthesis.paused || !speechSynthesis.speaking) {
-        try { speechSynthesis.cancel(); } catch (_) {}
-        isProcessing = false;
+  function togglePlay() {
+    if (!textChunks.length) {
+      ttsStatus.textContent = 'Chưa có nội dung. Hãy nhấn "Xử lý & Chuẩn bị đọc" trước.';
+      return;
+    }
+    if (ttsState === 'playing') {
+      speechSynthesis.pause();
+      ttsState = 'paused';
+      ttsStatus.textContent = 'Đã tạm dừng.';
+      updateUI();
+    } else if (ttsState === 'paused') {
+      speechSynthesis.resume();
+      ttsState = 'playing';
+      ttsStatus.textContent = 'Đang đọc tiếp...';
+      updateUI();
+      // Some browsers need re-trigger
+      if (!speechSynthesis.speaking) {
         speakChunk(currentChunkIndex);
       }
-    }, 150);
+    } else {
+      speechSynthesis.cancel();
+      ttsState = 'playing';
+      isProcessing = false;
+      if (currentChunkIndex >= textChunks.length) currentChunkIndex = 0;
+      updateUI();
+      speakChunk(currentChunkIndex);
+    }
+  }
 
-  } else {
-    // --- BẮT ĐẦU MỚI ---
-    ttsState = 'playing';
+  function stopTts() {
+    speechSynthesis.cancel();
+    ttsState = 'stopped';
     isProcessing = false;
-    currentUtterance = null;
-    if (currentChunkIndex >= textChunks.length) currentChunkIndex = 0;
-    ttsStatus.textContent = 'Đang đọc...';
+    currentChunkIndex = 0;
+    selectedSpeedIndex = 0;
     updateUI();
-
-    try { speechSynthesis.cancel(); } catch (_) {}
-    setTimeout(() => {
-      if (ttsState === 'playing') {
-        speakChunk(currentChunkIndex);
-      }
-    }, 50);
+    ttsStatus.textContent = 'Đã dừng.';
   }
-}
 
-function stopTts() {
-  try { speechSynthesis.cancel(); } catch (_) {}
-  ttsState = 'stopped';
-  isProcessing = false;
-  currentUtterance = null;
-  currentChunkIndex = 0;
-  selectedSpeedIndex = 0;
-  updateUI();
-  ttsStatus.textContent = 'Đã dừng.';
-}
-
-function cycleSpeed() {
-  selectedSpeedIndex = (selectedSpeedIndex + 1) % SPEED_MULTIPLIERS.length;
-  updateUI();
-  if (ttsState === 'playing') {
-    try { speechSynthesis.cancel(); } catch (_) {}
-    isProcessing = false;
-    currentUtterance = null;
-    setTimeout(() => speakChunk(currentChunkIndex), 50);
+  function cycleSpeed() {
+    selectedSpeedIndex = (selectedSpeedIndex + 1) % SPEED_MULTIPLIERS.length;
+    updateUI();
+    if (ttsState === 'playing') {
+      // Restart current chunk with new rate
+      speechSynthesis.cancel();
+      isProcessing = false;
+      setTimeout(() => speakChunk(currentChunkIndex), 50);
+    }
   }
-}
 
-function jumpToSentence(n) {
-  if (!textChunks.length) return;
-  const idx = Math.max(0, Math.min(textChunks.length - 1, n - 1));
-  currentChunkIndex = idx;
-  jumpInput.value = idx + 1;
-  updateUI();
-  if (ttsState === 'playing') {
-    try { speechSynthesis.cancel(); } catch (_) {}
-    isProcessing = false;
-    currentUtterance = null;
-    setTimeout(() => speakChunk(currentChunkIndex), 50);
+  function jumpToSentence(n) {
+    if (!textChunks.length) return;
+    const idx = Math.max(0, Math.min(textChunks.length - 1, n - 1));
+    currentChunkIndex = idx;
+    jumpInput.value = idx + 1;
+    updateUI();
+    if (ttsState === 'playing') {
+      speechSynthesis.cancel();
+      isProcessing = false;
+      setTimeout(() => speakChunk(currentChunkIndex), 50);
+    }
   }
-}
 
   // ===================== LOAD CONTENT & JINA READER PRO =====================
 async function processText(text) {
@@ -1172,7 +1008,6 @@ $('btnClear').addEventListener('click', () => {
   loadStatus.textContent = '';
   ttsStatus.textContent = '';
 });
-
 
 // ===================== CONTROLS EVENTS =====================
 $('btnPlay').addEventListener('click', togglePlay);
@@ -1620,151 +1455,50 @@ function cleanDocumentText(text) {
   return cleanLines.join('\n\n').trim();
 }
 
-// 1. Cập nhật hàm điều hướng đọc file (bổ sung dạng ảnh)
+// ===================== BỘ ĐỌC TRÍCH XUẤT FILE CÁC ĐỊNH DẠNG =====================
 async function readTextFromFile(file) {
   const ext = file.name.split('.').pop().toLowerCase();
   
-  // Kiểm tra đuôi file hình ảnh
-  if (['png', 'jpg', 'jpeg', 'bmp', 'webp', 'gif'].includes(ext)) {
-    return await readImageFile(file);
-  } else if (ext === 'pdf') {
+  if (ext === 'pdf') {
     return await readPdfFile(file);
   } else if (ext === 'docx') {
     return await readDocxFile(file);
   } else if (ext === 'doc') {
-    throw new Error('File .doc cũ không hỗ trợ đọc trực tiếp. Vui lòng đổi sang dạng .docx, .pdf hoặc .jpg!');
+    throw new Error('File .doc cũ không hỗ trợ đọc trực tiếp trên trình duyệt. Vui lòng đổi/lưu sang dạng .docx hoặc .pdf!');
   } else {
+    // Dạng txt, md, log...
     return await readTextFile(file);
   }
 }
 
-// 2. Thêm hàm quét OCR nhận diện chữ từ file ảnh
-async function readImageFile(file) {
-  if (typeof Tesseract === 'undefined') {
-    throw new Error('Chưa tải xong thư viện quét ảnh Tesseract.js. Vui lòng kiểm tra kết nối mạng!');
-  }
-
-  const statusEl = $el('loadStatus');
-  if (statusEl) statusEl.innerHTML = '<span class="loading"></span> Đang chuẩn bị quét chữ từ ảnh...';
-
-  // Quét kết hợp cả Tiếng Việt (vie) và Tiếng Anh (eng)
-  const result = await Tesseract.recognize(file, 'vie+eng', {
-    logger: m => {
-      if (m.status === 'recognizing text' && statusEl) {
-        const progress = Math.round((m.progress || 0) * 100);
-        statusEl.innerHTML = `<span class="loading"></span> Đang quét chữ từ ảnh: ${progress}%...`;
-      }
-    }
-  });
-
-  const extractedText = result.data.text;
-  if (!extractedText || !extractedText.trim()) {
-    throw new Error('Không tìm thấy chữ hoặc ảnh quá mờ/chất lượng thấp.');
-  }
-
-  return cleanDocumentText(extractedText);
-}
-
-// 1. Hàm kiểm tra văn bản bị lỗi font mã hóa (Mojibake/Vỡ nét)
-function isMangledText(text) {
-  if (!text || text.trim().length === 0) return true;
-
-  // Tập hợp các ký tự rác/mã hóa sai TCVN3/Windows-1252 phổ biến khi bóc tách PDF lỗi font
-  const mangledPattern = /[¢¾¬Ë¯µ£§¥μ°±¡¿ÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßæçëîïðñö÷øûüþÿ]/g;
-  const matches = text.match(mangledPattern) || [];
-
-  // Bắt các lỗi kết hợp ký tự rác phổ biến như: "V)nh", "nh¥t", "Hu¿", "TiÁn"
-  const structureMangle = (text.match(/\b\w+[\)\¥\¿\Á\±\°]\w+\b/g) || []).length;
-
-  const totalBadHits = matches.length + (structureMangle * 2);
-
-  // Nếu tỷ lệ ký tự rác > 2% tổng số ký tự -> Xác định file bị vỡ font
-  return (totalBadHits / text.length) > 0.02;
-}
-
-// 2. Hàm đọc file PDF tối ưu tốc độ OCR & khắc phục cảnh báo lặp
+// 1. Đọc file PDF
 async function readPdfFile(file) {
+  if (!window.pdfjsLib) throw new Error('Chưa tải xong thư viện PDF.js');
   const arrayBuffer = await file.arrayBuffer();
-  const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
-  let fullText = '';
+  const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
+  const pdf = await loadingTask.promise;
+  let fullText = [];
   const statusEl = $el('loadStatus');
 
-  // Khởi tạo trước 1 Tesseract Worker dùng chung cho tất cả các trang
-  let ocrWorker = null;
-
-  try {
-    for (let i = 1; i <= pdf.numPages; i++) {
-      if (statusEl) {
-        statusEl.innerHTML = `<span class="loading"></span> Đang xử lý trang ${i}/${pdf.numPages}...`;
+  for (let i = 1; i <= pdf.numPages; i++) {
+    if (statusEl) statusEl.innerHTML = `<span class="loading"></span> Đang nạp PDF: Trang ${i}/${pdf.numPages}...`;
+    const page = await pdf.getPage(i);
+    const content = await page.getTextContent();
+    
+    let lastY = null;
+    let pageText = '';
+    for (const item of content.items) {
+      if (lastY !== null && Math.abs(item.transform[5] - lastY) > 5) {
+        pageText += '\n'; // Xuống dòng khi thay đổi tọa độ Y
+      } else if (pageText && !pageText.endsWith(' ') && !item.str.startsWith(' ')) {
+        pageText += ' ';
       }
-
-      const page = await pdf.getPage(i);
-      const textContent = await page.getTextContent();
-      
-      // Ghép văn bản trực tiếp từ PDF
-      let lastY = null;
-      let pageText = '';
-      for (const item of textContent.items) {
-        if (lastY !== null && Math.abs(item.transform[5] - lastY) > 5) {
-          pageText += '\n';
-        } else if (pageText && !pageText.endsWith(' ') && !item.str.startsWith(' ')) {
-          pageText += ' ';
-        }
-        pageText += item.str;
-        lastY = item.transform[5];
-      }
-
-      const cleanExtract = pageText.trim();
-      const isCorrupted = isMangledText(cleanExtract);
-
-      // Nếu văn bản bóc ra đủ dài VÀ KHÔNG BỊ LỖI FONT -> Dùng trực tiếp
-      if (cleanExtract.length > 30 && !isCorrupted) {
-        fullText += cleanExtract + '\n\n';
-      } else {
-        // Nếu bị vỡ font hoặc là PDF dạng ảnh -> Dùng OCR
-        if (statusEl) {
-          statusEl.innerHTML = `<span class="loading"></span> Trang ${i}/${pdf.numPages}: Đang nhận diện OCR chữ Tiếng Việt...`;
-        }
-
-        // Tạo Worker Tesseract một lần duy nhất khi gặp trang cần OCR
-        if (!ocrWorker) {
-          if (typeof Tesseract.createWorker === 'function') {
-            ocrWorker = await Tesseract.createWorker('vie+eng');
-          }
-        }
-
-        // Render trang PDF ra Canvas chất lượng cao (Scale 2.0)
-        const viewport = page.getViewport({ scale: 2.0 });
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d');
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-
-        await page.render({ canvasContext: context, viewport: viewport }).promise;
-
-        // Quét OCR bằng Worker đã khởi tạo
-        if (ocrWorker) {
-          const ret = await ocrWorker.recognize(canvas);
-          fullText += (ret.data.text || '') + '\n\n';
-        } else {
-          // Fallback nếu dùng bản Tesseract.js cũ
-          const ret = await Tesseract.recognize(canvas, 'vie+eng');
-          fullText += (ret.data.text || '') + '\n\n';
-        }
-      }
+      pageText += item.str;
+      lastY = item.transform[5];
     }
-  } finally {
-    // Giải phóng bộ nhớ Tesseract Worker sau khi hoàn thành toàn bộ các trang
-    if (ocrWorker && typeof ocrWorker.terminate === 'function') {
-      await ocrWorker.terminate();
-    }
+    fullText.push(pageText);
   }
-
-  if (!fullText.trim()) {
-    throw new Error('Không thể rút trích văn bản từ file PDF này.');
-  }
-
-  return cleanDocumentText(fullText);
+  return cleanDocumentText(fullText.join('\n\n'));
 }
 
 // 2. Đọc file Word (.docx)
