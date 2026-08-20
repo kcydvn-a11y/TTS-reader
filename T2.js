@@ -793,52 +793,64 @@ function speakChunk(index) {
   }
 }
 
+let lastToggleTime = 0; // Biến toàn cục dùng để chặn spam click
+
 function togglePlay() {
   if (!textChunks.length) {
     ttsStatus.textContent = 'Chưa có nội dung. Hãy nhấn "Xử lý & Chuẩn bị đọc" trước.';
     return;
   }
 
+  // 1. CHỐNG SPAM CLICK: Ngăn bấm quá nhanh (< 250ms) gây nghẽn Web Speech Engine
+  const now = Date.now();
+  if (now - lastToggleTime < 250) return;
+  lastToggleTime = now;
+
   if (ttsState === 'playing') {
-    // Pause thật → giữ đúng vị trí đang đọc
-    try { speechSynthesis.pause(); } catch (_) {}
+    // --- TẠM DỪNG ---
     ttsState = 'paused';
-    isProcessing = false;          // ← quan trọng, tránh bị kẹt
+    isProcessing = false;
     ttsStatus.textContent = 'Đã tạm dừng.';
     updateUI();
+
+    try { speechSynthesis.pause(); } catch (_) {}
+
   } else if (ttsState === 'paused') {
-    // Resume thật từ đúng chỗ
-    try { speechSynthesis.resume(); } catch (_) {}
+    // --- ĐỌC TIẾP ---
     ttsState = 'playing';
     ttsStatus.textContent = 'Đang đọc tiếp...';
     updateUI();
 
-    // Fallback nếu browser không resume được
+    // Thử resume chuẩn từ trình duyệt
+    try { speechSynthesis.resume(); } catch (_) {}
+
+    // 2. CƠ CHẾ GIẢI CỨU (PC / Android / iOS):
+    // Nếu sau 150ms trình duyệt bị kẹt (paused vẫn bằng true hoặc không phát tiếng) -> Ép reset và đọc lại câu hiện tại
     setTimeout(() => {
-      const isAndroid = /Android/i.test(navigator.userAgent);
-      
-      // PC: Giữ nguyên logic gốc (!speaking && !paused)
-      // Android: Nếu bị kẹt speaking thì ép cancel() rồi đọc tiếp câu hiện tại
-      if (ttsState === 'playing') {
-        if (!speechSynthesis.speaking && !speechSynthesis.paused) {
-          isProcessing = false;
-          speakChunk(currentChunkIndex);
-        } else if (isAndroid) {
-          try { speechSynthesis.cancel(); } catch (_) {}
-          isProcessing = false;
-          speakChunk(currentChunkIndex);
-        }
+      if (ttsState !== 'playing') return;
+
+      if (speechSynthesis.paused || !speechSynthesis.speaking) {
+        try { speechSynthesis.cancel(); } catch (_) {}
+        isProcessing = false;
+        speakChunk(currentChunkIndex);
       }
-    }, 120);
+    }, 150);
+
   } else {
-    // Từ stopped → bắt đầu mới
-    try { speechSynthesis.cancel(); } catch (_) {}
+    // --- BẮT ĐẦU MỚI ---
     ttsState = 'playing';
     isProcessing = false;
     currentUtterance = null;
     if (currentChunkIndex >= textChunks.length) currentChunkIndex = 0;
+    ttsStatus.textContent = 'Đang đọc...';
     updateUI();
-    speakChunk(currentChunkIndex);
+
+    try { speechSynthesis.cancel(); } catch (_) {}
+    setTimeout(() => {
+      if (ttsState === 'playing') {
+        speakChunk(currentChunkIndex);
+      }
+    }, 50);
   }
 }
 
