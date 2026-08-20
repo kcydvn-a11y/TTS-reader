@@ -793,9 +793,6 @@ function speakChunk(index) {
   }
 }
 
-// Kiểm tra xem người dùng đang dùng điện thoại/máy tính bảng hay máy tính
-const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
 function togglePlay() {
   if (!textChunks.length) {
     ttsStatus.textContent = 'Chưa có nội dung. Hãy nhấn "Xử lý & Chuẩn bị đọc" trước.';
@@ -803,36 +800,38 @@ function togglePlay() {
   }
 
   if (ttsState === 'playing') {
-    if (isMobileDevice) {
-      // Dành riêng cho Mobile: Hủy luồng để tránh treo Android
-      try { speechSynthesis.cancel(); } catch (_) {}
-    } else {
-      // Dành cho PC: Giữ nguyên pause gốc để ngắt mượt đúng từ đang đọc
-      speechSynthesis.pause();
-    }
+    // Pause thật → giữ đúng vị trí đang đọc
+    try { speechSynthesis.pause(); } catch (_) {}
     ttsState = 'paused';
-    isProcessing = false;
+    isProcessing = false;          // ← quan trọng, tránh bị kẹt
     ttsStatus.textContent = 'Đã tạm dừng.';
     updateUI();
-
   } else if (ttsState === 'paused') {
-    if (isMobileDevice) {
-      // Dành riêng cho Mobile: Đọc lại từ đầu câu hiện tại
-      try { speechSynthesis.cancel(); } catch (_) {}
-      ttsState = 'playing';
-      isProcessing = false;
-      updateUI();
-      speakChunk(currentChunkIndex);
-    } else {
-      // Dành cho PC: Resume tiếp tục ngay vị trí vừa dừng mượt mà
-      speechSynthesis.resume();
-      ttsState = 'playing';
-      isProcessing = false;
-      updateUI();
-    }
+    // Resume thật từ đúng chỗ
+    try { speechSynthesis.resume(); } catch (_) {}
+    ttsState = 'playing';
+    ttsStatus.textContent = 'Đang đọc tiếp...';
+    updateUI();
 
+    // Fallback nếu browser không resume được
+    setTimeout(() => {
+      const isAndroid = /Android/i.test(navigator.userAgent);
+      
+      // PC: Giữ nguyên logic gốc (!speaking && !paused)
+      // Android: Nếu bị kẹt speaking thì ép cancel() rồi đọc tiếp câu hiện tại
+      if (ttsState === 'playing') {
+        if (!speechSynthesis.speaking && !speechSynthesis.paused) {
+          isProcessing = false;
+          speakChunk(currentChunkIndex);
+        } else if (isAndroid) {
+          try { speechSynthesis.cancel(); } catch (_) {}
+          isProcessing = false;
+          speakChunk(currentChunkIndex);
+        }
+      }
+    }, 120);
   } else {
-    // Trạng thái bắt đầu đọc mới
+    // Từ stopped → bắt đầu mới
     try { speechSynthesis.cancel(); } catch (_) {}
     ttsState = 'playing';
     isProcessing = false;
