@@ -684,7 +684,6 @@ function getSelectedVoice() {
   return sorted[0]?.v || null;
 }
 
-
 function updateUI() {
   sentenceInfo.textContent = `Câu: ${textChunks.length ? currentChunkIndex + 1 : 0} / ${textChunks.length}`;
   if (ttsState === 'playing') {
@@ -715,13 +714,14 @@ function snapToWordBoundary(text, index) {
   if (index <= 0) return 0;
   if (index >= text.length) return text.length;
   
-  const nextSpace = text.indexOf(' ', index);
-  const prevSpace = text.lastIndexOf(' ', index);
+  // Trừ hao 2-3 ký tự để tránh việc offset bị ước lượng vượt quá vị trí thực tế
+  const safeIndex = Math.max(0, index - 3);
 
-  if (prevSpace !== -1 && (index - prevSpace < 6)) {
-    return prevSpace + 1;
-  }
-  return nextSpace !== -1 ? nextSpace + 1 : index;
+  // Lùi lại tìm khoảng trắng gần nhất phía trước
+  const prevSpace = text.lastIndexOf(' ', safeIndex);
+  
+  // Nếu tìm thấy khoảng trắng, bắt đầu ngay sau khoảng trắng đó. Nếu không, đọc lại từ đầu câu.
+  return prevSpace !== -1 ? prevSpace + 1 : 0;
 }
 
 function estimateCurrentOffset() {
@@ -730,7 +730,8 @@ function estimateCurrentOffset() {
   const fullText = textChunks[currentChunkIndex] || '';
   const elapsedSec = (Date.now() - chunkStartTime) / 1000;
   
-  const charsPerSec = detectedLang === 'vi' ? 13 : 16;
+  // Giảm xuống 9-10 chars/s cho tiếng Việt để tính toán luôn nằm trong khoảng an toàn
+  const charsPerSec = detectedLang === 'vi' ? 9.5 : 12;
   const currentRate = BASE_RATE * SPEED_MULTIPLIERS[selectedSpeedIndex];
   const estimatedChars = Math.floor(elapsedSec * charsPerSec * currentRate);
 
@@ -861,6 +862,8 @@ function speakChunk(index, offset = 0) {
   }
 }
 
+const isAndroid = /Android/i.test(navigator.userAgent);
+
 function togglePlay() {
   if (!textChunks.length) {
     ttsStatus.textContent = 'Chưa có nội dung.';
@@ -875,11 +878,14 @@ function togglePlay() {
 
     try { speechSynthesis.pause(); } catch (_) {}
 
-    setTimeout(() => {
-      if (ttsState === 'paused') {
-        try { speechSynthesis.cancel(); } catch (_) {}
-      }
-    }, 100);
+    // CHỈ áp dụng cancel() trên Android vì Android không resume() được
+    if (isAndroid) {
+      setTimeout(() => {
+        if (ttsState === 'paused') {
+          try { speechSynthesis.cancel(); } catch (_) {}
+        }
+      }, 100);
+    }
 
     ttsStatus.textContent = 'Đã tạm dừng.';
     updateUI();
@@ -890,19 +896,19 @@ function togglePlay() {
     ttsStatus.textContent = 'Đang đọc tiếp...';
     updateUI();
 
-    try {
-      if (speechSynthesis.paused) {
-        speechSynthesis.resume();
-      }
-    } catch (_) {}
+    // Trên PC / iOS: Ưu tiên resume native
+    if (!isAndroid) {
+      try { speechSynthesis.resume(); } catch (_) {}
+    }
 
+    // Fallback cho Android hoặc PC khi resume thất bại
     setTimeout(() => {
       if (ttsState === 'playing' && (!speechSynthesis.speaking || speechSynthesis.paused)) {
         try { speechSynthesis.cancel(); } catch (_) {}
         isProcessing = false;
         speakChunk(currentChunkIndex, currentOffset);
       }
-    }, 120);
+    }, isAndroid ? 50 : 150);
 
   } else {
     try { speechSynthesis.cancel(); } catch (_) {}
